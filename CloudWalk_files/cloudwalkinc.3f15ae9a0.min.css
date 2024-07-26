@@ -7309,8 +7309,8 @@ figcaption {
   grid-column-gap: 16px;
   grid-row-gap: 16px;
   flex-flow: column;
-  justify-content: flex-start;
-  align-items: flex-start;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   max-width: 1480px;
   height: 100%;
