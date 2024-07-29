@@ -14833,3 +14833,53 @@ figcaption {
 
 
 }
+
+/* 3D CSS HOVER SCREEN*/
+
+.scream3d {
+  position: relative;
+  width: 500px;
+  height: 400px;
+  transform: rotate(15deg) scale(0.9);
+  transition: 0.2s;
+  z-index: 9999;
+}
+
+
+@media screen and (min-width:992) and(max-width:1360px) {
+  .scream3d {
+    transform: rotate(15deg) scale(0.7);
+  }}
+
+@media screen and (min-width:481) and(max-width:991px) {
+  .scream3d {
+  padding: 10px;
+  transform: translate(15px) rotate(15deg) scale(0.5);
+  transition: 0.2s;
+  }}
+
+  @media screen and (max-width: 480px) {
+    .scream3d {
+      padding: 10px;
+      transform: translate(15px ,30px) rotate(15deg)  scale(0.688);
+      transition: 0.2s;
+      }
+  }
+
+.scream3d img {
+  position: absolute;
+  width: 80%;
+  transition: 0.5s;
+}
+.scream3d:hover img:nth-child(3) {
+  transform: translate(147px, -125px) rotate(20deg);
+  opacity: 1;
+}
+.scream3d:hover img:nth-child(2) {
+  transform: translate(0px, -77px) rotate(15deg);
+  opacity: 0.9;
+}
+.scream3d:hover img:nth-child(1) {
+  transform: translate(-110px, -30px) rotate(0deg);
+  opacity: 0.7;
+}
