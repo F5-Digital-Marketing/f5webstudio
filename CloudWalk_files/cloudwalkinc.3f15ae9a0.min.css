@@ -5631,6 +5631,7 @@ figcaption {
 }
 
 .main-link-block {
+  margin-top: 80px;
   color: #050505;
   text-transform: uppercase;
   background-color: #00d3e2;
@@ -14860,6 +14861,7 @@ figcaption {
 
   @media screen and (max-width: 480px) {
     .scream3d {
+
       padding: 10px;
       transform: translate(15px ,30px) rotate(15deg)  scale(0.688);
       transition: 0.2s;
