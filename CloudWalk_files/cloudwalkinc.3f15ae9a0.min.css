@@ -14858,7 +14858,6 @@ figcaption {
   z-index: 9999;
 }
 
-
 @media screen and (min-width:992) and(max-width:1180px) {
   .scream3d {
     padding: 50px;
@@ -14922,4 +14921,6 @@ figcaption {
 }
 .scream3d img:nth-child(1){width: 80px;transform: scale(0.2) translate(237px, 200px);}
 
-
+.scream3d-float {
+ 
+  }
