@@ -3546,7 +3546,6 @@ figcaption {
 
 .inner-padding-small {
   padding-top: 32px;
-  padding-bottom: 32px
 }
 
 .inner-padding-xsmall {
@@ -3855,7 +3854,7 @@ figcaption {
 
 .main-paragraph {
   opacity: 1;
-  font-size: 16px;
+  font-size: 24px;
   font-weight: 300;
   line-height: 1.5
 }
@@ -7334,11 +7333,11 @@ figcaption {
 .text-align-center.heading-xlarge.text-weight-thin.title-pillars {
   letter-spacing: 0;
   font-size: 9.4em;
-  line-height: 1.1
+  line-height: 1.0
 }
 
 .logo-cw-footer {
-  width: 140px;
+  width: 180px;
   display: block
 }
 
@@ -7399,7 +7398,7 @@ figcaption {
 }
 
 .margin-top-small {
-  margin-top: 24px
+  margin-top: 22px
 }
 
 .text-weight-thin {
@@ -13831,7 +13830,7 @@ figcaption {
 }
 
 #w-node-_0cd07a46-2560-212d-3473-7ab9055390c2-c31c4a88 {
-  grid-area: 1/4/2/7
+  grid-area: 1/4/2/6
 }
 
 #w-node-_0cd07a46-2560-212d-3473-7ab9055390c5-c31c4a88 {
@@ -14838,10 +14837,13 @@ figcaption {
 /* 3D CSS HOVER SCREEN*/
 
 .scream3d {
+  margin-top: 0px;
+  margin-right: 80px;
+  padding-left: 80px;
   position: relative;
-  width: 500px;
+  width: 400px;
   height: 400px;
-  transform: rotate(15deg) scale(0.9);
+  transform: rotate(15deg) scale(0.7);
   transition: 0.2s;
   z-index: 9999;
 }
@@ -14861,27 +14863,52 @@ figcaption {
 
   @media screen and (max-width: 480px) {
     .scream3d {
-
-      padding: 10px;
-      transform: translate(15px ,30px) rotate(15deg)  scale(0.688);
+      padding-left: 50px;
+      transform: translate(15px ,-23px) rotate(15deg)  scale(0.6);
       transition: 0.2s;
       }
   }
 
 .scream3d img {
   position: absolute;
-  width: 80%;
+  width: 100%;
   transition: 0.5s;
 }
-.scream3d:hover img:nth-child(3) {
-  transform: translate(147px, -125px) rotate(20deg);
+
+.scream3d:hover img:nth-child(7) {
+  transform: translate(110px, -30px) rotate(0deg);
   opacity: 1;
 }
-.scream3d:hover img:nth-child(2) {
+.scream3d:hover img:nth-child(6) {
+  transform: translate(-31px, -30px) rotate(5deg);
+  opacity: 1;
+}
+.scream3d:hover img:nth-child(5) {
   transform: translate(0px, -77px) rotate(15deg);
-  opacity: 0.9;
+  opacity: 1;
 }
+.scream3d:hover img:nth-child(4) {
+  transform: scale(0.5) translate(-50px, 470px) ;
+  opacity: 1;
+}
+.scream3d img:nth-child(4){width: 80px;transform: scale(0.2) translate(200px, 200px);}
+
+.scream3d:hover img:nth-child(3) {
+  transform: scale(0.5) translate(-110px, 350px) rotate(2deg);
+  opacity: 1;
+}
+.scream3d img:nth-child(3){width: 80px;transform: scale(0.2) translate(200px, 200px);}
+
+.scream3d:hover img:nth-child(2) {
+  transform: scale(0.5) translate(-150px, 190px) rotate(2deg);
+  opacity: 1;
+}
+.scream3d img:nth-child(2){width: 80px;transform: scale(0.2) translate(200px, 200px);}
+
 .scream3d:hover img:nth-child(1) {
-  transform: translate(-110px, -30px) rotate(0deg);
-  opacity: 0.7;
+  transform: scale(0.5) translate(-150px, 50px) rotate(2deg);
+  opacity: 1;
 }
+.scream3d img:nth-child(1){width: 80px;transform: scale(0.2) translate(237px, 200px);}
+
+
