@@ -6857,7 +6857,6 @@ figcaption {
   color: #fff;
   letter-spacing: -.04em;
   white-space: nowrap;
-  font-family: Bdogrotesk Vf, sans-serif;
   font-size: 22em;
   font-weight: 400;
   line-height: 1
@@ -15055,7 +15054,14 @@ background-image: url(/CloudWalk_files\Images\carrossel\ANANTOP-APMOCK.png)
     text-shadow: 0 0 3px rgba(34, 34, 34, 0.6), 0 0 1px rgba(34, 34, 34, 0.2);
     text-align: justify;
   }
-  
+
+@media screen and (max-width:991px) {
+  .realistic  {
+    left: 0;
+    overflow: hidden;
+    transform-origin: 15% 400px;
+  }
+}
   .realistic>p {
     text-indent: 60px;
   }
