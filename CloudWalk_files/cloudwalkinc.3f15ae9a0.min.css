@@ -5627,6 +5627,17 @@ figcaption {
   top: 0;
   overflow: hidden
 }
+.main-link-block-flat{
+  margin-top: 80px;
+  color: #050505;
+  text-transform: uppercase;
+  background-color: #00d3e2;
+  border-radius: 7px;
+  min-height: 44px;
+  padding: 12px 32px;
+  font-size: .8em;
+  text-decoration: none
+}
 
 .main-link-block {
   margin-top: 80px;
