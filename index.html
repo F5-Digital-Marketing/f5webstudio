@@ -236,6 +236,40 @@
       <section id="work-with-us" class="section">
         <div class="container inner-padding-medium">
           <div class="w-layout-grid grid-2-col margin-bottom-small">
+            
+    <script>
+      $(document).ready(function () {
+  var steps = 2; //has to match css
+
+  var content = $(".original").html();
+  var top = $("<div/>").insertBefore(".original");
+  var bottom = $("<div/>").insertBefore(".original");
+
+  for (var i = 0; i < steps; i++) {
+    $("<div/>").addClass("realistic blur blur-top").html(content).appendTo(top);
+    $("<div/>")
+      .addClass("realistic blur blur-bottom")
+      .html(content)
+      .appendTo(bottom);
+  }
+
+  $(".original").on("input", function () {
+    $(".blur").html($(".original").html());
+  });
+});
+
+    </script>  
+<div class="realistic original" contenteditable>
+  <h1>A MUITO, MUITO TEMPO ATRÁS...</h1>
+  <p>sses sites eram conhecidos como os "Reinos do Texto". Eles ostentavam longas páginas cheias de parágrafos densos, repletos de letras minúsculas e imagens que pareciam ter sido geradas por uma máquina do tempo com gosto duvidoso. A maioria das imagens era falsa, retratos de pessoas e lugares que nunca existiram, e isso irritava os navegantes que buscavam autenticidade.
+
+    Os habitantes de Weblandia, chamados de "Navegadores", frequentemente se sentiam aprisionados por essas páginas enfadonhas. Um jovem navegador chamado Lucas, cansado de rolar por intermináveis colunas de texto enfadonho, decidiu que era hora de agir. Ele sonhava com um mundo onde as informações fossem apresentadas de forma clara e visualmente atraente.
+    
+    Com sua fiel amiga, a artista digital Maia, eles fundaram a "Liga da Criatividade". Juntos, eles começaram a criar sites que eram verdadeiros tesouros de conhecimento. Em vez de longos textos, utilizavam ilustrações coloridas e gráficos interativos para transmitir suas mensagens. Foi assim que a Liga começou a atrair os Navegadores em busca de algo melhor. Mas a batalha contra os sites chatos não foi fácil. Os gigantes dos Reinos do Texto estavam determinados a manter seu controle sobre Weblandia. Eles enviaram suas criaturas de palavras intermináveis e imagens enganadoras para tentar desviar os Navegadores da nova era da criatividade.</p>
+</div>
+
+<div class="overlay"></div>
+
             <div id="w-node-ea7b408b-e44f-c7e8-cf8b-2eef43da79e0-c31c4a88" class="image-m card-optmized">
               <div class="" style="display: block;">
               </div>
@@ -389,8 +423,12 @@
               <div class="heading-medium">Por trás de cada página...</div>
             </div>
             <div class="content-wrapper inner-padding-small">
-              <p class="secondary-paragraph margin-bottom-medium">Além do planejamento cuidadoso e estratégico.
-                Entregamos uma estrutura completa, com as principais ferramentas de escala digital.<br>
+              <div id="w-node-_229613fd-4be9-4e5e-4736-fa9ef420e1d2-3fd8cc73" class="box-wrapper press">
+                <div class="content-wrapper-2">
+                  <div class="heading-small">Tem um planejamento cuidadoso e estratégico para contruir uma estrutura digital completa e essencial para o marketing.</div>
+                </div>
+              </div>
+              <p class="secondary-paragraph margin-bottom-medium"><br>
                 <br>Mais visibilidade no <strong>GOOGLE MAPS;<em></em></strong>
                 <br>Perfil Completo no <strong>GOOGLE MEU NEGÓCIO;<em></em></strong>
                 <br>SEO no talo <strong>BUSCAS;<em></em></strong>
@@ -404,14 +442,12 @@
       <div class="w-layout-grid wide-grid">
         <div id="w-node-_0cd07a46-2560-212d-3473-7ab9055390b3-c31c4a88">
           <div class="half-container">
-            <div class="tag-pill">our products</div>
-            <div class="content-wrapper-top-split"><img
-                src="./CloudWalk_files\Images\SVG\f5ws-white.svg" loading="lazy" alt=""
-                class="infinitepay_logo_split">
-              <div class="heading-medium">oferecemos soluções que convertem oferta em vendas.</div>
+            <div class="tag-pill">NOSSA OPINIÃO</div>
+            <div class="content-wrapper-top-split">
+              <div class="heading-medium">A venda começa na abordagem, na oferta...</div>
             </div>
             <div class="content-wrapper inner-padding-small">
-              <p class="secondary-paragraph margin-bottom-medium"><strong>O que produz conversão é principalmente a oferta. </strong> mas isso depende diretamente do investimento no marketing para atingir aas pessoas e o a eficiência do time comercial para atende-las.
+              <p class="secondary-paragraph margin-bottom-medium"><strong> A chave para a conversão está na oferta em si,</strong> aliada a um investimento significativo em marketing para atingir as pessoas certas e a eficiência do time comercial em fazer o atendimento.
               </p><a href="https://www.infinitepay.io/" target="_blank" class="main-link-block w-inline-block">
                 <div class="label-overflow">
                   <div class="label-button">Discover infinitepay</div>
@@ -430,13 +466,15 @@
         </div>
       </div>
     </div>
+    <div>
+    </div>
     <section class="full-image-cw">
       <div class="ticker-scroll">
         <div class="tag-pill agi">TÁ AFIM DE ALGO REALMENTE NOVO PRA SUA MARCA?</div>
         <div data-w-id="2e5e4ae1-945c-17da-ceb6-aceb8f9031d7" class="big-heading-wrapper">
           <div class="scroll-heading"
             style="will-change: transform; transform: translate3d(25vw, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
-            DÁ UM F5 AÍ!</div>
+            DÊ UM F5 AÍ!</div>
         </div>
         <p class="secondary-paragraph text-align-center _w-medium text-size-large text-full-white text-black _w-600px">
           Sites e Página de vendas, otimizados, funcionais e de alto impacto.</p>             <a href="https://WA.ME/5545999129157" target="_blank" class="main-link-block-flat w-inline-block">
