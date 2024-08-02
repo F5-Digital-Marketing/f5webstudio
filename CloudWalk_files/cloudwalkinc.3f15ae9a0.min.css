@@ -14853,7 +14853,7 @@ figcaption {
   width: 400px;
   height: 400px;
   transform: rotate(15deg) scale(0.8);
-  transition: 0.9s;
+  transition: 0.12s;
   z-index: 9999;
 }
 
@@ -14867,44 +14867,38 @@ figcaption {
   .scream3d {
   padding: 10px;
   transform: translate(15px) rotate(15deg) scale(0.5);
-  transition: 0.9s;
   }}
 
   @media screen and (max-width: 480px) {
     .scream3d {
       padding-left: 50px;
       transform: translate(15px ,-23px) rotate(15deg)  scale(0.6);
-      transition: 0.9s;
       }
   }
 
 .scream3d img {
   position: absolute;
   width: 100%;
-  /* transition: 0.10s; */
+  transition: 0.10s;
 }
 
 .scream3d:hover img:nth-child(7) {
   transform: translate(110px, -30px) rotate(0deg);
-  transition: 0.9s;
   opacity: 1;
 }
 .scream3d:hover img:nth-child(6) {
   transform: translate(-31px, -30px) rotate(5deg);
-  transition: 0.9s;
   opacity: 1;
 }
 .scream3d:hover img:nth-child(5) {
   transform: translate(0px, -77px) rotate(15deg);
-  transition: 0.9s;
   opacity: 1;
 }
 .scream3d:hover img:nth-child(4) {
   transform: scale(0.5) translate(-50px, 470px);
-  transition: 0.11s;
   opacity: 1;
 }
-.scream3d img:nth-child(4){width: 80px;transform: scale(0.2) translate(200px, 200px);transition: 2;}
+.scream3d img:nth-child(4){width: 80px;transform: scale(0.2) translate(200px, 200px);transition: 0.9s;}
 
 .scream3d:hover img:nth-child(3) {
   transform: scale(0.5) translate(-110px, 350px) rotate(2deg);
@@ -14918,7 +14912,7 @@ figcaption {
   transition: 1.3s;
   opacity: 1;
 }
-.scream3d img:nth-child(2){width: 80px;transform: scale(0.2) translate(200px, 200px);transition: 0.9s;}
+.scream3d img:nth-child(2){width: 80px;transform: scale(0.2) translate(200px, 200px);}
 
 .scream3d:hover img:nth-child(1) {
   transform: scale(0.5) translate(-150px, 50px) rotate(2deg);
