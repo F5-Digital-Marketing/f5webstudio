@@ -7575,7 +7575,7 @@ figcaption {
 .full-image-cw {
   background-color: #f1fbfd;
   width: 100%;
-  height: 100lvh;
+  height: 100vh;
   position: relative;
   overflow: hidden
 }
@@ -11575,7 +11575,7 @@ figcaption {
   }
 
   .full-image-cw {
-    height: 100lvh
+    height: 100vh
   }
 
   .scroll-heading {
@@ -15017,3 +15017,12 @@ background-image: url(/CloudWalk_files\Images\carrossel\ANANTOP-APMOCK.png)
 
 }
 
+#bkdcard-2{
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: repeat;
+  background-image: url(/CloudWalk_files\Images\carrossel\ANANTOP-APMOCK.png)
+  
+  }
