@@ -15039,11 +15039,12 @@ background-image: url(/CloudWalk_files\Images\carrossel\ANANTOP-APMOCK.png)
 
   
   .realistic {
+    pointer-events: none;
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2));
     background-size: 80vw 100vh;
     color: #222;
     font-family: Georgia, Baskerville, serif;
-    font-size: 30px;
+    font-size: 28px;
     position: absolute;
     top: -300px;
     left: 0;
@@ -15055,6 +15056,9 @@ background-image: url(/CloudWalk_files\Images\carrossel\ANANTOP-APMOCK.png)
     text-align: justify;
   }
   
+  .realistic>p {
+    text-indent: 60px;
+  }
   
   h1 {
     font-weight: normal;
