@@ -1,11 +1,25 @@
 html {
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
+  overflow-x: hidden;
   font-family: sans-serif
 }
 
 body {
   margin: 0
+  
+}
+body::-webkit-scrollbar {
+  width: 8px
+}
+
+body::-webkit-scrollbar-track {
+  background: #ced8d8
+}
+
+body::-webkit-scrollbar-thumb {
+  border-radius: 20px;
+  background: #ebc000
 }
 
 article,
@@ -15036,83 +15050,6 @@ background-image: url(/CloudWalk_files\Images\carrossel\ANANTOP-APMOCK.png)
 
 
   /* TEXTEFFECT */
-
-  
-  .realistic {
-    pointer-events: none;
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2));
-    background-size: 80vw 100vh;
-    color: #222;
-    font-family: Georgia, Baskerville, serif;
-    font-size: 28px;
-    position: absolute;
-    top: -300px;
-    left: 0;
-    opacity: 0.25;
-    transform-origin: 50% 600px;
-    max-width: 900px;
-    transform: scale(0.75, 0.75) perspective(1200px) rotateY(8deg) rotateX(45deg);
-    text-shadow: 0 0 3px rgba(34, 34, 34, 0.6), 0 0 1px rgba(34, 34, 34, 0.2);
-    text-align: justify;
-    animation: backwards;
-
-  }
-
-@media screen and (max-width:991px) {
-  .realistic  {
-    left: 0;
-    overflow: hidden;
-    transform-origin: 15% 400px;
-  }
-}
-  .realistic>p {
-    text-indent: 60px;
-  }
-  
-  h1 {
-    font-weight: normal;
-    font-size: 100px;
-    text-align: center;
-  }
-  
-  .realistic.blur {
-    pointer-events: none;
-  }
-  
-  .realistic.blur-top:nth-child(1) {
-    transform: scale(0.75, 0.75) perspective(1200px) rotateY(8.2deg) rotateX(45.2deg);
-  }
-  
-  .realistic.blur-bottom:nth-child(1) {
-    transform: scale(0.75, 0.75) perspective(1200px) rotateY(7.8deg) rotateX(44.8deg);
-  }
-  
-  .realistic.blur-top:nth-child(2) {
-    transform: scale(0.75, 0.75) perspective(1200px) rotateY(8.4deg) rotateX(45.4deg);
-  }
-  
-  .realistic.blur-bottom:nth-child(2) {
-    transform: scale(0.75, 0.75) perspective(1200px) rotateY(7.6deg) rotateX(44.6deg);
-  }
-  
-  .realistic.blur1 {
-    transform: scale(0.75, 0.75) perspective(1200px) rotateY(8.4deg) rotateX(45.4deg);
-  }
-  
-  .realistic.blur2 {
-    transform: scale(0.75, 0.75) perspective(1200px) rotateY(7.6deg) rotateX(44.6deg);
-  }
-  
-  .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    background: linear-gradient( #0b0b11 20%, #0b0b1100 80%);
-    z-index: -1;
-    pointer-events: none;
-  }
 
 
 /* SCROLLGSAP*/

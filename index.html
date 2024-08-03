@@ -237,17 +237,6 @@
         <div class="container inner-padding-medium">
           <div class="w-layout-grid grid-2-col margin-bottom-small">
           
-<div class="realistic original" contenteditable>
-  <h1>HÁ MUITO, MUITO TEMPO ATRÁS...</h1>
-  <p>Os sites para empresas e serviços ostentavam longas páginas cheias de parágrafos densos, repletos de letras minúsculas e imagens que pareciam ter sido geradas por uma máquina do tempo com gosto duvidoso. A maioria das imagens era falsa, retratos de pessoas e lugares que nunca existiram, e isso irritava os navegantes que buscavam autenticidade.
-
-    Os habitantes de Weblandia, chamados de "Navegadores", frequentemente se sentiam aprisionados por essas páginas enfadonhas. Um jovem navegador chamado Lucas, cansado de rolar por intermináveis colunas de texto enfadonho, decidiu que era hora de agir. Ele sonhava com um mundo onde as informações fossem apresentadas de forma clara e visualmente atraente.
-    
-    Com sua fiel amiga, a artista digital Maia, eles fundaram a "Liga da Criatividade". Juntos, eles começaram a criar sites que eram verdadeiros tesouros de conhecimento. Em vez de longos textos, utilizavam ilustrações coloridas e gráficos interativos para transmitir suas mensagens. Foi assim que a Liga começou a atrair os Navegadores em busca de algo melhor. Mas a batalha contra os sites chatos não foi fácil. Os gigantes dos Reinos do Texto estavam determinados a manter seu controle. Eles enviaram suas criaturas de palavras intermináveis e imagens enganadoras para tentar desviar os Navegadores da nova era da criatividade.</p>
-</div>
-
-<div class="overlay"></div>
-
             <div id="w-node-ea7b408b-e44f-c7e8-cf8b-2eef43da79e0-c31c4a88" class="image-m card-optmized">
               <div class="" style="display: block;">
               </div>
@@ -286,7 +275,7 @@
             <div class="_w-medium margin-top-small subpurmissiondiv">
               <p data-w-id="1d24ca17-7616-b93c-c986-06320cb2a038" class="main-paragraph text-align-center subourmission"
                 style="font-weight:200; transform: translate3d(0px, 0%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
-                <strong>Etapas</strong> planejadas que, quando concluídas, aumentará<br> o seu nível frente à <strong>concorrência.</strong>
+                <strong>Etapas</strong> planejadas que, quando concluídas, aumentará o seu nível frente à <strong>concorrência.</strong>
               </p>
             </div>
           </div>
@@ -613,28 +602,6 @@
       });
     }
   </script>
-    <script>
-      $(document).ready(function () {
-  var steps = 2; //has to match css
-
-  var content = $(".original").html();
-  var top = $("<div/>").insertBefore(".original");
-  var bottom = $("<div/>").insertBefore(".original");
-
-  for (var i = 0; i < steps; i++) {
-    $("<div/>").addClass("realistic blur blur-top").html(content).appendTo(top);
-    $("<div/>")
-      .addClass("realistic blur blur-bottom")
-      .html(content)
-      .appendTo(bottom);
-  }
-
-  $(".original").on("input", function () {
-    $(".blur").html($(".original").html());
-  });
-});
-
-    </script>  
 </body>
 
 </html>
