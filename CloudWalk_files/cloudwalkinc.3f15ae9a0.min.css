@@ -6039,7 +6039,7 @@ figcaption {
 }
 
 .label-overflow {
-  height: 1.4rem;
+  height: 2.4rem;
   overflow: hidden
 }
 
@@ -14904,7 +14904,7 @@ figcaption {
 .scream3d img {
   position: absolute;
   width: 100%;
-  transition: 0.10s;
+  transition: 0.9s;
 }
 
 .scream3d:hover img:nth-child(7) {
@@ -14927,10 +14927,10 @@ figcaption {
 
 .scream3d:hover img:nth-child(3) {
   transform: scale(0.5) translate(-110px, 350px) rotate(2deg);
-  transition: 0.10s;
+  transition: 0.9s;
   opacity: 1;
 }
-.scream3d img:nth-child(3){width: 80px;transform: scale(0.2) translate(200px, 200px);transition: 0.9s}
+.scream3d img:nth-child(3){width: 80px;transform: scale(0.2) translate(200px, 200px);transition: 0.3s}
 
 .scream3d:hover img:nth-child(2) {
   transform: scale(0.5) translate(-150px, 190px) rotate(2deg);
@@ -14941,10 +14941,10 @@ figcaption {
 
 .scream3d:hover img:nth-child(1) {
   transform: scale(0.5) translate(-150px, 50px) rotate(2deg);
-  transition: 0.8s;
+  transition: 1.8s;
   opacity: 1;
 }
-.scream3d img:nth-child(1){width: 80px;transform: scale(0.2) translate(237px, 200px);transition: 0.2s;}
+.scream3d img:nth-child(1){width: 80px;transform: scale(0.2) translate(237px, 200px);transition: 1.92s;}
 
 
 /*bkdanim*/
@@ -15046,13 +15046,64 @@ background-image: url(/CloudWalk_files\Images\carrossel\ANANTOP-APMOCK.png)
   
   }
 
+  /* lottie */
 
-
-
-  /* TEXTEFFECT */
+  .lottiescale{
+    padding-top: 17px;
+    display: flex;
+    transform: scale(1.8);
+  }
+  
 
 
 /* SCROLLGSAP*/
 
+@keyframes slides {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.logos {
+  overflow: hidden;
+  padding: 30px 0px;
+  white-space: nowrap;
+  position: relative;
+}
+
+.logos:before, .logos:after {
+  position: absolute;
+  top: 0;
+  content: '';
+  width: 250px;
+  height: 100%;
+  z-index: 2;
+}
+
+.logos:before {
+  left: 0;
+  background: linear-gradient(to left, rgba(255,255,255,0), rgb(255, 255, 255));
+}
+
+.logos:after {
+  right: 0;
+  background: linear-gradient(to right, rgba(255,255,255,0), rgb(255, 255, 255));
+}
+
+.logo_items {
+  display: inline-block;
+  animation: 35s slides infinite linear;
+}
+
+.logos:hover .logo_items {
+  animation-play-state: paused;
+}
+
+.logo_items img{
+  height: 100px;
+}
 
 
