@@ -15181,7 +15181,7 @@ p {
 /* Carousel and animation css starts */
 .rc-carousel {
   --box-gap: 1.5rem;
-  --tile-size: 20rem;
+  --tile-size: 30rem;
   --size-two: 5rem;
   width: 100%;
   max-width: calc(
@@ -15221,7 +15221,7 @@ p {
 .rc-carousel::after {
   right: 0;
   --direction: right;
-  background-image: linear-gradient(270deg, #0b0b11 10%, #0b0b1100 90%);
+  background-image: linear-gradient(270deg, #0b0b11 13%, #0b0b1100 80%);
 }
 .rc-carousel-strip {
   width: -webkit-fit-content;
@@ -15311,4 +15311,34 @@ p {
   .rc-carousel-strip {
     animation: none;
   }
+}
+
+/*strong*/
+strong {
+  position: relative;
+}
+strong::after {
+  content: '';
+  position: absolute;
+  bottom: -0.20em;
+  height: 0.4em;
+  left: 0;
+  z-index: -1;
+  width: 0;
+  animation: animated-underline .5s linear forwards;
+
+  /* The SVG is added as an SVG background image */
+  background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/664131/underline.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+strong::after { animation-delay: 1s; }
+strong:nth-child(0)::after { animation-delay: 0; }
+strong:nth-child(1)::after { animation-delay: .2s; }
+strong:nth-child(2)::after { animation-delay: .4s; }
+strong:nth-child(3)::after { animation-delay: .6s; }
+
+@keyframes animated-underline {
+  0% { width: 0; }
+  100% { width: 100%; }
 }
