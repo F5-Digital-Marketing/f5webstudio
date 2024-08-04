@@ -14764,8 +14764,6 @@ figcaption {
   font-display: auto;
 }
 
-
-
 /*ADD*/
 
 /*backgrouds*/
@@ -15061,54 +15059,256 @@ background-image: url(/CloudWalk_files\Images\carrossel\ANANTOP-APMOCK.png)
   
 
 
-/* SCROLLGSAP*/
+/* grid bent*/
+.gridiv {
+  box-sizing: border-box;
+}
 
-@keyframes slides {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(-100%);
+.grid-container {
+  margin: 50px auto;
+  width: 80%;
+  height: 90vh;
+  display: grid;
+  grid-auto-columns: 1fr;
+  gap: 1em;
+  grid-template-areas: 
+    'one one two five five'
+    'three three two five five'
+    'four four four five five'
+}
+
+.grid-item {
+  border-radius: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.grid-item:nth-child(1) {
+  grid-area: one;
+  background-color: #222E50;
+}
+
+.grid-item:nth-child(2) {
+  grid-area: two;
+  background-color: #007991;
+}
+
+.grid-item:nth-child(3) {
+  grid-area: three;
+  background-color: #439a86;
+}
+
+.grid-item:nth-child(4) {
+  grid-area: four;
+  background-color: #f6511d;
+}
+
+.grid-item:nth-child(5) {
+  grid-area: five;
+  background-color: #c1292e;
+}
+
+
+@media (max-width: 940px) {
+  .grid-container {
+    grid-template-areas: 
+    'one one two five five'
+    'three three three five five'
+    'four four four four four'
   }
 }
 
-.logos {
+@media (max-width: 640px) {
+  .grid-container {
+    grid-template-areas: 
+    'one one two two two'
+    'three three three five five'
+    'four four four four four'
+  }
+}
+
+@media (max-width: 460px) {
+  .grid-container {
+    grid-template-areas: 
+    'one'
+    'two'
+    'three'
+    'four'
+    'five';
+  }
+}
+
+/*GRID TAIL*/
+
+
+*,
+::before,
+::after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+@media screen and (min-width: 768px) {
+  html {
+    font-size: 100%;
+  }
+}
+@media screen and (min-width: 1920px) {
+  html {
+    font-size: 125%;
+  }
+}
+@media screen and (min-width: 2560px) {
+  html {
+    font-size: 150%;
+  }
+}
+
+
+
+
+
+/* Carousel and animation css starts */
+.rc-carousel {
+  --box-gap: 1.5rem;
+  --tile-size: 20rem;
+  --size-two: 5rem;
+  width: 100%;
+  max-width: calc(
+    (var(--tile-size) + var(-size-two)) * ((var(--tiles) / 2) - 1)
+  );
+  margin: var(--box-gap) auto;
   overflow: hidden;
-  padding: 30px 0px;
-  white-space: nowrap;
   position: relative;
+  z-index: 10;
 }
-
-.logos:before, .logos:after {
+.rc-carousel::before,
+.rc-carousel::after {
+  content: "";
   position: absolute;
   top: 0;
-  content: '';
-  width: 250px;
+  width: 5rem;
   height: 100%;
-  z-index: 2;
+  background-image: -o-linear-gradient(
+    var(--direction),
+    transparent,
+    var(--body-bg)
+  );
+  background-image: linear-gradient(
+    to var(--direction),
+    transparent,
+    var(--body-bg)
+  );
+  z-index: inherit;
 }
-
-.logos:before {
+.rc-carousel::before {
   left: 0;
-  background: linear-gradient(to left, rgba(255,255,255,0), rgb(255, 255, 255));
+  --direction: left;
+  background-image: linear-gradient(90deg, #0b0b11 10%, #0b0b1100 90%);
+  
 }
 
-.logos:after {
+.rc-carousel::after {
   right: 0;
-  background: linear-gradient(to right, rgba(255,255,255,0), rgb(255, 255, 255));
+  --direction: right;
+  background-image: linear-gradient(270deg, #0b0b11 10%, #0b0b1100 90%);
 }
-
-.logo_items {
-  display: inline-block;
-  animation: 35s slides infinite linear;
+.rc-carousel-strip {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  -webkit-animation: slideX 50s linear infinite;
+  animation: slideX 50s linear infinite;
 }
-
-.logos:hover .logo_items {
+.rc-carousel-strip.reverse {
+  /* reverse animation */
+  animation-direction: reverse;
+}
+.rc-carousel-strip:hover {
+  -webkit-animation-play-state: paused;
   animation-play-state: paused;
 }
-
-.logo_items img{
-  height: 100px;
+.rc-carousel-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  gap: var(--box-gap);
 }
 
+.rc-carousel-item {
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  width: var(--tile-size);
+  height: var(--tile-size);
+}
 
+.rc-carousel-item-image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+  object-fit: contain;
+  -o-object-position: center;
+  object-position: center;
+}
+
+@-webkit-keyframes slideX {
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  0% {
+    -webkit-transform: translateX(
+      calc(-1 * (var(--tile-size) + var(--box-gap)) * (var(--tiles) / 2))
+    );
+    transform: translateX(
+      calc(-1 * (var(--tile-size) + var(--box-gap)) * (var(--tiles) / 2))
+    );
+  }
+}
+
+@keyframes slideX {
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  0% {
+    -webkit-transform: translateX(
+      calc(-1 * (var(--tile-size) + var(--box-gap)) * (var(--tiles) / 2))
+    );
+    transform: translateX(
+      calc(-1 * (var(--tile-size) + var(--box-gap)) * (var(--tiles) / 2))
+    );
+  }
+}
+
+/* Animation won't work if you preferes reduced motion */
+@media (prefers-reduced-motion) {
+  /* styles to apply if a user's device settings are set to reduced motion */
+  .rc-carousel::before,
+  .rc-carousel::after {
+    display: none;
+  }
+  .rc-carousel-box {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .rc-carousel-box [aria-hidden="true"] {
+    display: none;
+  }
+  .rc-carousel-strip {
+    animation: none;
+  }
+}
