@@ -15145,41 +15145,99 @@ background-image: url(/CloudWalk_files\Images\carrossel\ANANTOP-APMOCK.png)
   }
 }
 
-/*GRID TAIL*/
+/*grid-2*/
 
-
-*,
-::before,
-::after {
-  -webkit-box-sizing: border-box;
+.gridiv-2 {
   box-sizing: border-box;
 }
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-  margin: 0;
+
+.grid-container-2 {
+  margin: 50px auto;
+  width: 80%;
+  height: 90vh;
+  display: grid;
+  grid-auto-columns: 1fr;
+  gap: 1em;
+  grid-template-areas: 
+    'one two two five five'
+    'three two two four four'
+    'six six six six seven'
 }
-@media screen and (min-width: 768px) {
-  html {
-    font-size: 100%;
-  }
+
+.grid-item-2 {
+  border-radius: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
 }
-@media screen and (min-width: 1920px) {
-  html {
-    font-size: 125%;
-  }
+
+.grid-item-2:nth-child(1) {
+  grid-area: one;
+  background-color: #222E50;
 }
-@media screen and (min-width: 2560px) {
-  html {
-    font-size: 150%;
-  }
+
+.grid-item-2:nth-child(2) {
+  grid-area: two;
+  background-color: #007991;
+}
+
+.grid-item-2:nth-child(3) {
+  grid-area: three;
+  background-color: #439a86;
+}
+
+.grid-item-2:nth-child(4) {
+  grid-area: four;
+  background-color: #f6511d;
+}
+
+.grid-item-2:nth-child(5) {
+  grid-area: five;
+  background-color: #c1292e;
+}
+.grid-item-2:nth-child(6) {
+  grid-area: six;
+  border-radius: 24px;
+  border: 1px solid #4c2589;
+  background: linear-gradient(#241d41, #1a142f);
+  padding: 20px;
+  box-sizing: border-box;
+}
+.grid-item-2:nth-child(7) {
+  grid-area:seven ;
+  background-color: #fff;
 }
 
 
+@media (max-width: 940px) {
+  .grid-container {
+    grid-template-areas: 
+    'one one two five five'
+    'three three three five five'
+    'four four four four four'
+  }
+}
+
+@media (max-width: 640px) {
+  .grid-container {
+    grid-template-areas: 
+    'one one two two two'
+    'three three three five five'
+    'four four four four four'
+  }
+}
+
+@media (max-width: 460px) {
+  .grid-container {
+    grid-template-areas: 
+    'one'
+    'two'
+    'three'
+    'four'
+    'five';
+  }
+}
 
 
 
@@ -15236,7 +15294,6 @@ p {
   animation: slideX 50s linear infinite;
 }
 .rc-carousel-strip.reverse {
-  /* reverse animation */
   animation-direction: reverse;
 }
 .rc-carousel-strip:hover {
@@ -15299,9 +15356,8 @@ p {
   }
 }
 
-/* Animation won't work if you preferes reduced motion */
 @media (prefers-reduced-motion) {
-  /* styles to apply if a user's device settings are set to reduced motion */
+ 
   .rc-carousel::before,
   .rc-carousel::after {
     display: none;
@@ -15318,18 +15374,3 @@ p {
   }
 }
 
-/*strong*/
-
-
-/* video*/
-
-.video-hero{
-  background-attachment: fixed; 
-
-}
-#hero-video{
-  mix-blend-mode: color;
-  background-attachment: fixed; 
-  opacity: 90%;
-
-}
