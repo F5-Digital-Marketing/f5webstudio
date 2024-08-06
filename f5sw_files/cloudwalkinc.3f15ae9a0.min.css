@@ -3583,7 +3583,8 @@ figcaption {
 }
 
 .section.hero {
-  height: 120vh
+  height: 120vh;
+  position: sticky;
 }
 
 .section.h-xlarge {
@@ -4257,6 +4258,7 @@ figcaption {
 }
 
 .brand {
+  padding-left: 10px;
   z-index: 3;
   color: #fff;
   justify-content: center;
@@ -10815,12 +10817,12 @@ figcaption {
     position: static
   }
 
-  .home-header_video {
+  /*.home-header_video {
     background-image: url(https://cdn.prod.website-files.com/6654b3697a9d140e0ca14dcc/6658d416a06be085ccf15c77_HeroCW_Mobile.webp);
     background-position: 100% 100%;
     flex: 0 auto;
     height: 100%
-  }
+  }*/
 
   .home-header_video-wrap {
     justify-content: center;
@@ -11360,7 +11362,8 @@ figcaption {
   }
 
   .heading-large.catchphrase {
-    font-size: 2.7em
+    font-size: 2.7em;
+    line-height: 1.2;
   }
 
   .heading-medium {
@@ -12226,7 +12229,9 @@ figcaption {
   }
 
   .heading-large.catchphrase {
-    font-size: 2.4em
+    font-size: 2.4em;
+    line-height: 1.2;
+
   }
 
   .heading-medium {
@@ -15341,4 +15346,19 @@ strong:nth-child(3)::after { animation-delay: .6s; }
 @keyframes animated-underline {
   0% { width: 0; }
   100% { width: 100%; }
+}
+
+
+/* video*/
+
+.video-hero{
+  background-attachment: fixed; 
+
+}
+#hero-video{
+  mix-blend-mode: color;
+  background-attachment: fixed; 
+  opacity: 90%;
+  -webkit-mask-image: linear-gradient(to top, transparent -5%, #0b0b11e6 32%);
+  mask-image: linear-gradient(to top, transparent -5%, #0b0b11e6 32%);
 }
