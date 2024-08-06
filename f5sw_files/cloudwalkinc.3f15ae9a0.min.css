@@ -15319,34 +15319,6 @@ p {
 }
 
 /*strong*/
-strong {
-  position: relative;
-}
-strong::after {
-  content: '';
-  position: absolute;
-  bottom: -0.20em;
-  height: 0.4em;
-  left: 0;
-  z-index: -1;
-  width: 0;
-  animation: animated-underline .5s linear forwards;
-
-  /* The SVG is added as an SVG background image */
-  background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/664131/underline.svg');
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-strong::after { animation-delay: 1s; }
-strong:nth-child(0)::after { animation-delay: 0; }
-strong:nth-child(1)::after { animation-delay: .2s; }
-strong:nth-child(2)::after { animation-delay: .4s; }
-strong:nth-child(3)::after { animation-delay: .6s; }
-
-@keyframes animated-underline {
-  0% { width: 0; }
-  100% { width: 100%; }
-}
 
 
 /* video*/
