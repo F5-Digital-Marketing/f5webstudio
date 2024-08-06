@@ -15359,6 +15359,5 @@ strong:nth-child(3)::after { animation-delay: .6s; }
   mix-blend-mode: color;
   background-attachment: fixed; 
   opacity: 90%;
-  -webkit-mask-image: linear-gradient(to top, transparent -5%, #0b0b11e6 32%);
-  mask-image: linear-gradient(to top, transparent -5%, #0b0b11e6 32%);
+
 }
