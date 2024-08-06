@@ -9684,8 +9684,9 @@ figcaption {
 }
 
 .link_button_press {
-  color: #5e87ff;
-  font-weight: 700
+  font-size: 15px;
+  color: #e2e2e2;
+  font-weight: 400;
 }
 
 .press-logo-img {
