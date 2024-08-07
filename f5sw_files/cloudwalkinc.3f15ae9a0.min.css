@@ -4593,7 +4593,7 @@ figcaption {
 
 .button:hover {
   color: #fff;
-  background-color: #55d099
+  background-color: #070707
 }
 
 .container-wrapper {
@@ -15149,9 +15149,12 @@ background-image: url(/CloudWalk_files\Images\carrossel\ANANTOP-APMOCK.png)
 @media (max-width: 640px) {
   .grid-container {
     grid-template-areas: 
-    'one one two two two'
-    'three three three five five'
-    'four four four four four'
+    'one'
+    'two'
+    'three'
+    'four'
+    'five';
+  
   }
 }
 
@@ -15488,4 +15491,65 @@ background-image: url(/CloudWalk_files\Images\carrossel\ANANTOP-APMOCK.png)
   background-clip: text;
   -webkit-text-fill-color: transparent;
   -webkit-box-decoration-break: clone
+}
+
+
+/*buton*/
+
+
+.content__item {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.content__item::before {
+	color: #fff;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.button {
+	pointer-events: auto;
+	cursor: pointer;
+	background: #fff;
+  color: #0000;
+	border: none;
+	margin: 0;
+	font-family: inherit;
+	font-size: 20px;
+	position: relative;
+	display: inline-block;
+}
+
+.button--pandora {
+	background: #000;
+	font-weight: 700;
+	padding: 0;
+	border-radius: 10px;
+}
+
+.button--pandora span {
+  color: #000;
+	display: block;
+	background: #ffff;
+	padding: 1.5rem 2rem;
+	border: 1px solid #000;
+	border-radius: 10px;
+	transform: translate3d(4px, -4px, 0);
+	transition: transform 0.3s cubic-bezier(0.7, 0, 0.2, 1);
+}
+
+.button--pandora:hover span {
+	transform: translate3d(8px, -8px, 0);
+
 }
