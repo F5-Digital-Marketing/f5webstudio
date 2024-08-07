@@ -15401,6 +15401,7 @@ background-image: url(/CloudWalk_files\Images\carrossel\ANANTOP-APMOCK.png)
 :root {
 
   --text-color: ;
+  --pointer:red;
 }
 
 .container-t {
@@ -15421,10 +15422,9 @@ background-image: url(/CloudWalk_files\Images\carrossel\ANANTOP-APMOCK.png)
 .typewriter span {
   font-size: 50px;
   color: var(--text-color);
-  letter-spacing: 0.2rem;
-  line-height: 1.5rem;
+  letter-spacing: 0.055rem;
   padding: 5px;
-  border-right: solid var(--text-color) 5px; 
+  border-right: solid var(--pointer) 5px; 
   animation: cursor 1s ease-in-out infinite;
 }
 
@@ -15439,10 +15439,53 @@ background-image: url(/CloudWalk_files\Images\carrossel\ANANTOP-APMOCK.png)
 @media (max-width: 768px) {
   .typewriter { font-size: 60px; }
   .typewriter span {
-    font-size: 30px;
+    font-size: 40px;
   }
 }
 
 @media (max-width: 991x) {
   .typewriter { font-size: 60px; }
+}
+/*bebt-gradient-color*/
+
+.bento-text-gradient-mint-blue-dark {
+  background: -webkit-linear-gradient(-70deg,#a2facf,#64acff);
+  -webkit-background-clip: text;
+  background-clip: text
+}
+
+.bento-text-gradient-mint-blue-dark,.bento-text-gradient-pink-blue {
+  -webkit-text-fill-color: transparent;
+  -webkit-box-decoration-break: clone;
+}
+
+.bento-text-gradient-pink-blue {
+  /* background:-webkit-linear-gradient(-70deg,#ff7b7b,#64acff); */
+  /* -webkit-background-clip:text; */
+  /* background-clip:text; */
+}
+
+.bento-text-gradient-coral-yellow-dark {
+  background: -webkit-linear-gradient(-70deg,#ff7b7b,#f7ff64);
+  -webkit-background-clip: text;
+  background-clip: text
+}
+
+.bento-text-gradient-coral-yellow-dark,.bento-text-gradient-silver {
+  -webkit-text-fill-color: transparent;
+  -webkit-box-decoration-break: clone
+}
+
+.bento-text-gradient-silver {
+  background: linear-gradient(180deg,#fff,#aaa);
+  -webkit-background-clip: text;
+  background-clip: text
+}
+
+.bento-text-gradient-candy-light-green {
+  background: -webkit-linear-gradient(-70deg,#a2facf,#fff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-box-decoration-break: clone
 }
