@@ -176,24 +176,54 @@
                     <div class="flex-center inner-padding-large">
                       <div class="overflow-center">
                         <div data-w-id="eab8bda3-4e1b-9d17-8c3a-2f0a142dc913" class="heading-large catchphrase">
-                          <body class="page">
-                            <main class="main page__main">
-                              <h1 class="main__title">Call me <span class="main__word" id="typed"></span>.</h1>
-                            </main>
-                            <script>const typed = new Typed("#typed", {
-                              strings: ["Mike", "John", "Cindy", "Daisy"],
-                              typeSpeed: 100,
-                              backSpeed: 70,
-                              backDelay: 150,
-                              loop: true
-                            });
-                            </script>
-                          </body>
+                          <div class="container-t">
+                            <p class="typewriter">A venda começa na abordagem<br> 
+                              <span data-text="da sua oferta, do seu site!"></span>
+                            </p>
+                          </div>
+                          <script>var span = document.querySelector(".typewriter span");
+                            var textArr = span.getAttribute("data-text").split(", "); 
+                            var maxTextIndex = textArr.length; 
+                            
+                            var sPerChar = 0.10; 
+                            var sBetweenWord = 0.5;
+                            var textIndex = 0; 
+                            
+                            typing(textIndex, textArr[textIndex]); 
+                            
+                            function typing(textIndex, text) {
+                                var charIndex = 0; 
+                                var maxCharIndex = text.length - 1; 
+                                
+                                var typeInterval = setInterval(function () {
+                                    span.innerHTML += text[charIndex]; 
+                                    if (charIndex == maxCharIndex) {
+                                        clearInterval(typeInterval);
+                                        setTimeout(function() { deleting(textIndex, text) }, sBetweenWord * 900); 
+                                        
+                                    } else {
+                                        charIndex += 1; 
+                                    }
+                                }, sPerChar * 500); 
+                            }
+                            
+                            function deleting(textIndex, text) {
+                                var minCharIndex = 0; 
+                                var charIndex = text.length - 1; 
+                            
+                                var typeInterval = setInterval(function () {
+                                    span.innerHTML = text.substr(0, charIndex); 
+                                    if (charIndex == minCharIndex) {
+                                        clearInterval(typeInterval);
+                                        textIndex + 1 == maxTextIndex ? textIndex = 0 : textIndex += 1; 
+                                        setTimeout(function() { typing(textIndex, textArr[textIndex]) }, sBetweenWord * 800); 
+                                    } else {
+                                        charIndex -= 1; 
+                                    }
+                                }, sPerChar * 800); 
+                            }</script>
                         </div>
                       </div>
-                      <p class="main-paragraph text-align-center" style="padding-bottom: 20px;">
-                      <strong>Atualize a sua.</strong> 
-                      </p>
                     </div>
                   </div>
                 </div>
