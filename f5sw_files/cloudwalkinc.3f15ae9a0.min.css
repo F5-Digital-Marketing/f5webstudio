@@ -271,11 +271,11 @@ html {
 }
 
 body {
-  color: #001418;
+  color: #0c0c0c;
   background-color: #fff;
   min-height: 100%;
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: Cerapro, Arial, sans-serif;
   font-size: 14px;
   line-height: 20px
 }
@@ -2223,7 +2223,7 @@ textarea.w-select {
 }
 
 :root {
-  --black: #0b0b11;
+  --black: #0c0c0c;
   --dark-slate-grey: var(--main-white);
   --mid-gray: #c4c4c4;
   --main-white: #ecebe9;
@@ -9686,7 +9686,7 @@ figcaption {
 .link_button_press {
   font-size: 15px;
   color: #e2e2e2;
-  font-weight: 400;
+  font-weight: 00;
 }
 
 .press-logo-img {
@@ -15395,3 +15395,38 @@ background-image: url(/CloudWalk_files\Images\carrossel\ANANTOP-APMOCK.png)
   }
 }
 
+ /*TYPING*/
+
+ @import "https://unpkg.com/open-props";
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&display=swap");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.page {
+  color: black;
+  background-color: white;
+  display: grid;
+  grid-template-areas: "main";
+  min-height: 100vh;
+  font-family: "IBM Plex Mono", monospace;
+}
+.page__main {
+  grid-area: main;
+}
+
+.main {
+  display: grid;
+  place-content: center;
+}
+.main__title {
+  font-size: clamp(1.5rem, 8vw, 5rem);
+}
+.main__word {
+  color: var(--red-9);
+  border-bottom: 2px solid;
+}
