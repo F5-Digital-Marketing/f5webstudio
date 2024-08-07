@@ -3688,7 +3688,7 @@ figcaption {
 
 .container {
   width: 100%;
-  max-width: 1480px;
+  max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 32px;
@@ -3922,7 +3922,6 @@ figcaption {
 
 .heading-large {
   z-index: 2;
-  letter-spacing: -.04em;
   text-transform: none;
   font-size: 6em;
   font-weight: 400;
@@ -5702,11 +5701,10 @@ figcaption {
 }
 
 .grid-4c {
-  grid-column-gap: 64px;
-  grid-row-gap: 64px;
+  grid-column-gap: 40px;
   grid-template-rows: auto;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  align-items: start;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
   width: 100%;
   position: relative
 }
@@ -15160,6 +15158,7 @@ background-image: url(/CloudWalk_files\Images\carrossel\ANANTOP-APMOCK.png)
 
 @media (max-width: 460px) {
   .grid-container {
+    padding-bottom: 100px;
     grid-template-areas: 
     'one'
     'two'
@@ -15415,7 +15414,7 @@ background-image: url(/CloudWalk_files\Images\carrossel\ANANTOP-APMOCK.png)
 }
 
 .typewriter {
-  font-size: 90px;
+  font-size: 80px;
   color: #fff;
   position: relative;
   margin: 0;
@@ -15423,7 +15422,7 @@ background-image: url(/CloudWalk_files\Images\carrossel\ANANTOP-APMOCK.png)
 }
 
 .typewriter span {
-  font-size: 50px;
+  font-size: 80px;
   color: var(--text-color);
   letter-spacing: 0.055rem;
   padding: 5px;
