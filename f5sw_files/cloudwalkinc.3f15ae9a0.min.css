@@ -7360,7 +7360,7 @@ figcaption {
 }
 
 .logo-cw-footer {
-  width: 180px;
+  width: 220px;
   display: block
 }
 
@@ -15410,10 +15410,11 @@ background-image: url(/CloudWalk_files\Images\carrossel\ANANTOP-APMOCK.png)
   align-items: center;
   box-sizing: border-box;
   background: var(--bg-color);
-  padding-bottom: 100px;
+  padding-bottom: 50px;
 }
 
 .typewriter {
+  padding-bottom: 30px;
   font-size: 80px;
   color: #fff;
   position: relative;
