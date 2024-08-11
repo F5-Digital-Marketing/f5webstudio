@@ -19,7 +19,7 @@ body::-webkit-scrollbar-track {
 
 body::-webkit-scrollbar-thumb {
   border-radius: 20px;
-  background: #ebc000
+  background: #E5003C
 }
 
 article,
@@ -2223,11 +2223,11 @@ textarea.w-select {
 }
 
 :root {
-  --black: #0c0c0c;
+  --black: #1E1E1E;
+  --pink-dark: #E5003C;
   --dark-slate-grey: var(--main-white);
-  --mid-gray: #c4c4c4;
+  --violet: #7B4FF5;
   --main-white: #ecebe9;
-  --dark-sea-green: #7e7e7e;
   --main-orange: #e25813;
   --light-coral: #ff667d;
   --olive-drab: #414141;
@@ -5456,18 +5456,18 @@ figcaption {
 }
 
 .tag-pill {
-  color: rgba(255, 255, 255, .6);
+  color: rgba(255, 255, 255,);
   text-transform: uppercase;
-  background-color: rgba(124, 124, 124, .12);
-  border-radius: 2px;
+  background: linear-gradient(-70deg,#E5004a, #7B4FF5);
+  border-radius: 7px;
   margin-bottom: 24px;
-  padding: 4px 8px;
-  font-size: 14px;
+  padding:8px;
+  font-size: 12px;
   display: inline-block
 }
 
 .tag-pill.dark {
-  color: #020202;
+  color: #ffffff;
   background-color: rgba(243, 243, 243, .8)
 }
 
@@ -7360,7 +7360,7 @@ figcaption {
 }
 
 .logo-cw-footer {
-  width: 220px;
+  width: 150px;
   display: block
 }
 
@@ -15469,7 +15469,8 @@ background-image: url(/CloudWalk_files\Images\carrossel\ANANTOP-APMOCK.png)
 }
 
 .bento-text-gradient-coral-yellow-dark {
-  background: -webkit-linear-gradient(-70deg,#ff7b7b,#f7ff64);
+
+  background: -webkit-linear-gradient(-70deg,#E5004a, #7B4FF5);
   -webkit-background-clip: text;
   background-clip: text
 }
@@ -15486,7 +15487,7 @@ background-image: url(/CloudWalk_files\Images\carrossel\ANANTOP-APMOCK.png)
 }
 
 .bento-text-gradient-candy-light-green {
-  background: -webkit-linear-gradient(-70deg,#a2facf,#fff);
+  background: -webkit-linear-gradient(-70deg,#7B4FF5,#fff);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -15551,5 +15552,7 @@ background-image: url(/CloudWalk_files\Images\carrossel\ANANTOP-APMOCK.png)
 
 .button--pandora:hover span {
 	transform: translate3d(8px, -8px, 0);
+  color:#E5003C
+
 
 }
