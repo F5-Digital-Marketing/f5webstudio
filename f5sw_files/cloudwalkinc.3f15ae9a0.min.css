@@ -15415,7 +15415,7 @@ background-image: url(/CloudWalk_files\Images\carrossel\ANANTOP-APMOCK.png)
 
 .typewriter {
   padding-bottom: 30px;
-  font-size: 80px;
+  font-size: 75px;
   color: #fff;
   position: relative;
   margin: 0;
@@ -15437,17 +15437,17 @@ background-image: url(/CloudWalk_files\Images\carrossel\ANANTOP-APMOCK.png)
 }
 
 @media (max-width: 576px) {
-  .typewriter { font-size: 50px; }
+  .typewriter { font-size: 40px; }
 }
 @media (max-width: 768px) {
-  .typewriter { font-size: 60px; }
+  .typewriter { font-size: 55px; }
   .typewriter span {
     font-size: 40px;
   }
 }
 
 @media (max-width: 991x) {
-  .typewriter { font-size: 60px; }
+  .typewriter { font-size: 55px; }
 }
 /*bebt-gradient-color*/
 
