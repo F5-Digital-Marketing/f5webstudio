@@ -15076,7 +15076,7 @@ background-image: url(/CloudWalk_files\Images\carrossel\ANANTOP-APMOCK.png)
   grid-auto-columns: 1fr;
   gap: 1em;
   grid-template-areas: 
-    'one one two five five'
+    'one six six five five'
     'three three two five five'
     'four four four five five'
 }
@@ -15134,6 +15134,9 @@ border: 1px solid rgba(20, 20, 20, 0.12);
 
 .grid-item:nth-child(3) {
   grid-area: three;
+  display: flex;
+  flex-direction: row-reverse;
+ align-items: center;
   border-radius: 15px;
   border: 1px solid #4c2589;
   background: linear-gradient(#241d41, #1a142f);
@@ -15161,14 +15164,22 @@ border: 1px solid rgba(20, 20, 20, 0.12);
   padding: 20px;
   box-sizing: border-box;
 }
+.grid-item:nth-child(6) {
+  grid-area: six;
+  border-radius: 15px;
+  border: 1px solid #4c2589;
+  background: linear-gradient(#241d41, #1a142f);
+  padding: 20px;
+  box-sizing: border-box;
+}
 
 
 @media (max-width: 940px) {
   .grid-container {
     grid-template-areas: 
-    'one one two five five'
+    'one six two five five'
     'three three three five five'
-    'four four four four four'
+    'four four four four four six'
   }
 }
 
@@ -15179,7 +15190,8 @@ border: 1px solid rgba(20, 20, 20, 0.12);
     'two'
     'three'
     'four'
-    'five';
+    'five'
+    'six';;
   
   }
 }
@@ -15189,6 +15201,7 @@ border: 1px solid rgba(20, 20, 20, 0.12);
     padding-bottom: 100px;
     grid-template-areas: 
     'one'
+    'six'
     'two'
     'three'
     'four'
@@ -15256,37 +15269,47 @@ border: 1px solid rgba(20, 20, 20, 0.12);
   box-sizing: border-box;
 }
 .grid-item-2:nth-child(7) {
-  grid-area:seven ;
+  grid-area:seven;
   background-color: #fff;
 }
 
 
 @media (max-width: 940px) {
-  .grid-container {
-    grid-template-areas: 
-    'one one two five five'
-    'three three three five five'
-    'four four four four four'
-  }
-}
-
-@media (max-width: 640px) {
-  .grid-container {
-    grid-template-areas: 
-    'one one two two two'
-    'three three three five five'
-    'four four four four four'
-  }
-}
-
-@media (max-width: 460px) {
-  .grid-container {
+  .grid-container-2 {
     grid-template-areas: 
     'one'
     'two'
     'three'
     'four'
-    'five';
+    'five'
+    'six'
+    'seven'
+  }
+}
+
+@media (max-width: 640px) {
+  .grid-container-2 {
+    grid-template-areas: 
+    'one'
+    'two'
+    'three'
+    'four'
+    'five'
+    'six'
+    'seven'
+  }
+}
+
+@media (max-width: 460px) {
+  .grid-container-2 {
+    grid-template-areas: 
+    'one'
+    'two'
+    'three'
+    'four'
+    'five'
+    'six'
+    'seven';
   }
 }
 
@@ -15584,3 +15607,6 @@ border: 1px solid rgba(20, 20, 20, 0.12);
 
 
 }
+
+
+/*IMG-BKD*/
