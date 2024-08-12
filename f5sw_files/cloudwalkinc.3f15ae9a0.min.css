@@ -15120,26 +15120,43 @@ border: 1px solid rgba(20, 20, 20, 0.12);
  
 .grid-item:nth-child(1) {
   grid-area: one;
+
 }
 
 .grid-item:nth-child(2) {
   grid-area: two;
-  background-color: #007991;
+    border-radius: 15px;
+  border: 1px solid #4c2589;
+  background: linear-gradient(#241d41, #1a142f);
+  padding: 20px;
+  box-sizing: border-box;
 }
 
 .grid-item:nth-child(3) {
   grid-area: three;
-  background-color: #439a86;
+  border-radius: 15px;
+  border: 1px solid #4c2589;
+  background: linear-gradient(#241d41, #1a142f);
+  padding: 20px;
+  box-sizing: border-box;
 }
 
 .grid-item:nth-child(4) {
   grid-area: four;
-  background: linear-gradient(90deg, #0d1223, #080a24, rgba(31, 28, 73, 1)) 
+  border-radius: 15px;
+  border: 1px solid #4c2589;
+  background: linear-gradient(#241d41, #1a142f);
+  padding: 20px;
+  box-sizing: border-box;
 }
 
 .grid-item:nth-child(5) {
   grid-area: five;
-  background-color: #c1292e;
+  border-radius: 15px;
+  border: 1px solid #4c2589;
+  background: linear-gradient(#241d41, #1a142f);
+  padding: 20px;
+  box-sizing: border-box;
 }
 
 
@@ -15229,7 +15246,7 @@ border: 1px solid rgba(20, 20, 20, 0.12);
 }
 .grid-item-2:nth-child(6) {
   grid-area: six;
-  border-radius: 7px;
+  border-radius: 15px;
   border: 1px solid #4c2589;
   background: linear-gradient(#241d41, #1a142f);
   padding: 20px;
