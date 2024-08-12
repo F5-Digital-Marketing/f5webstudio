@@ -11995,7 +11995,7 @@ figcaption {
   }
 
   .inner-padding-large {
-    padding-top: 80px;
+    padding-top: 200px;
     padding-bottom: 80px
   }
 
@@ -15143,6 +15143,9 @@ border: 1px solid rgba(20, 20, 20, 0.12);
 
 .grid-item:nth-child(4) {
   grid-area: four;
+  display: flex;
+  flex-direction: row-reverse;
+ align-items: center;
   border-radius: 15px;
   border: 1px solid #4c2589;
   background: linear-gradient(#241d41, #1a142f);
