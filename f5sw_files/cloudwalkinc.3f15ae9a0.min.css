@@ -80,7 +80,7 @@ dfn {
 
 h1 {
   margin: .67em 0;
-  font-size: 2em
+  font-size: 2.5em
 }
 
 mark {
@@ -5759,6 +5759,7 @@ figcaption {
   position: relative
 }
 
+
 .hero-header_content-wrap.main.cw {
   padding-top: 18vh
 }
@@ -6069,7 +6070,7 @@ figcaption {
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 100vh;
+  height: 0;
   display: flex;
   position: relative;
   overflow: hidden
@@ -6699,17 +6700,6 @@ figcaption {
   color: var(--dark-sea-green)
 }
 
-.header_shadow {
-  z-index: 3;
-  background-image: none;
-  width: 100%;
-  height: 100vh;
-  position: absolute;
-  top: 0%;
-  bottom: auto;
-  left: 0%;
-  right: auto
-}
 
 .header_shadow.is-70vh {
   background-image: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .3));
@@ -11987,7 +11977,7 @@ figcaption {
 
 @media screen and (max-width:479px) {
   h1 {
-    font-size: 40px
+    font-size: 31px
   }
 
   h2 {
@@ -15553,7 +15543,7 @@ border: 1px solid rgba(20, 20, 20, 0.12);
   width: 100%;
   height: 100%;
   margin: 0;
-  padding: 0;
+  padding: 20PX;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -15608,5 +15598,34 @@ border: 1px solid rgba(20, 20, 20, 0.12);
 
 }
 
-
 /*IMG-BKD*/
+
+.hero-header_content-wrap:before {
+  content:"";
+  position: absolute;
+  top:0;
+  right:0;
+  left:0;
+  bottom:0;
+  z-index:1;
+  background: linear-gradient(to top, #1e1e1e 22%, #0e0d0e85 90%);
+}
+
+/*cards*/
+
+.bgblue {
+  background: linear-gradient(135deg, #fffffff5, #3a4b8a, #ffffff98);
+  padding: 1px;
+  border-radius: 1.2rem;
+  box-shadow: 0px 1rem 1.5rem -0.9rem #000000e1;
+  max-width: 300px;
+}
+
+.card {
+  font-size: 1rem;
+  color: #bec4cf;
+  background: linear-gradient(135deg, #0d1120 0%, #3a4b8a 43%, #0d1120 100%);
+  padding: 1.5rem;
+  border-radius: 1.2rem;
+}
+
