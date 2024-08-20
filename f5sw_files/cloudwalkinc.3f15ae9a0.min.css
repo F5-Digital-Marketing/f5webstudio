@@ -3432,7 +3432,6 @@ body {
   color: var(--main-white);
   font-family: Cerapro, sans-serif;
   font-size: 18px;
-  font-weight: 500;
   line-height: 1.55
 }
 
@@ -4434,7 +4433,7 @@ figcaption {
   flex: 0 auto;
   width: auto;
   max-width: none;
-  height: 40px
+  height: 60px
 }
 
 .small-circle-button {
@@ -7348,7 +7347,7 @@ figcaption {
 }
 
 .logo-cw-footer {
-  width: 150px;
+  width: 165px;
   display: block
 }
 
@@ -15202,7 +15201,7 @@ border: 1px solid rgba(20, 20, 20, 0.12);
 
 .grid-container-2 {
   margin: 50px auto;
-  width: 80%;
+  width: 1200px;
   height: 100%;
   display: grid;
   grid-auto-columns: 1fr;
@@ -15242,6 +15241,9 @@ border: 1px solid rgba(20, 20, 20, 0.12);
     'one'
     'two'
     'three'
+  }
+  .grid-container-2{
+    width: 90%;
   }
 }
 
@@ -15591,7 +15593,7 @@ border: 1px solid rgba(20, 20, 20, 0.12);
   --card-icon-background-color: rgba(255, 255, 255, 0.08);
   --card-icon-border-color: rgba(255, 255, 255, 0.12);
   --card-shine-opacity: .1;
-  --card-shine-gradient: conic-gradient(from 205deg at 50% 50%, rgba(16, 185, 129, 0) 0deg, #10B981 25deg, rgba(52, 211, 153, 0.18) 295deg, rgba(16, 185, 129, 0) 360deg);
+  --card-shine-gradient: conic-gradient(from 205deg at 50% 50%, #2A2B2C 0deg, #2A2B2C 25deg, #ee0b53 295deg, #222 360deg);
   --card-line-color: #2A2B2C;
   --card-tile-color: #fcd4de26;
   --card-hover-border-color: #222;
