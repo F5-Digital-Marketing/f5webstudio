@@ -15912,8 +15912,8 @@ border: 1px solid rgba(20, 20, 20, 0.12);
   top: 0;
 }
 .slider .slide-track {
-  -webkit-animation: scroll 74s linear infinite;
-  animation: scroll 74s linear infinite;
+  -webkit-animation: scroll 40s linear infinite;
+  animation: scroll 40s linear infinite;
   display: flex;
   width: calc(750px* 14);
 }
