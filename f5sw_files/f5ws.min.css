@@ -15911,6 +15911,14 @@ border: 1px solid rgba(20, 20, 20, 0.12);
   left: 0;
   top: 0;
 }
+
+@media screen and (max-width:991px) {
+  .slider::before,
+.slider::after {
+    width: 80px
+  }
+}
+
 .slider .slide-track {
   -webkit-animation: scroll 40s linear infinite;
   animation: scroll 40s linear infinite;
@@ -15937,5 +15945,5 @@ border: 1px solid rgba(20, 20, 20, 0.12);
   top: 50%;
   transform: translateY(-50%);
   margin: 0 auto;
-  height: 100% !important;
+  height: 80% !important;
 }
