@@ -3582,7 +3582,7 @@ figcaption {
 }
 
 .section.hero {
-  height: 100vh;
+  height: 120vh;
   position: sticky;
 }
 
@@ -15446,7 +15446,6 @@ border: 1px solid rgba(20, 20, 20, 0.12);
 /*IMG-BKD*/
 
 .hero-header_content-wrap:before {
-  height: 111%;
   content:"";
   position: absolute;
   top:0;
@@ -15876,7 +15875,6 @@ border: 1px solid rgba(20, 20, 20, 0.12);
   height: 1px;
   background: #222;
   background: -webkit-gradient(linear, 0 0, 100% 0, from(#0c0c0c), to(#0c0c0c), color-stop(50%, #666));
-  z-index:5;
 }
 
 /*SLIDER*/
@@ -15959,8 +15957,4 @@ border: 1px solid rgba(20, 20, 20, 0.12);
   position: relative; 
   margin: 0 auto;
   height: 60% !important;
-}
-
-#hero{
-  height: 600px;
 }
