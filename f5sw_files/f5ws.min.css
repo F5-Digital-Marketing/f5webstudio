@@ -3567,6 +3567,7 @@ figcaption {
 }
 
 .section {
+  padding: 5px;
   z-index: 2;
   color: var(--dark-slate-grey);
   position: relative
@@ -15335,9 +15336,9 @@ border: 1px solid rgba(20, 20, 20, 0.12);
   }
 }
 @media (max-width: 991px) {
-  .typewriter { font-size: 42px; }
+  .typewriter { font-size: 40px; }
   .typewriter span {
-    font-size: 42px;
+    font-size: 40px;
   }
 }
 
