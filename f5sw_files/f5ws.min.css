@@ -3883,7 +3883,7 @@ figcaption {
 }
 
 .main-paragraph.text-align-center.subourmission {
-  font-size: 28px;
+  font-size: 25px;
   font-weight: 500
 }
 
@@ -3973,7 +3973,7 @@ figcaption {
 
 .heading-small {
   font-size: 22px;
-  font-weight: 500;
+  font-weight: 300;
   line-height: 1.6
 }
 
@@ -15290,7 +15290,7 @@ border: 1px solid rgba(20, 20, 20, 0.12);
 
 :root {
 
-  --text-color: ;
+  --text-color: #E5003C;
   --pointer:red;
 }
 
@@ -15311,7 +15311,7 @@ border: 1px solid rgba(20, 20, 20, 0.12);
 }
 
 .typewriter span {
-  font-size: 80px;
+  font-size: 75px;
   color: var(--text-color);
   letter-spacing: 0.055rem;
   padding: 5px;
@@ -15326,17 +15326,18 @@ border: 1px solid rgba(20, 20, 20, 0.12);
 
 @media (max-width: 576px) {
   .typewriter { font-size: 40px; }
-}
-@media (max-width: 768px) {
-  .typewriter { font-size: 55px; }
   .typewriter span {
     font-size: 40px;
   }
 }
-
-@media (max-width: 991x) {
-  .typewriter { font-size: 55px; }
+@media (max-width: 991px) {
+  .typewriter { font-size: 42px; }
+  .typewriter span {
+    font-size: 42px;
+  }
 }
+
+
 /*bebt-gradient-color*/
 
 .bento-text-gradient-mint-blue-dark {

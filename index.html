@@ -138,8 +138,8 @@
             <div class="overflow-center">
               <div data-w-id="eab8bda3-4e1b-9d17-8c3a-2f0a142dc913" class="heading-large catchphrase"
                 style="wisll-change: transform; transform: translate3d(0px, 0%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;"><div class="container">
-                  <p class="typewriter">A venda começa
-                    <span data-text="na abordagem, na oferta, no website."></span>
+                  <p class="typewriter">A venda começa<br>na
+                    <span data-text="oferta., abordagem."></span>
                   </p>
                 </div></div>
             </div>
@@ -753,12 +753,12 @@ kk
         span.innerHTML += text[charIndex];
         if (charIndex == maxCharIndex) {
           clearInterval(typeInterval);
-          setTimeout(function () { deleting(textIndex, text) }, sBetweenWord * 700);
+          setTimeout(function () { deleting(textIndex, text) }, sBetweenWord * 800);
 
         } else {
           charIndex += 1;
         }
-      }, sPerChar * 700);
+      }, sPerChar * 900);
     }
 
     function deleting(textIndex, text) {
