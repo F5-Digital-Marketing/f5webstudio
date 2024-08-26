@@ -15333,7 +15333,7 @@ border: 1px solid rgba(20, 20, 20, 0.12);
 @media (max-width: 991px) {
   .typewriter { font-size: 42px; }
   .typewriter span {
-    font-size: 42px;
+    font-size: 4px;
   }
 }
 
@@ -15341,7 +15341,7 @@ border: 1px solid rgba(20, 20, 20, 0.12);
 /*bebt-gradient-color*/
 
 .bento-text-gradient-mint-blue-dark {
-  background: -webkit-linear-gradient(-70deg,#a2facf,#64acff);
+  background: -webkit-linear-gradient(-70deg, #E5004a, #82012d);
   -webkit-background-clip: text;
   background-clip: text
 }
@@ -15359,7 +15359,7 @@ border: 1px solid rgba(20, 20, 20, 0.12);
 
 .bento-text-gradient-coral-yellow-dark {
 
-  background: -webkit-linear-gradient(-70deg,#E5004a, #7B4FF5);
+  background: -webkit-linear-gradient(-70deg, #E5004a, #87002e);
   -webkit-background-clip: text;
   background-clip: text
 }
