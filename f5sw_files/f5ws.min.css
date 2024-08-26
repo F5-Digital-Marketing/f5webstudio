@@ -7804,6 +7804,20 @@ figcaption {
   margin-right: auto
 }
 
+.container-large-xl {
+  padding-top: 200px;
+  width: 100%;
+  max-width: 80rem;
+  margin-left: auto;
+  margin-right: auto
+}
+
+@media screen and (max-width:1025px) {.container-large-xl{
+  padding: 20px;
+
+}
+}
+
 .bg-neutral-500 {
   background-color: #6c6c70
 }
@@ -15888,11 +15902,11 @@ border: 1px solid rgba(20, 20, 20, 0.12);
 .slider::before,
 .slider::after {
   backdrop-filter: blur(1.1px);
-  background: linear-gradient(to right, #0c0c0c 17%, #0c0c0c00 67%);
+  background: linear-gradient(to right, #0c0c0c 17%, #0c0c0c00 84%);
   content: "";
   height: 100%;
   position: absolute;
-  width: 120px;
+  width: 50px;
   z-index: 2;
 }
 .slider::after {
