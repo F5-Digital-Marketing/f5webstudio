@@ -3929,7 +3929,7 @@ figcaption {
 }
 
 .heading-large.uppercase {
-  font-weight: 400
+  font-weight: 500
 }
 
 .heading-large.catchphrase {
@@ -3941,8 +3941,8 @@ figcaption {
   align-self: auto;
   margin-top: 0;
   margin-bottom: 0;
-  font-size: 2.5em;
-  font-weight: 500;
+  font-size: 1.4em;
+  font-weight: 600;
   line-height: 1.1
 }
 
@@ -15371,7 +15371,7 @@ border: 1px solid rgba(20, 20, 20, 0.12);
 }
 
 .bento-text-gradient-silver {
-  background: linear-gradient(180deg,#fff,#aaa);
+  background: linear-gradient(357deg, #fff 12%, #989393 63%, #d2d2d2 73%);
   -webkit-background-clip: text;
   background-clip: text
 }
