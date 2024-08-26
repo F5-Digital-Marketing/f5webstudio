@@ -7813,7 +7813,7 @@ figcaption {
 }
 
 @media screen and (max-width:1025px) {.container-large-xl{
-  padding: 20px;
+  padding-top: 80px;
 
 }
 }
