@@ -7585,8 +7585,9 @@ figcaption {
 }
 
 .background-image-hero-jobs {
+  -webkit-backdrop-filter: blur();
   background-image: url(https://res.cloudinary.com/ditgc9poq/image/upload/f_auto,q_auto/v1/images/F5%20DIGITAL/BANNERS/p653qff9drj9oyuzrtzr);
-  background-position: 100% 100%;
+  background-position: center;
   background-size: cover;
   position: absolute;
   top: 0%;
@@ -7600,12 +7601,12 @@ figcaption {
 }
 @media screen and (max-width: 767px) {
   .background-image-hero-jobs {
-      background-position: 60% 100%;
+      background-position: center;
   }
 }
 @media screen and (max-width: 991px) {
   .background-image-hero-jobs {
-      background-position: 92% 100%;
+      background-position: center;
   }
 }
 
@@ -10779,7 +10780,9 @@ figcaption {
     grid-row-gap: 20px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     justify-content: space-between;
-    display: flex
+    align-content: center;
+    flex-direction: column;
+    align-items: center;
   }
 
   .image-centralized-floating.customer,
@@ -10828,9 +10831,6 @@ figcaption {
     padding-bottom: 80px
   }
 
-  .background-image-hero-jobs {
-    background-position: 92% 100%
-  }
 
   .ticker-scroll {
     height: 100%
@@ -11624,9 +11624,7 @@ figcaption {
     padding-bottom: 64px
   }
 
-  .background-image-hero-jobs {
-    background-position: 89% 100%
-  }
+
 
   .full-image-cw {
     height: 100vh
@@ -12477,7 +12475,7 @@ figcaption {
   }
 
   .image-logo {
-    width: 240px;
+    width: 200px;
     height: 100%;
     display: block;
   }
