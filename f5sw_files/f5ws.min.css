@@ -2223,7 +2223,8 @@ textarea.w-select {
 }
 
 :root {
-  --black: #0c0c0c;
+  --black: #10101b;
+  --dark-blue: #080811;
   --pink-dark: #E5003C;
   --dark-slate-grey: #f3ecec;
   --violet: #7B4FF5;
@@ -3567,7 +3568,6 @@ figcaption {
 }
 
 .section {
-  padding: 5px;
   z-index: 2;
   color: var(--dark-slate-grey);
   position: relative
@@ -3813,6 +3813,7 @@ figcaption {
   position: relative
 }
 
+
 .padding-bottom-large {
   min-width: 200px;
   min-height: 200px;
@@ -3884,7 +3885,7 @@ figcaption {
 }
 
 .main-paragraph.text-align-center.subourmission {
-  font-size: 25px;
+  font-size: 20px;
   font-weight: 500
 }
 
@@ -5422,7 +5423,7 @@ figcaption {
 }
 
 .content-wrapper-2 {
-  grid-row-gap: 6px;
+  grid-row-gap: 15px;
   flex-direction: column;
   width: 100%;
   display: flex;
@@ -8052,8 +8053,8 @@ figcaption {
 }
 
 .padding-vertical {
-  padding-left: 0;
-  padding-right: 0
+  padding-left: 100px;
+  padding-right: 100px;
 }
 
 .aspect-ratio-square {
@@ -15391,6 +15392,7 @@ border: 1px solid rgba(20, 20, 20, 0.12);
 }
 
 .bento-text-gradient-silver {
+  font-weight: 500px;
   background: linear-gradient(357deg, #fff 12%, #989393 63%, #d2d2d2 73%);
   -webkit-background-clip: text;
   background-clip: text
@@ -15484,7 +15486,7 @@ border: 1px solid rgba(20, 20, 20, 0.12);
 
 .card {
 
-  --background-color: #18181B;
+  --background-color: #171725;
   --text-color: #A1A1AA;
   --card-background-color: rgb(200 141 141 / 2%);
   --card-border-color: rgba(255, 255, 255, 0.1);
@@ -15494,7 +15496,7 @@ border: 1px solid rgba(20, 20, 20, 0.12);
   --card-box-shadow-2: rgba(0, 0, 0, 0.1);
   --card-box-shadow-2-y: 8px;
   --card-box-shadow-2-blur: 15px;
-  --card-label-color: #FFFFFF;
+  --card-label-color: #E91E63;
   --card-icon-color: #D4D4D8;
   --card-icon-background-color: rgba(255, 255, 255, 0.08);
   --card-icon-border-color: rgba(255, 255, 255, 0.12);
@@ -15924,7 +15926,7 @@ border: 1px solid rgba(20, 20, 20, 0.12);
 .slider::before,
 .slider::after {
   backdrop-filter: blur(1.1px);
-  background: linear-gradient(to right, #0c0c0c 17%, #0c0c0c00 84%);
+  background: linear-gradient(to right, var(--dark-blue) 17%, #0c0c0c00 84%);
   content: "";
   height: 100%;
   position: absolute;
@@ -15979,9 +15981,9 @@ border: 1px solid rgba(20, 20, 20, 0.12);
 
 /*BACKGOROUND*/
 .pattern-2{
-  background-color: #3b1717;
+  background-color: var(--dark-blue);
   opacity: 1;
-  background-image: linear-gradient(rgb(0, 0, 0) 2px, #29292900 2px), linear-gradient(to right, rgb(5 5 5) 2px, rgb(12 12 12) 2px);}
+}
 
 
   .overlay-head-2{
