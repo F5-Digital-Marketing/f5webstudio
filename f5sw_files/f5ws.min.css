@@ -3547,8 +3547,8 @@ figcaption {
 }
 
 .inner-padding-large {
-  padding-top: 148px;
-  padding-bottom: 148px
+  padding-top: 50px;
+  padding-bottom: 50px  
 }
 
 .inner-padding-medium {
@@ -3790,7 +3790,7 @@ figcaption {
 }
 
 .flex-center {
-  gap: 20px;
+  gap:1px;
   z-index: 2;
   flex-direction: column;
   justify-content: center;
@@ -3885,8 +3885,7 @@ figcaption {
 }
 
 .main-paragraph.text-align-center.subourmission {
-  font-size: 20px;
-  font-weight: 500
+  font-weight: 400
 }
 
 .main-paragraph._w-small.paragraph-hero-jobs {
@@ -5664,12 +5663,12 @@ figcaption {
 }
 
 .main-link-block {
-  margin-top: 80px;
+  margin-top: 40px;
   color: #050505;
   text-transform: uppercase;
-  background-color: #00d3e2;
-  border-radius: 100px;
-  min-height: 44px;
+  background-color: #ffffff;
+  border-radius: 30px;
+  min-height: 60px;
   padding: 12px 32px;
   font-size: .8em;
   text-decoration: none
@@ -7586,8 +7585,7 @@ figcaption {
 }
 
 .background-image-hero-jobs {
-  -webkit-backdrop-filter: blur();
-  background-image: url(https://res.cloudinary.com/ditgc9poq/image/upload/f_auto,q_auto/v1/images/F5%20DIGITAL/BANNERS/p653qff9drj9oyuzrtzr);
+  background-image: url();
   background-position: center;
   background-size: cover;
   position: absolute;
@@ -10218,6 +10216,11 @@ figcaption {
   }
 }
 
+@media screen and (max-width:1024px) {
+  .flex-center {
+    padding-top: 100px;
+  }}
+
 @media screen and (max-width:991px) {
   .overflow {
     z-index: 2
@@ -10247,6 +10250,7 @@ figcaption {
   }
 
   .flex-center {
+    padding-top: 100px;
     z-index: 3;
     position: relative
   }
@@ -12261,7 +12265,7 @@ figcaption {
   }
 
   .heading-medium {
-    font-size: 32px
+    font-size: 25px
   }
 
   .heading-medium.hero.text-white {
@@ -12714,7 +12718,7 @@ figcaption {
   }
 
   .content-wrapper-2 {
-    grid-row-gap: 2px
+    grid-row-gap: 25px
   }
 
   .inner-rounded-img {
@@ -15363,7 +15367,7 @@ border: 1px solid rgba(20, 20, 20, 0.12);
 /*bebt-gradient-color*/
 
 .bento-text-gradient-mint-blue-dark {
-  background: -webkit-linear-gradient(-70deg, #E5004a, #82012d);
+  background: -webkit-linear-gradient(65deg, #ff0052, #790029);
   -webkit-background-clip: text;
   background-clip: text
 }
@@ -15373,11 +15377,6 @@ border: 1px solid rgba(20, 20, 20, 0.12);
   -webkit-box-decoration-break: clone;
 }
 
-.bento-text-gradient-pink-blue {
-  /* background:-webkit-linear-gradient(-70deg,#ff7b7b,#64acff); */
-  /* -webkit-background-clip:text; */
-  /* background-clip:text; */
-}
 
 .bento-text-gradient-coral-yellow-dark {
 
@@ -15946,7 +15945,7 @@ border: 1px solid rgba(20, 20, 20, 0.12);
 @media screen and (max-width:991px) {
   .slider::before,
 .slider::after {
-  width: 34px;
+  width: 15px;
   backdrop-filter: blur(1.2px);
   background: linear-gradient(to right, #0706082b 18%, #0c0c0c00 58%);
   }
