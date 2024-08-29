@@ -3870,7 +3870,7 @@ figcaption {
 
 .main-paragraph {
   opacity: 1;
-  font-size: 19px;
+  font-size: 22px;
   font-weight: 300;
   line-height: 1.5
 }
@@ -15392,7 +15392,7 @@ border: 1px solid rgba(20, 20, 20, 0.12);
 
 .bento-text-gradient-silver {
   font-weight: 500px;
-  background: linear-gradient(357deg, #fff 12%, #989393 63%, #d2d2d2 73%);
+  background: linear-gradient(33deg, #fff 12%, #989393 63%, #d2d2d2 73%);
   -webkit-background-clip: text;
   background-clip: text
 }
