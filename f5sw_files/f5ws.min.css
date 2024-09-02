@@ -11621,7 +11621,8 @@ figcaption {
   }
 
   .heading-jobs {
-    font-size: 32px
+    font-size: 32px;
+    text-align:start;
   }
 
   .grid-content-jobs.inner-padding-large.is-code {
