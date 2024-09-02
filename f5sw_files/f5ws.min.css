@@ -7538,8 +7538,7 @@ figcaption {
 }
 
 .bg-white {
-  color: var(--black);
-  background-color: #fff
+  color: var(--dark-slate-grey);
 }
 
 .text-black {
@@ -7552,6 +7551,7 @@ figcaption {
 }
 
 .heading-jobs {
+  text-align:start;
   font-size: 40px;
   line-height: 1.2
 }
@@ -7566,7 +7566,7 @@ figcaption {
   grid-column-gap: 80px;
   grid-row-gap: 80px;
   grid-template-rows: auto;
-  grid-template-columns: .7fr 1fr
+  grid-template-columns: 1fr 1fr
 }
 
 .grid-content-jobs.inner-padding-large.is-code {
