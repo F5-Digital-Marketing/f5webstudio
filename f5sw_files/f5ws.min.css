@@ -7647,7 +7647,7 @@ figcaption {
 
 .scroll-heading {
   opacity: .72;
-  color: var(--black);
+  color: var(--main-white);
   white-space: nowrap;
   mix-blend-mode: normal;
   font-size: 10em;
