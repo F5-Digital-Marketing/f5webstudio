@@ -5474,6 +5474,18 @@ figcaption {
   display: inline-block;
 }
 
+.tag-pill-2 {
+  color: rgba(255, 255, 255,);
+  text-transform: uppercase;
+  border-radius: 100px;
+  margin-bottom: 24px;
+  padding: 10px;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .tag-pill.dark {
   color: #ffffff;
   background-color: rgba(243, 243, 243, .8)
