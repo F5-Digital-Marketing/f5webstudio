@@ -16032,7 +16032,9 @@ border: 1px solid rgba(20, 20, 20, 0.12);
 
 /*ARROWS*/
 
-
+.arrow-scribble{
+  opacity: 65%;
+}
 @media screen and (max-width:991px) {
   .arrow-scribble{
     transform: rotate(90deg);
