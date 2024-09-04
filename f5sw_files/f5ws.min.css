@@ -7367,7 +7367,7 @@ figcaption {
 
 .text-align-center.heading-xlarge.text-weight-thin.title-pillars {
   letter-spacing: 0;
-  font-size: 7.4em;
+  font-size:  8.5em;
   line-height: 1.0
 }
 
@@ -7453,7 +7453,7 @@ figcaption {
 .image-centralized-floating.customer,
 .image-centralized-floating.tap,
 .image-centralized-floating.economics {
-  width: 270px
+  width: 200px
 }
 
 .text-wrapper-relative {
