@@ -5472,8 +5472,10 @@ figcaption {
   border-radius: 7px;
   margin-bottom: 24px;
   padding: 10px;
-  font-size: 18px;
-  display: inline-block;
+  font-size: 22px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 .tag-pill-2 {
@@ -11491,7 +11493,7 @@ f
   }
 
   .tag-pill {
-    font-size: 12px
+    font-size: 17px
   }
 
   .tag-pill.absolute-top.black {
@@ -15127,7 +15129,7 @@ border: 1px solid rgba(20, 20, 20, 0.12);
 .grid-container-2 {
   padding-bottom: 50px;
   margin: 50px auto;
-  width: 1200px;
+  width: 80%;
   height: 100%;
   display: grid;
   grid-auto-columns: 1fr;
@@ -15136,6 +15138,16 @@ border: 1px solid rgba(20, 20, 20, 0.12);
     'one one two two three three'
  
 }
+@media (min-width: 1900px) {
+  .grid-container-2{
+    width: 1250px;
+
+  }}
+@media (max-width: 991px) {
+  .grid-container-2{
+    width: 90%;
+
+  }}
 
 .grid-item-2 {
   border-radius: 7px;
@@ -16008,14 +16020,13 @@ border: 1px solid rgba(20, 20, 20, 0.12);
   }
 
 #circle-p{
-  transform: translateY(-55px) translateX(-15px);
+  transform:translateY(-57px) translateX(3px);
   z-index:99;
-  display: flex;
 }
 
 @media screen and (max-width:991px) {
   #circle-p {
-    transform: translateY(-98px) translateX(1px);
+
   }}
 
 
