@@ -5466,13 +5466,12 @@ figcaption {
 }
 
 .tag-pill {
-  color: rgba(255, 255, 255,);
   text-transform: uppercase;
   background: linear-gradient(-70deg, #f785aa59, #7b4ff500);
   border-radius: 7px;
   margin-bottom: 24px;
   padding: 10px;
-  font-size: 22px;
+  font-size: 19px;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -7574,7 +7573,7 @@ figcaption {
 
 .heading-jobs {
   text-align:start;
-  font-size: 40px;
+  font-size: 32px;
   line-height: 1.2
 }
 
