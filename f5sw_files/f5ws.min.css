@@ -7843,7 +7843,7 @@ f .padding-section-medium {
 
 .container-large {
   width: 100%;
-  max-width: 80rem;
+  max-width: 40rem;
   margin-left: auto;
   margin-right: auto
 }
