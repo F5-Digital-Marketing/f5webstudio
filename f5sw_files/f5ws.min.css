@@ -6886,7 +6886,7 @@ figcaption {
 }
 
 .xlarge-scroll-heading {
-  color: #fff;
+  color: var(--text-color);
   letter-spacing: -.04em;
   white-space: nowrap;
   font-size: 22em;
