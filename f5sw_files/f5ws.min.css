@@ -15236,10 +15236,8 @@ f .padding-section-medium {
   background-clip: text
 }
 
-.bento-text-gradient-mint-blue-dark,
-.bento-text-gradient-pink-blue {
-  -webkit-text-fill-color: transparent;
-  -webkit-box-decoration-break: clone;
+.blue-dark {
+color: var(--black)
 }
 
 
