@@ -3923,9 +3923,9 @@ figcaption {
 .heading-large {
   z-index: 2;
   text-transform: none;
-  font-size: 4.2em;
+  font-size: 3em;
   font-weight: 400;
-  line-height: 1;
+  line-height: 1.2;
   position: relative
 }
 
