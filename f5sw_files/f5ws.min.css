@@ -15880,6 +15880,17 @@ color: var(--black)
   z-index: 2;
 }
 
+.slider-w::before,
+.slider-w::after {
+  backdrop-filter: blur(1.1px);
+  background: linear-gradient(to right, var(--dark-blue) 17%, #0c0c0c00 84%) IMPOR !important;
+  content: "";
+  height: 100%;
+  position: absolute;
+  width: 50px;
+  z-index: 2;
+}
+
 .slider::after {
   right: 0;
   top: 0;
