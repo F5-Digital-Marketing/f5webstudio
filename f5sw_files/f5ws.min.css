@@ -3429,7 +3429,7 @@ textarea.w-select {
 }
 
 body {
-  background-color: var(--black);
+  background-color: var(--main-white);
   color: var(--main-white);
   font-family: Cerapro, sans-serif;
   font-size: 18px;
