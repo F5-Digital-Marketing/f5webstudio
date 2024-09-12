@@ -3700,7 +3700,6 @@ figcaption {
   flex-flow: column;
   justify-content: center;
   align-items: center;
-  min-height: 60svh;
   display: flex
 }
 
