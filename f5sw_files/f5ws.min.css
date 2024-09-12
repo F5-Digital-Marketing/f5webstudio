@@ -16065,9 +16065,6 @@ color: var(--black)
 }
 
 /*BRANDING-SLIDER*/
-:root{
-  --bg-clr: #64748B;
-}
 .carousel-wrapper {
   --width: 150px;
   --gap: 10;
@@ -16106,9 +16103,6 @@ color: var(--black)
   flex: 1 0 var(--width);
   text-align: center;
   padding:1rem;
-}
-.item:last-child{
-  /*background: red;*/
 }
 .item > img{
   width: 100%;
