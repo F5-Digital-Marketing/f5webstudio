@@ -3429,8 +3429,8 @@ textarea.w-select {
 }
 
 body {
-  background-color: var(--main-white);
-  color: var(--main-white);
+  background-color:var(--dark-blue);
+  color: var(--dark-slate-grey);
   font-family: Cerapro, sans-serif;
   font-size: 18px;
   line-height: 1.55
@@ -15969,5 +15969,98 @@ color: var(--black)
   .arrow-scribble {
     transform: rotate(90deg);
 
+  }
+}
+
+/*text-roll*/
+.text {
+  font-size: 3.8em;
+  color: #00a99d;
+  direction: rtl;
+}
+
+.content-slider {
+  position: relative;
+  text-align: left;
+}
+.content-slider__sizer {
+  position: relative;
+  display: inline-block;
+  visibility: hidden;
+  pointer-events: none;
+}
+.content-slider__data {
+  position: relative;
+  display: inline-block;
+}
+.content-slider__list {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+.content-slider__item {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateY(110%);
+  opacity: 1;
+}
+.content-slider__item:nth-child(1) {
+  -webkit-animation: loopContentSlide 4s infinite ease-in-out both;
+          animation: loopContentSlide 4s infinite ease-in-out both;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+}
+.content-slider__item:nth-child(2) {
+  -webkit-animation: loopContentSlide 4s infinite ease-in-out both;
+          animation: loopContentSlide 4s infinite ease-in-out both;
+  -webkit-animation-delay: 1.3333333333s;
+          animation-delay: 1.3333333333s;
+}
+.content-slider__item:nth-child(3) {
+  -webkit-animation: loopContentSlide 4s infinite ease-in-out both;
+          animation: loopContentSlide 4s infinite ease-in-out both;
+  -webkit-animation-delay: 2.6666666667s;
+          animation-delay: 2.6666666667s;
+}
+
+@-webkit-keyframes loopContentSlide {
+  0% {
+    transform: translateY(110%);
+  }
+  20% {
+    transform: translateY(0%);
+  }
+  40% {
+    transform: translateY(0%);
+  }
+  50% {
+    transform: translateY(-110%);
+  }
+  100% {
+    transform: translateY(-110%);
+  }
+}
+
+@keyframes loopContentSlide {
+  0% {
+    transform: translateY(110%);
+  }
+  20% {
+    transform: translateY(0%);
+  }
+  40% {
+    transform: translateY(0%);
+  }
+  50% {
+    transform: translateY(-110%);
+  }
+  100% {
+    transform: translateY(-110%);
   }
 }
