@@ -16066,29 +16066,17 @@ color: var(--black)
 }
 
 /*BRANDING-SLIDER*/
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 :root{
   --bg-clr: #64748B;
 }
-body {
-  min-height: 100svh;
-  display: grid;
-  place-content: center;
-  background-color: var(--bg-clr);
-}
-
 .carousel-wrapper {
-  --width: 100px;
-  --gap: 0;
+  --width: 150px;
+  --gap: 10;
   --num-items: 10;
   --ani-offset: calc(var(--width) * var(--num-items) * -1);
-  --ani-speed: 10s;
+  --ani-speed: 20s;
   
-  width: 400px;
+  width: 500px;
   overflow: hidden;
   position: relative;
 }
@@ -16103,11 +16091,11 @@ body {
 }
 .carousel-wrapper::before{
   left: 0;
-  background-image: linear-gradient(to right,var(--bg-clr) 0%,transparent 50%);
+  background-image: linear-gradient(to right,var(--dark-blue) 0%,transparent 50%);
 }
 .carousel-wrapper::after{
   right: 0;
-  background-image: linear-gradient(to left,var(--bg-clr) 0%,transparent 50%);
+  background-image: linear-gradient(to left,var(--dark-blue) 0%,transparent 50%);
 }
 
 .carousel {
