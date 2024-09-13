@@ -16067,7 +16067,6 @@ color: var(--black)
   --num-items: 8;
   --ani-offset: calc(var(--width) * var(--num-items) * -1);
   --ani-speed: 20s;
-  
   width: 500px;
   overflow: hidden;
   position: relative;
@@ -16089,6 +16088,12 @@ color: var(--black)
   right: 0;
   background-image: linear-gradient(to left,var(--dark-blue) 0%,transparent 50%);
 }
+
+
+@media screen and (max-width:991px) {
+  .carousel-wrapper {
+    Width: 100%;
+  }}
 
 .carousel {
   display: flex;
