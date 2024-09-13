@@ -15813,10 +15813,6 @@ color: var(--black)
     padding: 32px;
   }
 }
-
-
-
-
 .card:before {
   content: "";
   position: absolute;
