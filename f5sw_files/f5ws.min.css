@@ -7602,7 +7602,7 @@ background-color: #2a0e3a;
 }
 
 .background-image-hero-jobs {
-  background-image: url(htthttps://res.cloudinary.com/dohfsymfd/image/upload/f_auto,q_auto/v1/f5web-estudio/ieouwqk6omqijxwj5cm0);
+  background-image: url(https://res.cloudinary.com/dohfsymfd/image/upload/f_auto,q_auto/v1/f5web-estudio/ieouwqk6omqijxwj5cm0);
   background-position: center;
  background-repeat: no-repeat;
   background-size: contain;
@@ -16116,8 +16116,8 @@ color: var(--black)
 
 /*BUTTON*/
 .btn {
-  --btn-color: rgb(124 45 18);
-  --btn-bg: rgb(252 211 77);
+  --btn-color: #E5003C;
+  --btn-bg: #fff;
   position: relative;
   display: inline-flex;
   align-items: center;
@@ -16184,6 +16184,7 @@ color: var(--black)
 }
 
 .btn-b {
+  padding: 20px;
   display: grid;
   place-content: center;
 }
