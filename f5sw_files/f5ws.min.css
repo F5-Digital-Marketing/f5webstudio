@@ -7602,9 +7602,10 @@ background-color: #2a0e3a;
 }
 
 .background-image-hero-jobs {
-  background-image: url();
+  background-image: url(htthttps://res.cloudinary.com/dohfsymfd/image/upload/f_auto,q_auto/v1/f5web-estudio/ieouwqk6omqijxwj5cm0);
   background-position: center;
-  background-size: cover;
+ background-repeat: no-repeat;
+  background-size: contain;
   position: absolute;
   top: 0%;
   bottom: 0%;
