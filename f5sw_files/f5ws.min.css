@@ -15873,7 +15873,7 @@ color: var(--black)
 
 .slider-w::before,
 .slider-w::after {
-  background: linear-gradient(to right, var(--dark-blue) 17%, #200404 84%);
+  background: linear-gradient(to right, var(--dark-blue) 17%, #0c0c0c00 84%);
   content: "";
   height: 100%;
   position: absolute;
@@ -15897,7 +15897,6 @@ color: var(--black)
   .slider::before,
   .slider::after {
     width: 10px;
-    backdrop-filter: blur(1.2px);
     background: linear-gradient(to right, #0706082b 18%, #0c0c0c00 58%);
   }
 }
