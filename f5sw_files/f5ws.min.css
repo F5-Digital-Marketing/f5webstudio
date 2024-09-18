@@ -16134,7 +16134,7 @@ color: var(--black)
   background-color: var(--btn-bg);
   color: var(--btn-color);
   padding: 14px 22px;
-  border-radius: 8px;
+  border-radius: 10px;
   border: 0;
   cursor: pointer;
   font-weight: 600;
@@ -16142,7 +16142,8 @@ color: var(--black)
   font-family: system-ui;
   border: 2px solid var(--btn-color);
   transition: 100ms ease;
-  box-shadow: 5px 5px 0 0 var(--btn-color);
+  box-shadow: -5px 5px 0 0 var(--btn-color);
+  transform: rotate(349deg); 
 }
 
 .btn--secondary {
@@ -16157,7 +16158,7 @@ color: var(--black)
 }
 
 .btn:hover {
-  box-shadow: 2px 2px 0 0 var(--btn-color);
+  box-shadow: -2px 2px 0 0 var(--btn-color);
 }
 
 .btn:active {
