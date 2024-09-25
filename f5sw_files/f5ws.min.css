@@ -16220,6 +16220,7 @@ color: var(--black)
   height: 40px;
   overflow-x: hidden;
   padding-top: 13px;
+  margin-bottom: -50px;
 }
 .marquee::after{
     background: linear-gradient(to right,#013D61 17%, #0c0c0c00 84%);
