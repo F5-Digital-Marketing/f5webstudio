@@ -16139,11 +16139,10 @@ color: var(--black)
   cursor: pointer;
   font-weight: 600;
   font-size: 1rem;
-  font-family: system-ui;
-  border: 2px solid var(--btn-color);
+  border: 2px solid linear-gradient(to left,var(--btn-color)20%,transparent 50%);;
   transition: 100ms ease;
   box-shadow: -5px 5px 0 0 var(--btn-color);
-  transform: rotate(349deg); 
+  transform: rotate(356deg); 
 }
 
 .btn--secondary {
