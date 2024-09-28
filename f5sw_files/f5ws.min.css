@@ -15864,8 +15864,8 @@ color: var(--black)
 }
 
 .slider {
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 50px;
+  padding-bottom: 50px;
   height: 100%;
   margin: auto;
   overflow-x: hidden;
