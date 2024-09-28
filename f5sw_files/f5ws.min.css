@@ -15835,7 +15835,6 @@ color: var(--black)
 
 .linha {
   z-index: 9;
-  margin: 10px 0;
   height: 1px;
   background: #222;
   background: -webkit-gradient(linear, 0 0, 100% 0, from(#0c0c0c), to(#0c0c0c), color-stop(50%, #666));
