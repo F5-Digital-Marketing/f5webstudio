@@ -2188,7 +2188,7 @@ h3 {
 h4 {
   margin-top: 10px;
   margin-bottom: 10px;
-  font-size: 16px;
+  font-size: 26px;
   font-weight: 500;
   line-height: 24px
 }
@@ -2423,9 +2423,10 @@ figcaption {
 
 .container.inner-padding-medium.our-investors {
   flex-flow: column;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
-  display: flex
+  display: flex;
+  flex-direction: row;
 }
 
 .container.large {
@@ -14824,7 +14825,7 @@ color: var(--black)
   --num-items: 8;
   --ani-offset: calc(var(--width) * var(--num-items) * -1);
   --ani-speed: 20s;
-  width: 500px;
+  width: 700px;
   overflow: hidden;
   position: relative;
 }
