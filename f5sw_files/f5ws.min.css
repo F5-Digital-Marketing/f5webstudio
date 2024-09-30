@@ -6213,6 +6213,7 @@ figcaption {
 }
 
 .gap-16 {
+  justify-content: space-evenly;
   grid-column-gap: 16px;
   grid-row-gap: 16px
 }
