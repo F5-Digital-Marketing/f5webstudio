@@ -6349,7 +6349,7 @@ background-color: #2a0e3a;
   left: 0%;
   right: 0%;
   width: 100%;
-  height: 70vh;
+  height: 55vh;
   position: relative;
   overflow: hidden;
 }
@@ -8980,6 +8980,8 @@ f .padding-section-medium {
     right: 0
   }
   .grid-4c{
+    padding-top: 50px;
+    padding-bottom: 100px;
     padding-left: 200px;
     padding-right: 200px;
   }
