@@ -14624,21 +14624,21 @@ color: var(--black)
 
 .slider::before,
 .slider::after {
-  background: linear-gradient(to right, var(--dark-blue) 17%, #0c0c0c00 84%);
+  background: linear-gradient(to right, var(--dark-blue) 3%, #0c0c0c00 84%);
   content: "";
   height: 100%;
   position: absolute;
-  width: 50%;
+  width: 47%;
   z-index: 2;
 }
 
 .slider-w::before,
 .slider-w::after {
-  background: linear-gradient(to right, var(--dark-blue) 17%, #0c0c0c00 84%);
+  background: linear-gradient(to right, var(--dark-blue) 3%, #0c0c0c00 84%);
   content: "";
   height: 100%;
   position: absolute;
-  width: 50%;
+  width: 47%;
   z-index: 2;
 }
 
@@ -14724,7 +14724,6 @@ color: var(--black)
 
 /*text-roll*/
 .text {
-  font-size: 2.0em;
   color: #00a99d;                                              
 }
 
