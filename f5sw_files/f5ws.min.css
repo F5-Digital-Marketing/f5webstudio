@@ -14827,7 +14827,7 @@ color: var(--black)
   --num-items: 8;
   --ani-offset: calc(var(--width) * var(--num-items) * -1);
   --ani-speed: 20s;
-  width: 700px;
+  width: 400px;
   overflow: hidden;
   position: relative;
 }
