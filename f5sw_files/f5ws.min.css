@@ -2413,7 +2413,7 @@ figcaption {
 
 .container {
   width: 100%;
-  max-width: 1200px;
+  max-width: 1250px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 32px;
@@ -2426,8 +2426,8 @@ figcaption {
   justify-content: space-evenly;
   align-items: center;
   display: flex;
-  flex-direction: row;
-  gap:20px;
+  flex-direction: row-reverse;
+  gap: 20px;
 }
 
 .container.large {
