@@ -13841,11 +13841,11 @@ f .padding-section-medium {
 .grid-container-2 {
   padding-bottom: 50px;
   margin: 50px auto;
-  width: 80%;
+  width: 95%;
   height: 100%;
   display: grid;
   grid-auto-columns: 1fr;
-  gap: 1em;
+  gap: 3em;
   grid-template-areas:
     'one one two two three three'
 
@@ -14184,13 +14184,13 @@ color: var(--black)
   transition: color 0.25s;
 }
 
-.card h4 {
+.card h6 {
   z-index: 2;
   position: relative;
   margin: 12px 0 4px 0;
   font-family: inherit;
   font-weight: 600;
-  font-size: 14px;
+  font-size: 18px;
   line-height: 2;
   color: var(--card-label-color);
 }
@@ -14199,7 +14199,7 @@ color: var(--black)
   z-index: 2;
   position: relative;
   margin: 0;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.7;
   color: var(--text-color);
 }
@@ -14561,7 +14561,7 @@ color: var(--black)
   flex-direction: column;
   flex-wrap: wrap;
   align-content: center;
-  padding: 42px;
+  padding: 35px;
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
   justify-content: center;
