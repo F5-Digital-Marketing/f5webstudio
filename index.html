@@ -671,6 +671,107 @@
       <div id="w-node-_86df5418-d57b-53a1-3c41-22c9211a2358-aa039404">
         <p class="heading-jobs">Você tem um projeto?</p>
         <a href="https://WA.ME/5545999129157" target="_blank" class="btn-b">
+          <div>
+            <div class="flex items-center min-h-screen bg-gray-50 dark:bg-gray-900">
+              <div class="container mx-auto">
+                <div>
+                  <div class="text-center">
+                    <h1 class="bento-text-gradient-coral-yellow-dark">
+                      Contact Us
+                    </h1>
+                    <p class="">
+                      Fill up the form below to send us a message.
+                    </p>
+                  </div>
+                  <div class="m-7">
+                    <form class="grid-2-col" action="https://api.web3forms.com/submit" method="POST" id="form">
+                      <input type="hidden" name="access_key" value="4535ea3e-6cec-4f29-bc17-80b4c158063a">
+                      <input type="hidden" name="subject" value="New Submission from Web3Forms">
+                      <input type="checkbox" name="botcheck" id="" style="display: none;">
+                      <input type="hidden" name="replyto" value="cmteaoliveira@gmail.com"/>
+
+                      <div class="mb-6">
+                        <label for="name" class="block mb-2 text-sm text-gray-600 dark:text-gray-400">Full
+                          Name</label>
+                        <input type="text" name="name" id="name" placeholder="John Doe" required="" class="">
+                      </div>
+                      <div class="mb-6">
+                        <label for="email" class="block ">Email
+                          Address</label>
+                        <input type="email" name="email" id="email" placeholder="you@company.com" required=""
+                          class="">
+                      </div>
+                      <div class="mb-6">
+                        <label for="phone" class="">Phone Number</label>
+                        <input type="text" name="phone" id="phone" placeholder="+1 (555) 1234-567" required=""
+                          class="">
+                      </div>
+                      <div class="mb-6">
+                        <label for="message" class="">Your
+                          Message</label>
+
+                        <textarea rows="2" name="message" id="message" placeholder="Your Message" class=""
+                          required=""></textarea>
+                      </div>
+                      <div class="mb-6">
+                        <button type="submit" class="0 focus:outline-none">
+                          Send Message
+                        </button>
+                      </div>
+                      <p class="text-base text-center text-gray-400" id="result"></p>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <script>
+              const form = document.getElementById("form");
+              const result = document.getElementById("result");
+
+              form.addEventListener("submit", function (e) {
+                const formData = new FormData(form);
+                e.preventDefault();
+                var object = {};
+                formData.forEach((value, key) => {
+                  object[key] = value;
+                });
+                var json = JSON.stringify(object);
+                result.innerHTML = "Please wait...";
+
+                fetch("https://api.web3forms.com/submit", {
+                  method: "POST",
+                  headers: {
+                    "Content-Type": "application/json",
+                    Accept: "application/json"
+                  },
+                  body: json
+                })
+                  .then(async (response) => {
+                    let json = await response.json();
+                    if (response.status == 200) {
+                      result.innerHTML = json.message;
+                      result.classList.remove("text-gray-500");
+                      result.classList.add("text-green-500");
+                    } else {
+                      console.log(response);
+                      result.innerHTML = json.message;
+                      result.classList.remove("text-gray-500");
+                      result.classList.add("text-red-500");
+                    }
+                  })
+                  .catch((error) => {
+                    console.log(error);
+                    result.innerHTML = "Something went wrong!";
+                  })
+                  .then(function () {
+                    form.reset();
+                    setTimeout(() => {
+                      result.style.display = "none";
+                    }, 5000);
+                  });
+              });
+            </script>
+          </div>
           <div class="btn-container">
             <button class="btn">Vamos Conversar</button>
           </div>
@@ -801,108 +902,6 @@
             </div>
           </div>
           <div id="w-node-_550879a7-f201-446e-f600-a1b9f248b590-c31c4a88" class="content-wrapper">
-
-            <div>
-              <div class="flex items-center min-h-screen bg-gray-50 dark:bg-gray-900">
-                <div class="container mx-auto">
-                  <div>
-                    <div class="text-center">
-                      <h1 class="bento-text-gradient-coral-yellow-dark">
-                        Contact Us
-                      </h1>
-                      <p class="">
-                        Fill up the form below to send us a message.
-                      </p>
-                    </div>
-                    <div class="m-7">
-                      <form class="grid-2-col" action="https://api.web3forms.com/submit" method="POST" id="form">
-                        <input type="hidden" name="access_key" value="4535ea3e-6cec-4f29-bc17-80b4c158063a">
-                        <input type="hidden" name="subject" value="New Submission from Web3Forms">
-                        <input type="checkbox" name="botcheck" id="" style="display: none;">
-                        <input type="hidden" name="replyto" value="cmteaoliveira@gmail.com"/>
-
-                        <div class="mb-6">
-                          <label for="name" class="block mb-2 text-sm text-gray-600 dark:text-gray-400">Full
-                            Name</label>
-                          <input type="text" name="name" id="name" placeholder="John Doe" required="" class="">
-                        </div>
-                        <div class="mb-6">
-                          <label for="email" class="block ">Email
-                            Address</label>
-                          <input type="email" name="email" id="email" placeholder="you@company.com" required=""
-                            class="">
-                        </div>
-                        <div class="mb-6">
-                          <label for="phone" class="">Phone Number</label>
-                          <input type="text" name="phone" id="phone" placeholder="+1 (555) 1234-567" required=""
-                            class="">
-                        </div>
-                        <div class="mb-6">
-                          <label for="message" class="">Your
-                            Message</label>
-
-                          <textarea rows="2" name="message" id="message" placeholder="Your Message" class=""
-                            required=""></textarea>
-                        </div>
-                        <div class="mb-6">
-                          <button type="submit" class="0 focus:outline-none">
-                            Send Message
-                          </button>
-                        </div>
-                        <p class="text-base text-center text-gray-400" id="result"></p>
-                      </form>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <script>
-                const form = document.getElementById("form");
-                const result = document.getElementById("result");
-
-                form.addEventListener("submit", function (e) {
-                  const formData = new FormData(form);
-                  e.preventDefault();
-                  var object = {};
-                  formData.forEach((value, key) => {
-                    object[key] = value;
-                  });
-                  var json = JSON.stringify(object);
-                  result.innerHTML = "Please wait...";
-
-                  fetch("https://api.web3forms.com/submit", {
-                    method: "POST",
-                    headers: {
-                      "Content-Type": "application/json",
-                      Accept: "application/json"
-                    },
-                    body: json
-                  })
-                    .then(async (response) => {
-                      let json = await response.json();
-                      if (response.status == 200) {
-                        result.innerHTML = json.message;
-                        result.classList.remove("text-gray-500");
-                        result.classList.add("text-green-500");
-                      } else {
-                        console.log(response);
-                        result.innerHTML = json.message;
-                        result.classList.remove("text-gray-500");
-                        result.classList.add("text-red-500");
-                      }
-                    })
-                    .catch((error) => {
-                      console.log(error);
-                      result.innerHTML = "Something went wrong!";
-                    })
-                    .then(function () {
-                      form.reset();
-                      setTimeout(() => {
-                        result.style.display = "none";
-                      }, 5000);
-                    });
-                });
-              </script>
-            </div>
           </div>
         </div>
       </div>
