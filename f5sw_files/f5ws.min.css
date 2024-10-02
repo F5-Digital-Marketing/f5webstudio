@@ -14897,7 +14897,6 @@ color: var(--black)
   border: 2px solid linear-gradient(to left,var(--btn-color)20%,transparent 50%);;
   transition: 100ms ease;
   box-shadow: -5px 5px 0 0 var(--btn-color);
-
 }
 
 .btn--secondary {
@@ -15038,4 +15037,8 @@ color: var(--black)
   padding: 10px;
 }
 
+}
+
+.banner-section-outer{
+  height: max-content;
 }
