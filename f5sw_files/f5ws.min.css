@@ -6151,7 +6151,6 @@ figcaption {
 .content-wrapper-top-split {
   z-index: 2;
   grid-column-gap: 16px;
-  grid-row-gap: 16px;
   flex-direction: column;
   align-items: flex-start;
   width: 100%;
@@ -14898,7 +14897,7 @@ color: var(--black)
   border: 2px solid linear-gradient(to left,var(--btn-color)20%,transparent 50%);;
   transition: 100ms ease;
   box-shadow: -5px 5px 0 0 var(--btn-color);
-  transform: rotate(356deg); 
+
 }
 
 .btn--secondary {
