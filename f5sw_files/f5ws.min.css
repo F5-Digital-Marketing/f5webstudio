@@ -2124,7 +2124,7 @@ textarea.w-select {
 }
 
 :root {
-  --black: #10101b;
+  --black: #080809;
   --dark-blue: #080811;
   --pink-dark: #E5003C;
   --dark-slate-grey: #f3ecec;
@@ -2155,7 +2155,7 @@ textarea.w-select {
 }
 
 body {
-  background-color:var(--dark-blue);
+  background-color:var(--black);
   color: var(--dark-slate-grey);
   font-family: Cerapro, sans-serif;
   font-size: 18px;
@@ -6283,7 +6283,7 @@ figcaption {
 }
 
 .bg-white {
-background-color: #2a0e3a;
+background-color: var(--dark-blue);
   color: var(--dark-slate-grey);
 }
 
@@ -14133,7 +14133,7 @@ color: var(--black)
 
 .card {
   height: -webkit-fill-available;
-  background-color: var(--background-color);
+  background-color: var(--dark-blue);
   box-shadow: 0px var(--card-box-shadow-1-y) var(--card-box-shadow-1-blur) var(--card-box-shadow-1), 0px var(--card-box-shadow-2-y) var(--card-box-shadow-2-blur) var(--card-box-shadow-2), 0 0 0 1px var(--card-border-color);
   padding: 56px 16px 16px 16px;
   border-radius: 15px;
@@ -14689,11 +14689,6 @@ color: var(--black)
   height: 60% !important;
 }
 
-  /*BACKGOROUND*/
-  .pattern-2 {
-    background-color: var(--dark-blue);
-    opacity: 1;
-  }
 
 
   .overlay-head-2 {
