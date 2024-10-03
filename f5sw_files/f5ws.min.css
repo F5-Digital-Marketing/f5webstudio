@@ -8999,6 +8999,12 @@ f .padding-section-medium {
   .grid-4c.inner-padding-medium.press {
     grid-template-columns: 1fr
   }
+}
+ 
+@media screen and (min-width:480px) and (max-width:991px) {
+  .text-align-center.heading-xlarge.text-weight-thin.title-pillars {
+    line-height: 2.5em;
+  }
 
 }
 
