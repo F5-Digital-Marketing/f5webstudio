@@ -14824,11 +14824,11 @@ color: var(--black)
 }
 .carousel-wrapper::before{
   left: 0;
-  background-image: linear-gradient(to right,var(--dark-blue) 0%,transparent 50%);
+  background-image: linear-gradient(to right,var(--black) 0%,transparent 50%);
 }
 .carousel-wrapper::after{
   right: 0;
-  background-image: linear-gradient(to left,var(--dark-blue) 0%,transparent 50%);
+  background-image: linear-gradient(to left,var(--black) 0%,transparent 50%);
 }
 
 
@@ -15065,12 +15065,13 @@ select {
   height: auto;
   margin: 0;
   outline: 0;
-  padding: 15px;
+  padding: 8px;
   width: 100%;
   background-color: #e8eeef;
   color: #8a97a0;
   box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
   margin-bottom: 30px;
+  border-radius: 2px;
 }
 
 input[type="radio"],
@@ -15079,7 +15080,7 @@ input[type="checkbox"] {
 }
 
 select {
-  padding: 6px;
+  padding: 8px;
   height: 32px;
   border-radius: 2px;
 }

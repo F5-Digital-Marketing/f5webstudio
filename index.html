@@ -597,28 +597,35 @@
                   <div class="m-7">
                     <form action="https://api.form-data.com/f/nnraatp5eq9cdnhgn2ccdi"
                     method="post">
-                    <input type="hidden" name="replyto" value="cmteaoliveira@gmail.com">                    
+                    <input type="hidden" name="replyto" value="cmteaoliveira@gmail.com">
+                    <div style="display:inline-flex;gap:10px;">
+                      <div>                    
                         <label for="name">nome:</label>
-                        <input type="text" id="name" name="user_name">                     
-                        <label for="number">Número para contato:</label>
-                        <input type="tel" id="tel" name="contato">        
+                        <input type="text" id="name" name="user_name"></div>
+                        <div>                  
+                        <label for="number">Contato:</label>
+                        <input type="tel" id="tel" name="contato"> </div> </div>      
                       <fieldset>  
                        <label for="servicos">Serviços:</label>
                         <select id="job" name="user_job">
-                          <optgroup label="Web">
+                          <optgroup label="Serviços">
                             <option value="website">Website</option>
                             <option value="landing_page">Landing page</option>
                             <option value="automacoes">Automações de marketing</option>
                             <option value="parcerias">Parcerias</option>
                           </optgroup>      
                         </select>
-                      </fieldset>                      
-                        <label>Orçamento Disponível</label>
-                        <input type="radio" id="800" value="800" name="orcamento"><label for="800" class="light">Até R$800,00</label><br>
-                        <input type="radio" id="1500" value="1500" name="orcamento"><label for="1500" class="light">Até R$1.500,00</label>
-                        <input type="radio" id="2200" value="2200" name="orcamento"><label for="2200" class="light">Até R$2.200,00</label>
-                        <input type="radio" id="5000" value="5000" name="orcamento"><label for="5000" class="light">Até R$5.500,00</label>   
-                       </fieldset>                    
+                      
+                      <label for="orcamento" >Orçamento Disponível</label>
+                      <select id="orcamento" name="orcamento">
+                        <optgroup label="Serviços">
+                          <option value="800">Até R$800,00</option>
+                          <option value="1500">Até R$1.500,00</option>
+                          <option value="2200">Até R$2.200,00</option>
+                          <option value="5000">Até R$5.000,00</option>
+                          <option value="personalizado">Quero algo personalizado</option>
+                        </optgroup>      
+                      </select> </fieldset>                   
                      <button type="submit">Enviar</button>                    
                      </form>
                   </div>
