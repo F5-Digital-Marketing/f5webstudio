@@ -10836,7 +10836,7 @@ f .padding-section-medium {
 
 @media screen and (max-width:479px) {
   h1 {
-    font-size: 31px
+    font-size: 65px
   }
 
   h2 {
@@ -15227,8 +15227,8 @@ em:hover path {
   }}
   
   .headline path {
-stroke: magenta;
-    stroke-width: 0.15em;
+stroke: #E5003C;
+    stroke-width: 0.10em;
 }
 
 @media screen and (min-width: 701px) {
