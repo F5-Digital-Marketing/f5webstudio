@@ -14125,7 +14125,6 @@ color: var(--black)
 .card {
   --background-color: #171725;
   --text-color: #A1A1AA;
-  --card-background-color: #c88d8d05;
   --card-border-color: #ffffff1a;
   --card-box-shadow-1: #0000000d;
   --card-box-shadow-1-y: 3px;
@@ -14139,7 +14138,7 @@ color: var(--black)
   --card-icon-border-color: #ffffff1f;
   --card-shine-opacity: .1;
   --card-shine-gradient: conic-gradient(from 205deg at 50% 50%, #2A2B2C 0deg, #2A2B2C 25deg, #ee0b53 295deg, #222 360deg);
-  --card-line-color: #2A2B2C;
+  --card-line-color: #141516;
   --card-tile-color: #fcd4de26;
   --card-hover-border-color: #222;
   --card-hover-box-shadow-1: #0000000a;
