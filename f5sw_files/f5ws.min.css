@@ -15242,6 +15242,10 @@ stroke: #E5003C;
 
 /**SLIDER-CASE**/
 #slider-case{
+  overflow: hidden;
   display: flex;
+}
+.slider-container {
+  --swiffy-slider-item-width: 850px !important
 }
 
