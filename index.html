@@ -38,8 +38,10 @@
   <link rel="stylesheet" href="https://unpkg.com/lenis@1.1.13/dist/lenis.css">
   <link href="https://fonts.googleapis.com/" rel="preconnect">
   <link href="https://fonts.gstatic.com/" rel="preconnect" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/js/swiffy-slider.min.js" crossorigin="anonymous" defer></script>
-<link href="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/css/swiffy-slider.min.css" rel="stylesheet" crossorigin="anonymous">
+ <!-- CSS -->
+<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+<!-- JavaScript -->
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
   <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script> 
   <script async="" src="/f5sw_files/webfont.js" type="text/javascript"></script>
   <script type="text/javascript">!function (o, c) { var n = c.documentElement, t = " w-mod-"; n.className += t + "js", ("ontouchstart" in o || o.DocumentTouch && c instanceof DocumentTouch) && (n.className += t + "touch") }(window, document);
@@ -171,48 +173,18 @@
         </div>
 </section>
 <section id="slider-cases">
-  <div class="swiffy-slider slider-item-show2 slider-item-reveal slider-nav-round slider-item-ratio" id="slider1">
-    <ul class="slider-container">
-        <li> <img src="https://res.cloudinary.com/dohfsymfd/image/upload/f_auto,q_auto/v1/f5web-estudio/resize/forthe-lp-f5" loading="lazy" alt="forthe-solar-landing-page" width="1250" height="881"></li>
-        <li><img src="https://res.cloudinary.com/dohfsymfd/image/upload/f_auto,q_auto/v1/f5web-estudio/resize/ltv-lp-f5" loading="lazy" alt="ltv-mentoria-landing-page" width="1250" height="881"></li>
-        <li><img src="https://res.cloudinary.com/dohfsymfd/image/upload/f_auto,q_auto/v1/f5web-estudio/resize/estacao-lp-f5" loading="lazy" alt="estacao-solar-landing-page" width="1250" height="881"></li>
-        <li><img src="https://res.cloudinary.com/dohfsymfd/image/upload/f_auto,q_auto/v1/f5web-estudio/resize/forthe-lp-f5" loading="lazy" alt="forthe-solar-landing-page" width="1250" height="881"></li>
-    </ul>
+  <p><code>wrapAround: true</code></p>
 
-    <button type="button" class="slider-nav" aria-label="Go left"></button>
-    <button type="button" class="slider-nav slider-nav-next" aria-label="Go left"></button>
-
-    <div class="slider-indicators slider-indicators-square d-none d-md-flex">
-        <button class="active" aria-label="Go to slide"></button>
-        <button aria-label="Go to slide"></button>
-        <button aria-label="Go to slide"></button>
-        <button aria-label="Go to slide"></button>
-    </div>
-
-    <div class="slider-indicators slider-indicators-sm slider-indicators-dark slider-indicators-round d-md-none slider-indicators-highlight">
-        <button class="active" aria-label="Go to slide"></button>
-        <button aria-label="Go to slide"></button>
-        <button aria-label="Go to slide"></button>
-        <button aria-label="Go to slide"></button>
-    </div>
-</div>
-
-    <div>
-      <div class="half-container">
-        <div class="content-wrapper-top-split"><img src="" loading="lazy" sizes="100vw">
-          <div data-w-id="eab8bda3-4e1b-9d17-8c3a-2f0a142dc913" class="bento-text-gradient-silver heading-large">
-            Por trás de</div>
-            <div data-w-id="eab8bda3-4e1b-9d17-8c3a-2f0a142dc913" class="bento-text-gradient-silver heading-large">
-           cada página...</div>
-          <p style="padding-top: 20px;" data-w-id="eab8bda3-4e1b-9d17-8c3a-2f0a142dc913">
-            Possuem etapas que resultam em uma estrutura digital essencial para o marketing do seu negócio.
-          </p>
-        </div>
-      </div>
-    </div>
+  <!-- Flickity HTML init -->
+  <div class="gallery js-flickity"
+    data-flickity-options='{ "wrapAround": true }'>
+    <div class="gallery-cell"></div>
+    <div class="gallery-cell"></div>
+    <div class="gallery-cell"></div>
+    <div class="gallery-cell"></div>
+    <div class="gallery-cell"></div>
   </div>
-
-
+  
 </section>
         <section class="slider pt-4">
           <div class="slide-track">
