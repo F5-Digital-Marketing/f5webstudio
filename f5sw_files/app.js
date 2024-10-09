@@ -9,7 +9,7 @@ new Swiper("#swiper-2", {
         clickable: true,
         renderBullet: function (index, className) {
         return `<div class=${className}>
-            
+            <span class="number"></span>
             <span class="line"></span>
             </div>`;
         }
