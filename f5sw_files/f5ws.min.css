@@ -15321,7 +15321,7 @@ stroke: #E5003C;
   display: block;
   width: 100%;
   height: 40rem;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .swiper-slide figure {
