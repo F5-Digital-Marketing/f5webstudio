@@ -12926,6 +12926,7 @@ f .padding-section-medium {
 }
 
 #w-node-_86df5418-d57b-53a1-3c41-22c9211a2358-aa039404 {
+  width: 500px;
   grid-area: span 1/span 1/span 1/span 1
 }
 
@@ -13646,18 +13647,30 @@ f .padding-section-medium {
   transition: 0.9s;
 }
 
+.scream3d img:nth-child(7) {
+  transform: translate(80px, -60px) rotate(10deg);
+  opacity: 1;
+}
 .scream3d:hover img:nth-child(7) {
-  transform: translate(110px, -30px) rotate(0deg);
+  transform: translate(100px, -60px) rotate(12deg);
   opacity: 1;
 }
 
+.scream3d img:nth-child(6) {
+  transform: translate(40px, -20px) rotate(1deg);
+  opacity: 1;
+}
 .scream3d:hover img:nth-child(6) {
-  transform: translate(-31px, -30px) rotate(5deg);
+  transform: translate(20px, -30px) rotate(5deg);
   opacity: 1;
 }
 
+.scream3d img:nth-child(5) {
+  transform: translate(40px, -20px) rotate(1deg);
+  opacity: 1;
+}
 .scream3d:hover img:nth-child(5) {
-  transform: translate(0px, -77px) rotate(15deg);
+  transform: translate(-40px, -7px) rotate(1deg);
   opacity: 1;
 }
 
@@ -13703,10 +13716,9 @@ f .padding-section-medium {
 
 .scream3d img:nth-child(1) {
   width: 80px;
-  transform: scale(0.2) translate(237px, 200px);
+  transform: scale(0.2) translate(777px, 200px);
   transition: 1.92s;
 }
-
 
 
 /* lottie */
