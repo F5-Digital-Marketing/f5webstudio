@@ -2598,7 +2598,7 @@ figcaption {
 
 .main-paragraph {
   opacity: 1;
-  font-size: 22px;
+  font-size: 19px;
   font-weight: 300;
   line-height: 1.5
 }
@@ -6829,8 +6829,8 @@ f .padding-section-medium {
 }
 
 .padding-vertical {
-  padding-left: 100px;
-  padding-right: 100px;
+  padding-left: 200px;
+  padding-right: 200px;
 }
 
 .aspect-ratio-square {
