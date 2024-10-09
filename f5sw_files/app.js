@@ -1,3 +1,5 @@
+
+
 new Swiper("#swiper-2", {
     slidesPerView: 1,
     centeredSlides: true,
@@ -23,7 +25,7 @@ new Swiper("#swiper-2", {
     },
     breakpoints: {
         800: {
-            slidesPerView: 2.5
+            slidesPerView: 1.5
         },
         1400: {
             slidesPerView: 3
