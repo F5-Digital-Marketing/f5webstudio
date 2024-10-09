@@ -15402,7 +15402,8 @@ stroke: #E5003C;
 }
 
 .swiper-custom-pagination .number {
-  opacity: 0;
+  opacity: 20%;
+  transform: scale(-1em);
   transition: all .3s ease-in-out;
 }
 
