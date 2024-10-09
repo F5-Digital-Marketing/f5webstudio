@@ -14141,7 +14141,7 @@ color: var(--black)
   --card-box-shadow-1: #0000000d;
   --card-box-shadow-1-y: 3px;
   --card-box-shadow-1-blur: 6px;
-  --card-box-shadow-2: #0000001a;
+  --card-box-shadow-2: #00000000;
   --card-box-shadow-2-y: 8px;
   --card-box-shadow-2-blur: 15px;
   --card-label-color: #ffffff;
@@ -14149,20 +14149,20 @@ color: var(--black)
   --card-icon-background-color: #ffffff14;
   --card-icon-border-color: #ffffff1f;
   --card-shine-opacity: .1;
-  --card-shine-gradient: conic-gradient(from 205deg at 50% 50%, #2A2B2C 0deg, #2A2B2C 25deg, #ee0b53 295deg, #222 360deg);
+  --card-shine-gradient: conic-gradient(from 205deg at 50% 50%, #2A2B2C 0deg, #2A2B2C 25deg, #3c3c3c 295deg, #222 360deg);
   --card-line-color: #141516;
-  --card-tile-color: #fcd4de26;
+  --card-tile-color: #afafaf26;
   --card-hover-border-color: #222;
-  --card-hover-box-shadow-1: #0000000a;
+  --card-hover-box-shadow-1: #00000052;
   --card-hover-box-shadow-1-y: 5px;
-  --card-hover-box-shadow-1-blur: 10px;
-  --card-hover-box-shadow-2: #0000004d;
-  --card-hover-box-shadow-2-y: 15px;
-  --card-hover-box-shadow-2-blur: 25px;
+  --card-hover-box-shadow-1-blur: 20px;
+  --card-hover-box-shadow-2: #00000026;
+  --card-hover-box-shadow-2-y: 7px;
+  --card-hover-box-shadow-2-blur: 15px;
   --card-hover-icon-color: #241d41;
   --card-hover-icon-background-color: #10101b;
-  --card-hover-icon-border-color: #ee0b53;
-  --blur-opacity: .01;
+  --card-hover-icon-border-color: #6a6a6a;
+  --blur-opacity: .011;
 }
 
 
@@ -15148,17 +15148,16 @@ label.light {
 }
 
 .number {
-  background-color: #353535;
+  background-color: #fff;
   color: #fff;
   height: 15px;
   width: 15px;
   display: inline-block;
   font-size: 0.8em;
-  margin-right: 4px;
   line-height: 30px;
   text-align: center;
   text-shadow: 0 1px 0 rgba(255,255,255,0.2);
-  border-radius: 100%;
+  border-radius: 3px;
 }
 
 @media screen and (min-width: 480px) {
