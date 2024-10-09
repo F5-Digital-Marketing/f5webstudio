@@ -15261,13 +15261,6 @@ stroke: #E5003C;
   --primary-ff: 'EB Garamond', Georgia, serif;
   --secondary-ff: 'Montserrat', Helvetica, sans-serif;
 }
-
-/* Typography */
-
-
-
-
-
 /* Header */
 #main-header {
   text-align: center;
@@ -15295,12 +15288,6 @@ stroke: #E5003C;
 
 #slider-2 {
   padding-bottom: 7.5rem;
-}
-
-/* Container */
-.container {
-  max-width: 46rem;
-  margin: auto;
 }
 
 
