@@ -754,10 +754,16 @@
                 </select>
               </div>
             </fieldset>
-            <button type="submit">Enviar</button>
+            <button onclick="myFunction()" type="submit">Enviar</button>
           </form>
         </div>
       </div>
+      <script>
+        function myFunction() {
+          var x = document.getElementById("immigrant").required;
+          document.getElementById("demo").innerHTML = x;
+        }
+        </script>
       <script>
         fetch("https://api.form-data.com/f/nnraatp5eq9cdnhgn2ccdi", {
           method: "post",
