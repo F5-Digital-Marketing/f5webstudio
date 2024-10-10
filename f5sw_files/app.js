@@ -34,18 +34,3 @@ new Swiper("#swiper-2", {
 });
 
 //form//
-const $select = $('[name=contact]');
-
-$select.on('change', (e) => {
-  const value = e.currentTarget.value;
-  
-  $('.js-select')
-    .removeClass('input--show')
-    .find('input')
-    .attr('required', false);
-  
-  $('#' + value)
-    .addClass('input--show')
-    .find('input')
-    .attr('required', true);
-});

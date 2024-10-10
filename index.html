@@ -633,13 +633,7 @@
                             <input type="checkbox">
                             Make a wish!
                           </label>
-                        
-                                          
-                        <label for="name">nome:</label>
-                        <input type="text" id="name" name="user_name"></div>
-                        <div>                  
-                        <label for="number">Contato:</label>
-                        <input type="tel" id="tel" name="contato"> </div> </div>      
+                                           
                       <fieldset>  
                        <label for="servicos">Serviços:</label>
                         <select id="job" name="user_job">
@@ -668,6 +662,22 @@
               </div>
             </div>
             <script>
+              const $select = $('[name=contact]');
+
+$select.on('change', (e) => {
+  const value = e.currentTarget.value;
+  
+  $('.js-select')
+    .removeClass('input--show')
+    .find('input')
+    .attr('required', false);
+  
+  $('#' + value)
+    .addClass('input--show')
+    .find('input')
+    .attr('required', true);
+});
+
               fetch("https://api.form-data.com/f/nnraatp5eq9cdnhgn2ccdi", {
   method:"post",
   body: myFormData,
