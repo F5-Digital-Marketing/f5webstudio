@@ -15125,8 +15125,8 @@ input[type="checkbox"] {
 }
 
 select {
+  width: 100%;
   padding: 8px;
-  height: 32px;
   border-radius: 2px;
 }
 
