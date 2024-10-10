@@ -15171,17 +15171,39 @@ label.light {
 
 }
 
-.input--hide {
-  position: absolute;
-  left: -9999px;
-  opacity: 0;
-  transiton: opacity .3s ease;
+select, input, textarea {
+  border: 1px solid lightgray;
+  width: 300px;
+  border-radius: 3px;
+  height: 30px;
 }
 
-.input--show {
-  opacity: 1;
-  position: static;
+textarea {
+  height: 70px !important;
 }
+
+.form_problem, .form_problem_software, .form_problem_hardware, .form_problem_rd-abrechnung,
+.form_problem_drucker, .form_lstnummer, .form_wo, .form_kurzbeschreibung, .form_welches, .form_email{
+  margin-top: 20px;
+}
+
+.form_wrapper {
+  padding: 30px;
+  width: 900px;
+  margin: 0px, auto;
+}
+
+div input, div select {
+  margin-top: 5px;
+}
+
+div label {
+  margin-left: 5px;
+}
+
+
+
+
 
 /*STROKE-EFFECT*/
 

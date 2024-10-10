@@ -607,31 +607,68 @@
                       Fill up the form below to send us a message.
                     </p>
                   </div>
-                    <form action="">
-    <h2>Example Two</h2>
-    <label>
-      Contact Preferences
-      <select name="contact">
-        <option>Please select...</option>
-        <option value="Email">Email</option>
-        <option value="Phone">Phone</option>
-        <option value="Pigeon">Pigeon</option>
-      </select>
-    </label>
-    <label class="input--hide js-select" id="Email">
-      Email
-      <input type="email">
-    </label>
-      <label class="input--hide js-select" id="Phone">
-      Phone Number
-      <input type="tel">
-    </label>
-    <label class="input--hide js-select" id="Pigeon">
-      <input type="checkbox">
-      Make a wish!
-    </label>
-    <input type="submit">
-  </form>
+                  <div id="hcwh-form">
+                    <form method="GET">
+                      <label for="who">I am a</label>
+                        <select  name="who" id="who">
+                          <option value="">Select One</option>
+                          <option value="A">Developer</option>
+                          <option value="B">Designer</option>
+                        </select>
+                      <label>And I do </label>
+                        <select  name="blank" id="blank" onchange="location = this.value;">
+                          <option value="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</option>
+                        </select>
+                      <select  name="developer" id="developer">
+                       <option value="">Select One</option>
+                       <option value="#">Python</option>
+                       <option value="#">Javascript</option>
+                       <option value="#">Java</option>
+                       <option value="#">C++</option>
+                       <option value="#">C#</option>
+                       <option value="#">Go</option>
+                      </select>
+                      <select name="designer" id="designer">
+                       <option value="">Select One</option>
+                       <option value="#">Photoshop</option>
+                       <option value="#">Illustrator</option>
+                       <option value="#">Sketch</option>
+                       <option value="#">Adobe XD</option>
+                       <option value="#">Notepad</option>
+                      </select> 
+                      <input type="submit" value="hire me"></input>
+                  </form>
+                  </div>
+                      <script>
+                        $(document).ready(function() {
+    var developer = $('#developer');
+    var designer = $('#designer');
+    var blank = $('#blank');
+    designer.hide();
+    developer.hide();
+    blank.show();
+  
+$('#who').change(function() {         
+  var selectedValue = $(this).val();
+
+  if(selectedValue  === 'A') {
+    blank.hide();
+    designer.hide();
+    developer.show();
+  } else if (selectedValue === 'B') {
+    blank.hide();
+    developer.hide();
+    designer.show();
+  } else {
+    blank.show();
+    developer.hide();
+    designer.hide();
+  }
+ 
+    });
+});
+                     </script>
+                    
                   <div class="m-7">
                     <form action="https://api.form-data.com/f/nnraatp5eq9cdnhgn2ccdi"
                     method="post">
