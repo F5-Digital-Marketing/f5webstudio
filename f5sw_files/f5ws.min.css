@@ -4851,7 +4851,7 @@ figcaption {
 }
 
 .hero-image_wrapper.max-h {
-  width: 400px;
+  width: 550px;
   justify-content: center;
   align-items: center;
   height: 100%;
@@ -6339,10 +6339,10 @@ background-color: var(--dark-blue);
 }
 
 .grid-content-jobs {
-  grid-column-gap: 200px;
+  grid-column-gap: 20px;
   grid-row-gap: 80px;
   grid-template-rows: auto;
-  grid-template-columns: .7fr 1fr
+  grid-template-columns: .7fr .7fr
 }
 
 .grid-content-jobs.inner-padding-large.is-code {
@@ -15179,6 +15179,7 @@ label.light {
 			#immigrant:checked ~ .conditional,
 			#required-2:checked ~ .conditional
 			#option-2:checked ~ .conditional {
+        padding: 10px;
 				clip: auto;
 				height: auto;
 				margin: 0;
@@ -15200,6 +15201,10 @@ label.light {
 				position: absolute;
 				width: 1px;
 			}
+      ol{
+      padding-inline-start: 0;
+      }
+
 
 
 
