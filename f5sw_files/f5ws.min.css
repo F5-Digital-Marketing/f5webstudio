@@ -15199,7 +15199,7 @@ label.light {
 				overflow: hidden;
 				padding: 0;
 				position: absolute;
-				width: 1px;
+				width: 80px;
 			}
       ol{
       padding-inline-start: 0;
@@ -15235,16 +15235,16 @@ align-items: center;
 align-content: center;
 flex-wrap: nowrap;
 }
-
 fieldset{
   display: block;
-  margin-inline-start: 0;
-  margin-inline-end: 0;
-  padding-block-start: 0;
-  padding-inline-start: 0;
-  padding-inline-end: 0;
-  padding-block-end: 0;
+margin-inline-start: 0;
+margin-inline-end: 0;
+padding-block-start: 0;
+padding-inline-start: 0;
+padding-inline-end: 0;
+padding-block-end: 0;
 }
+
 
 
 
