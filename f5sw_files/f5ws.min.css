@@ -2367,14 +2367,17 @@ figcaption {
 }
 
 .content-wrapper {
+  gap: 50px;
   z-index: 2;
-  flex-direction: column;
+  flex-direction: row;
   align-items: flex-start;
   width: 100%;
   height: 100%;
   display: flex;
-  position: relative
+  position: relative;
+  justify-content: flex-start;
 }
+
 
 .content-wrapper.padding-bottom-small {
   z-index: 1
@@ -15171,37 +15174,32 @@ label.light {
 
 }
 
-select, input, textarea {
-  border: 1px solid lightgray;
-  width: 300px;
-  border-radius: 3px;
-  height: 30px;
-}
 
-textarea {
-  height: 70px !important;
-}
+.control:checked ~ .conditional,
+			#immigrant:checked ~ .conditional,
+			#required-2:checked ~ .conditional
+			#option-2:checked ~ .conditional {
+				clip: auto;
+				height: auto;
+				margin: 0;
+				overflow: visible;
+				position: static;
+				width: auto;
+			}
 
-.form_problem, .form_problem_software, .form_problem_hardware, .form_problem_rd-abrechnung,
-.form_problem_drucker, .form_lstnummer, .form_wo, .form_kurzbeschreibung, .form_welches, .form_email{
-  margin-top: 20px;
-}
-
-.form_wrapper {
-  padding: 30px;
-  width: 900px;
-  margin: 0px, auto;
-}
-
-div input, div select {
-  margin-top: 5px;
-}
-
-div label {
-  margin-left: 5px;
-}
-
-
+			.control:not(:checked) ~ .conditional,
+			#immigrant:not(:checked) ~ .conditional,
+			#required-2:not(:checked) ~ .conditional,
+			#option-2:not(:checked) ~ .conditional {
+				border: 0;
+				clip: rect(0 0 0 0);
+				height: 1px;
+				margin: -1px;
+				overflow: hidden;
+				padding: 0;
+				position: absolute;
+				width: 1px;
+			}
 
 
 
