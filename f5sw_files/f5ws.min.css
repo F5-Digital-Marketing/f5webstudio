@@ -4846,6 +4846,7 @@ figcaption {
 }
 
 .hero-image_wrapper.max-h {
+  width: 400px;
   justify-content: center;
   align-items: center;
   height: 100%;
@@ -5090,6 +5091,9 @@ figcaption {
 
 .max-h {
   max-height: 980px
+}
+.w-600{
+  width: 500px;
 }
 
 .half-container {
@@ -13640,7 +13644,6 @@ f .padding-section-medium {
     transform: translate(15px, -23px) rotate(15deg) scale(0.6);
   }
 }
-
 .scream3d img {
   position: absolute;
   width: 100%;
@@ -13652,7 +13655,7 @@ f .padding-section-medium {
   opacity: 1;
 }
 .scream3d:hover img:nth-child(7) {
-  transform: translate(100px, -60px) rotate(12deg);
+  transform: translate(80px, -60px) rotate(12deg);
   opacity: 1;
 }
 
@@ -13661,16 +13664,16 @@ f .padding-section-medium {
   opacity: 1;
 }
 .scream3d:hover img:nth-child(6) {
-  transform: translate(20px, -30px) rotate(5deg);
+  transform: translate(20px, -30px) rotate(-2deg);
   opacity: 1;
 }
 
 .scream3d img:nth-child(5) {
-  transform: translate(40px, -20px) rotate(1deg);
+  transform: translate(80px, -60px) rotate(10deg);
   opacity: 1;
 }
 .scream3d:hover img:nth-child(5) {
-  transform: translate(-40px, -7px) rotate(1deg);
+  transform: translate(130px, -80px) rotate(20deg);
   opacity: 1;
 }
 
