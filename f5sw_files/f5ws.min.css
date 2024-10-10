@@ -15205,14 +15205,16 @@ label.light {
       padding-inline-start: 0;
       }
 
-
+::marker{
+  display: none;
+}
 
 
 /*STROKE-EFFECT*/
 
 
 .headline {
-  position: relative;
+  position: relative; 
   display: inline-block;
   
 }
