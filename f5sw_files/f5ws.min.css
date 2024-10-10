@@ -15112,7 +15112,16 @@ select {
 
 input[type="radio"],
 input[type="checkbox"] {
-  margin: 0 4px 8px 0;
+  appearance: none;
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  border: 2px solid #999;
+  transition: 0.2s all linear;
+  margin-right: 5px;
+  position: relative;
+  top: 4px;
+
 }
 
 select {
@@ -15203,18 +15212,6 @@ label.light {
 li::marker{
   content: '';
   font-variant-numeric: unset;
-}
-input {
-  appearance: none;
-  border-radius: 50%;
-  width: 16px;
-  height: 16px;
-  border: 2px solid #999;
-  transition: 0.2s all linear;
-  margin-right: 5px;
-
-  position: relative;
-  top: 4px;
 }
 
 input:checked {
