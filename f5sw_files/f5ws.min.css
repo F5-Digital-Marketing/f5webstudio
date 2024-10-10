@@ -15168,7 +15168,6 @@ label.light {
 
 }
 
-
 .input--hide {
   position: absolute;
   left: -9999px;
@@ -15180,6 +15179,7 @@ label.light {
   opacity: 1;
   position: static;
 }
+
 /*STROKE-EFFECT*/
 
 
