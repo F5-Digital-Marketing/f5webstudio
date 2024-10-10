@@ -15059,6 +15059,8 @@ color: var(--black)
 .banner-section-outer{
   height: max-content;
 }
+
+
 /*FORM*/
 form {
   max-width: 300px;
@@ -15164,6 +15166,19 @@ label.light {
     max-width: 480px;
   }
 
+}
+
+
+.input--hide {
+  position: absolute;
+  left: -9999px;
+  opacity: 0;
+  transiton: opacity .3s ease;
+}
+
+.input--show {
+  opacity: 1;
+  position: static;
 }
 /*STROKE-EFFECT*/
 

@@ -613,7 +613,28 @@
                     method="post">
                     <input type="hidden" name="replyto" value="cmteaoliveira@gmail.com">
                     <div style="display:inline-flex;gap:10px;">
-                      <div>                    
+                      <div>
+                            <select name="contact">
+                              <option>Please select...</option>
+                              <option value="Email">Email</option>
+                              <option value="Phone">Phone</option>
+                              <option value="Pigeon">Pigeon</option>
+                            </select>
+                          </label>
+                          <label class="input--hide js-select" id="Email">
+                            Email
+                            <input type="email">
+                          </label>
+                            <label class="input--hide js-select" id="Phone">
+                            Phone Number
+                            <input type="tel">
+                          </label>
+                          <label class="input--hide js-select" id="Pigeon">
+                            <input type="checkbox">
+                            Make a wish!
+                          </label>
+                          <input type="submit">
+                                          
                         <label for="name">nome:</label>
                         <input type="text" id="name" name="user_name"></div>
                         <div>                  
