@@ -15123,6 +15123,11 @@ input[type="checkbox"] {
   top: 4px;
 
 }
+input[type="radio"]:checked{
+  width: 19px;
+  height: 16px;
+}
+
 
 select {
   width: 100%;
@@ -15183,7 +15188,6 @@ label.light {
 			#immigrant:checked ~ .conditional,
 			#required-2:checked ~ .conditional
 			#option-2:checked ~ .conditional {
-        padding: 10px;
 				clip: auto;
 				height: auto;
 				margin: 0;

@@ -701,11 +701,12 @@
             <input type="hidden" name="replyto" value="cmteaoliveira@gmail.com">
             <label id="Name" style="gap: 20px;">Nome</label>
             <input type="text" name="nome" value="" required>
+            <p class="">Como prefere receber seu plano?</p>
             <fieldset>
               <ol style="gap: 50px;">
                 <li class="li-div">
-                  <input style="margin-top: 25px;" type="radio" name="contato" id="immigrant" data-gtm-form-interact-field-id="0">
-                  <label style="margin-top: 25px;width: 30%;" for="immigrant">WhatsApp</label>
+                  <input style="margin-top: 15px;" type="radio" name="contato" id="immigrant" data-gtm-form-interact-field-id="0">
+                  <label style="margin-top: 15px;width: 30%;" for="immigrant">WhatsApp</label>
                   <fieldset class="conditional">
                     <ol>
                       <li>
@@ -716,8 +717,8 @@
                   </fieldset>
                 </li>
                 <li class="li-div">
-                  <input style="margin-top: 25px;" type="radio" name="contato" value="Email" id="immigrant" data-gtm-form-interact-field-id="1">
-                  <label style="margin-top: 25px;width: 30%;" for="immigrant">E-mail</label>
+                  <input style="margin-top: 15px;" type="radio" name="contato" value="Email" id="immigrant" data-gtm-form-interact-field-id="1">
+                  <label style="margin-top: 15px;width: 30%;" for="immigrant">E-mail</label>
                   <fieldset class="conditional">
                     <ol>
                       <li>
@@ -731,9 +732,10 @@
             </fieldset>
             <fieldset class="li-div li-div-s">
               <div style="width: 100%;">
-                <label for="servicos">Serviços:</label>
-                <select id="job" name="serviços" data-gtm-form-interact-field-id="2">
-                  <optgroup label="Serviços">
+                <label for="servicos">Serviços</label>
+                <select id="job" name="serviços" data-gtm-form-interact-field-id="2" required>
+                  <optgroup label="Como podemos ajudar?">
+                    <option hidden disabled selected value> -- Escolha -- </option>
                     <option value="website">Website</option>
                     <option value="landing_page">Landing page</option>
                     <option value="automacoes">Automações de marketing</option>
@@ -743,8 +745,9 @@
               </div>
               <div style="width: 100%;">
                 <label for="orcamento">Orçamento Disponível</label>
-                <select id="orcamento" name="orcamento">
-                  <optgroup label="Serviços">
+                <select id="orcamento" name="orcamento" required>
+                  <optgroup label="Orçamento">
+                    <option hidden disabled selected value> -- Escolha -- </option>
                     <option value="800">Até R$800,00</option>
                     <option value="1500">Até R$1.500,00</option>
                     <option value="2200">Até R$2.200,00</option>
