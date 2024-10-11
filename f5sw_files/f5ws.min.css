@@ -15099,18 +15099,18 @@ input[type="time"],
 input[type="url"],
 textarea,
 select {
-  padding: 10px 0 10px 45px;
-  border: 2px solid black; 
-  web-kit-decoration: none;
-  margin: 10px 0;
-  font-size: 16px;
-  height: auto;
-  outline: 0;
-  width: 100%;
-  background-color: #e8eeef;
-  color: #0a0a0a;
-  box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
-  border-radius: 12px;
+  padding: 10px 0 10px 45px !important;
+  border: 2px solid black!important;
+  web-kit-decoration: none!important;
+  margin: 10px 0!important;
+  font-size: 16px!important;
+  height: auto!important;
+  outline: 0!important;
+  width: 100%!important;
+  background-color: #e8eeef!important; 
+  color: #0a0a0a!important; 
+  box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset!important; 
+  border-radius: 12px!important; 
 }
 
 input[type="radio"],
