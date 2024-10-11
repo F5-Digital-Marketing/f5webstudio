@@ -40,6 +40,7 @@
   <meta content="summary_large_image" name="twitter:card">
   <meta content="width=device-width, initial-scale=1" name="viewport">
   <meta name="facebook-domain-verification" content="rvh8099vh7gordebeh1761wh3pu87a" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">  
   <link href="./f5sw_files/f5ws.min.css" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="https://unpkg.com/lenis@1.1.13/dist/lenis.css">
   <link href="https://fonts.googleapis.com/" rel="preconnect">
@@ -705,24 +706,26 @@
             <fieldset>
               <ol style="gap: 50px;">
                 <li class="li-div">
-                  <input style="margin-top: 15px;" type="radio" name="contato" id="immigrant" data-gtm-form-interact-field-id="0">
-                  <label style="margin-top: 15px;width: 30%;" for="immigrant">WhatsApp</label>
+                  <input style="margin-top: 10px;" type="radio" name="contato" id="immigrant" data-gtm-form-interact-field-id="0">
+                  <label style="margin-top: 25px;width: 30%;" for="immigrant">WhatsApp</label>
                   <fieldset class="conditional">
                     <ol>
                       <li>
                         <label for="country_citizenship"></label>
+                        <span> <i class="fa fa-pencil"></i></span>
                         <input type="number" name="whatsapp" value="" id="country_citizenship">
                       </li>
                     </ol>
                   </fieldset>
                 </li>
                 <li class="li-div">
-                  <input style="margin-top: 15px;" type="radio" name="contato" value="Email" id="immigrant" data-gtm-form-interact-field-id="1">
-                  <label style="margin-top: 15px;width: 30%;" for="immigrant">E-mail</label>
+                  <input style="margin-top: 10px;" type="radio" name="contato" value="Email" id="immigrant" data-gtm-form-interact-field-id="1">
+                  <label style="margin-top: 25px;width: 30%;" for="immigrant">E-mail</label>
                   <fieldset class="conditional">
                     <ol>
                       <li>
                         <label for="visa_type"></label>
+                        <span> <i class="fa fa-pencil"></i> </span>
                         <input type="email" name="email" value="">
                       </li>
                     </ol>
@@ -733,8 +736,8 @@
             <fieldset class="li-div li-div-s">
               <div style="width: 100%;">
                 <label for="servicos">Serviços</label>
-                <select id="job" name="serviços" data-gtm-form-interact-field-id="2" required>
-                  <optgroup label="Como podemos ajudar?">
+                <select id="job" name="s  rviços" data-gtm-form-interact-field-id="2" required="true">
+                  <optgroup label="Como podemos ajudar?" aria-required="true">
                     <option hidden disabled selected value> -- Escolha -- </option>
                     <option value="website">Website</option>
                     <option value="landing_page">Landing page</option>
