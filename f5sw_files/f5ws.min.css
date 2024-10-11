@@ -132,10 +132,8 @@ samp {
 }
 
 button,
-input,
 optgroup,
-select,
-textarea {
+select{
   color: inherit;
   font: inherit;
   margin: 0
