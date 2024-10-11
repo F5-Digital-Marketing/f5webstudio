@@ -15088,7 +15088,6 @@ h1 {
 }
 
 input[type="text"],
-input[type="name"],
 input[type="password"],
 input[type="date"],
 input[type="datetime"],
@@ -15102,7 +15101,6 @@ textarea,
 select {
   padding: 10px 0 10px 45px !important;
   border: 2px solid black!important;
-  web-kit-decoration: none!important;
   margin: 10px 0!important;
   font-size: 16px!important;
   height: auto!important;
@@ -15112,6 +15110,21 @@ select {
   color: #0a0a0a!important; 
   box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset!important; 
   border-radius: 12px!important; 
+}
+
+#input-text{
+  padding: 10px 0 10px 45px !important;
+  border: 2px solid black!important;
+  web-kit-decoration: none!important;
+  margin: 10px 0!important;
+  font-size: 16px!important;
+  height: auto!important;
+  outline: 0!important;
+  width: 100%!important;
+  background-color: #e8eeef!important; 
+  color: #0a0a0a!important; 
+  box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset!important; 
+  border-radius: 12px!important;
 }
 
 input[type="radio"],
