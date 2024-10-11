@@ -15106,7 +15106,7 @@ select {
   background-color: #e8eeef;
   color: #0a0a0a;
   box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
-  border-radius: 2px;
+  border-radius: 12px;
 }
 
 input[type="radio"],
@@ -15131,7 +15131,7 @@ input[type="radio"]:checked{
 select {
   width: 100%;
   padding: 8px;
-  border-radius: 2px;
+  border-radius: 12px;
 }
 
 button {
@@ -15255,11 +15255,11 @@ padding-block-end: 0;
     }
 }
 
-li span {
+form span {
   display: inline-block;
   position: relative;
-  left: 20px;
-  top: 50px;
+  left: 15px;
+  top: 48px;
   font-weight: bold;
   color: var(--pink-dark);
 }
