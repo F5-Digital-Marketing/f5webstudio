@@ -34,6 +34,3 @@ new Swiper("#swiper-2", {
 });
 
 //form//
-$(document).on("ready", function () {
-    $(".card").eq(0).addClass('hover');
-});
