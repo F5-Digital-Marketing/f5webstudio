@@ -14570,7 +14570,7 @@ color: var(--black)
   transition: all 0.3s ease;
 }
 
-.day-night input:checked+div {
+.day-night input:checked {
   box-shadow: inset 20px -20px 0 0 var(--text-color);
   transform: scale(0.5) rotate(0deg);
   transition: transform 0.3s ease 0.1s, box-shadow 0.2s ease 0s;
