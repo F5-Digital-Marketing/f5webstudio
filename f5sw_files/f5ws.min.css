@@ -15255,7 +15255,7 @@ padding-block-end: 0;
     }
 }
 
-form span {
+form span{
   display: inline-block;
   position: relative;
   left: 15px;
@@ -15264,6 +15264,9 @@ form span {
   color: var(--pink-dark);
 }
 
+form span.icon-e{
+  top: 50px;
+}
 
 
 
