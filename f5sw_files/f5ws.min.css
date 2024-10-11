@@ -15088,6 +15088,7 @@ h1 {
 }
 
 input[type="text"],
+input[type="name"],
 input[type="password"],
 input[type="date"],
 input[type="datetime"],
