@@ -295,6 +295,40 @@
           <div class="swiper-custom-pagination"></div>
         </div>
       </div>
+      <script>
+        new Swiper("#swiper-2", {
+          slidesPerView: 1,
+          centeredSlides: true,
+          spaceBetween: 24,
+          pagination: {
+            el: ("#swiper-2 .swiper-custom-pagination"),
+            clickable: true,
+            renderBullet: function (index, className) {
+              return `<div class=${className}>
+              <span class="number"></span>
+              <span class="line"></span>
+              </div>`;
+            }
+          },
+          lazyLoading: true,
+          loop: true,
+          keyboard: {
+            enabled: true,
+          },
+          navigation: {
+            nextEl: "#nav-right",
+            prevEl: "#nav-left"
+          },
+          breakpoints: {
+            800: {
+              slidesPerView: 1.5
+            },
+            1400: {
+              slidesPerView: 3
+            }
+          }
+        });
+      </script>
       <section id="nosso-foco">
         <div class="flex-center inner-padding-xlarge">
           <div class="overflow-center">
@@ -963,40 +997,6 @@
   <script defer src="https://cdn.lordicon.com/lordicon.js"></script>
   <script async src="https://code.jquery.com/jquery-3.7.1.min.js"
     integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-  <script>
-    new Swiper("#swiper-2", {
-      slidesPerView: 1,
-      centeredSlides: true,
-      spaceBetween: 24,
-      pagination: {
-        el: ("#swiper-2 .swiper-custom-pagination"),
-        clickable: true,
-        renderBullet: function (index, className) {
-          return `<div class=${className}>
-          <span class="number"></span>
-          <span class="line"></span>
-          </div>`;
-        }
-      },
-      lazyLoading: true,
-      loop: true,
-      keyboard: {
-        enabled: true,
-      },
-      navigation: {
-        nextEl: "#nav-right",
-        prevEl: "#nav-left"
-      },
-      breakpoints: {
-        800: {
-          slidesPerView: 1.5
-        },
-        1400: {
-          slidesPerView: 3
-        }
-      }
-    });
-  </script>
   <script>var span = document.querySelector(".typewriter span");
     var textArr = span.getAttribute("data-text").split(", ");
     var maxTextIndex = textArr.length;
