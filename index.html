@@ -223,7 +223,7 @@
                   Estação Distribuidora
                 </figcaption>
               </figure>
-            </div> <!-- end swiper-slide -->
+            </div>
             <div class="swiper-slide">
               <figure>
                 <img
@@ -233,7 +233,7 @@
                   Mentoria LTV
                 </figcaption>
               </figure>
-            </div> <!-- end swiper-slide -->
+            </div>
             <div class="swiper-slide">
               <figure>
                 <img
@@ -243,7 +243,7 @@
                   Distribuidora Forthe
                 </figcaption>
               </figure>
-            </div> <!-- end swiper-slide -->
+            </div>
             <div class="swiper-slide">
               <figure>
                 <img
@@ -253,7 +253,7 @@
                   VF Móveis Planejados
                 </figcaption>
               </figure>
-            </div> <!-- end swiper-slide -->
+            </div>
             <div class="swiper-slide">
               <figure>
                 <img
@@ -263,7 +263,7 @@
                   Automações Magnéticas
                 </figcaption>
               </figure>
-            </div> <!-- end swiper-slide -->
+            </div>
             <div class="swiper-slide">
               <figure>
                 <img
@@ -273,8 +273,8 @@
                   Sk Metal Agroindustrial
                 </figcaption>
               </figure>
-            </div> <!-- end swiper-slide -->
-          </div> <!-- end swiper-wrapper -->
+            </div>
+          </div>
 
           <div class="swiper-custom-nav">
             <svg width="64" height="64" viewBox="0 0 64 64" id="nav-left" fill="none"
@@ -290,12 +290,45 @@
                 d="M32 64C49.6731 64 64 49.6731 64 32C64 14.3269 49.6731 0 32 0C14.3269 0 0 14.3269 0 32C0 49.6731 14.3269 64 32 64ZM35.0666 39.6001C35.3333 39.8667 35.6 40.0001 36 40.0001C36.4 40.0001 36.6666 39.8667 36.9333 39.6001L43.6 32.9334L43.6 32.9333C43.8 32.7333 43.925 32.4959 43.975 32.249C44.0583 31.8376 43.9334 31.4 43.6 31.0667L36.9333 24.4C36.4 23.8667 35.6 23.8667 35.0667 24.4C34.5333 24.9333 34.5333 25.7333 35.0667 26.2667L39.4666 30.6666H21.2778C20.5111 30.6666 20 31.2 20 32C20 32.8 20.5111 33.3333 21.2778 33.3333H39.4667L35.0666 37.7334C34.5333 38.2667 34.5333 39.0667 35.0666 39.6001Z"
                 fill="white" />
             </svg>
-          </div> <!-- end swiper-custom-nav -->
+          </div>
 
           <div class="swiper-custom-pagination"></div>
-        </div> <!-- end swiper -->
-      </div> <!-- end container -->
-    </section>
+        </div>
+      </div>
+      <script>
+        new Swiper("#swiper-2", {
+    slidesPerView: 1,
+    centeredSlides: true,
+    spaceBetween: 24,
+    pagination: {
+        el: ("#swiper-2 .swiper-custom-pagination"),
+        clickable: true,
+        renderBullet: function (index, className) {
+        return `<div class=${className}>
+            <span class="number"></span>
+            <span class="line"></span>
+            </div>`;
+        }
+    },
+    lazyLoading: true,
+    loop: true,
+    keyboard: {
+        enabled: true,
+    },
+    navigation: {
+        nextEl: "#nav-right",
+        prevEl: "#nav-left"
+    },
+    breakpoints: {
+        800: {
+            slidesPerView: 1.5
+        },
+        1400: {
+            slidesPerView: 3
+        }
+    }
+});
+      </script>
     <section id="nosso-foco">
       <div class="flex-center inner-padding-xlarge">
         <div class="overflow-center">
@@ -945,7 +978,6 @@
     </div>
   </div>
   <script defer src="/f5sw_files/f5ws.js" type="text/javascript"></script>
-  <script defer src="/f5sw_files/app.js" type="text/javascript"></script>
   <script async src="/f5sw_files/webfont.js" type="text/javascript"></script>
   <script defer src="https://cdn.lordicon.com/lordicon.js"></script>
   <script async src="https://code.jquery.com/jquery-3.7.1.min.js"
