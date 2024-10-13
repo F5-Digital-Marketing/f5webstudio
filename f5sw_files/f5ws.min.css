@@ -10848,11 +10848,11 @@ f .padding-section-medium {
 
 @media screen and (min-width:430px) {
   h1 {
-    font-size:115px
+    font-size:95px
   }}
 @media screen and (max-width:429px) {
   h1 {
-    font-size:100px
+    font-size:95px
   }
 
   h2 {
