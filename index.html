@@ -935,41 +935,6 @@
   <script defer src="https://cdn.lordicon.com/lordicon.js"></script>
   <script async src="https://code.jquery.com/jquery-3.7.1.min.js"
     integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-    <script>    
-      new Swiper("#swiper-2", {
-        slidesPerView: 1,
-        centeredSlides: true,
-        spaceBetween: 24,
-        pagination: {
-          el: ("#swiper-2 .swiper-custom-pagination"),
-          clickable: true,
-          renderBullet: function (index, className) {
-            return `<div class=${className}>
-            <span class="number"></span>
-            <span class="line"></span>
-            </div>`;
-          }
-        },
-        lazyLoading: true,
-        loop: true,
-        keyboard: {
-          enabled: true,
-        },
-        navigation: {
-          nextEl: "#nav-right",
-          prevEl: "#nav-left"
-        },
-        breakpoints: {
-          800: {
-            slidesPerView: 1.5
-          },
-          1400: {
-            slidesPerView: 3
-          }
-        }
-      });
-  
-        </script>
   <script async src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
   <script async="" data-id-scroll="" data-autoinit="true" data-duration="1" data-orientation="vertical"
     data-smoothwheel="true" data-smoothtouch="true" data-touchmultiplier="1.8"
