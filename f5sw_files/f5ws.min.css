@@ -9484,7 +9484,8 @@ f .padding-section-medium {
 
   .half-container {
     max-width: none;
-    padding: 64px
+    padding: 64px;
+    margin-top: -120px;
   }
 
   .space {
@@ -13694,7 +13695,7 @@ f .padding-section-medium {
 }
 
 .scream3d:hover img:nth-child(4) {
-  transform: scale(0.5) translate(-50px, 470px);
+  transform: scale(0.5) translate(0px, 450px);
   opacity: 1;
 }
 
@@ -13705,7 +13706,7 @@ f .padding-section-medium {
 }
 
 .scream3d:hover img:nth-child(3) {
-  transform: scale(0.5) translate(-110px, 350px) rotate(2deg);
+  transform: scale(0.5) translate(-70px, 310px) rotate(2deg);
   transition: 0.9s;
   opacity: 1;
 }
@@ -13717,7 +13718,7 @@ f .padding-section-medium {
 }
 
 .scream3d:hover img:nth-child(2) {
-  transform: scale(0.5) translate(-150px, 190px) rotate(2deg);
+  transform: scale(0.5) translate(-100px, 190px) rotate(2deg);
   transition: 1.3s;
   opacity: 1;
 }
@@ -13728,7 +13729,7 @@ f .padding-section-medium {
 }
 
 .scream3d:hover img:nth-child(1) {
-  transform: scale(0.5) translate(-150px, 50px) rotate(2deg);
+  transform: scale(0.5) translate(-90px, 50px) rotate(2deg);
   transition: 1.8s;
   opacity: 1;
 }
