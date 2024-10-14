@@ -3404,8 +3404,9 @@ figcaption {
   max-width: 1650px;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 24px;
-  padding-right: 24px
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 50px;
 }
 
 .inner-stats-info {
