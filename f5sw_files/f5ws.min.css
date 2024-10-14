@@ -4206,7 +4206,7 @@ figcaption {
   border-radius: 7px;
   margin-bottom: 24px;
   padding: 10px;
-  font-size: 19px;
+  font-size:22px;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -11869,8 +11869,8 @@ f .padding-section-medium {
   }
 
   .inner-padding-xlarge {
-    padding-top: 80px;
-    padding-bottom: 80px
+    padding-top: 50px;
+    padding-bottom: 50px
   }
 
   .container-medium {
@@ -14071,7 +14071,7 @@ color: var(--black)
 }
 
 .bento-text-gradient-silver {
-  font-weight: 500px;
+  font-weight: 600;
   background: linear-gradient(33deg, #fff 12%, #989393 63%, #d2d2d2 73%);
   -webkit-background-clip: text;
   background-clip: text;
