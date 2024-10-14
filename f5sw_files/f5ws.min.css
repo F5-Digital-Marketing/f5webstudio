@@ -15599,7 +15599,7 @@ stroke: #E5003C;
 }
 
 .bg-white-7{ 
-  overflow-x: hidden;
+  overflow: hidden;
   width: 100%;
   height: 100%;
   background-size: cover;
@@ -15609,7 +15609,7 @@ stroke: #E5003C;
 }
 
 .bg-white-6 { 
-  overflow-x: hidden;
+  overflow: hidden;
   width: 100%;
   height: 100%;
   background-size: cover;
