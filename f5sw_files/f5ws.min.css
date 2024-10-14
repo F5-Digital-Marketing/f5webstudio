@@ -14749,12 +14749,14 @@ color: var(--black)
 
 .arrow-scribble {
   opacity: 40%;
+  margin: -25px;
+  z-index: 9;
 }
 
 @media screen and (max-width:991px) {
   .arrow-scribble {
     transform: rotate(90deg);
-
+   margin: 0px;
   }
 }
 
