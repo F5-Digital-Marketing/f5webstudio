@@ -6615,7 +6615,6 @@ f .padding-section-medium {
 
 .container-large {
   width: 100%;
-  max-width: 40rem;
   margin-left: auto;
   margin-right: auto
 }
@@ -14071,7 +14070,7 @@ color: var(--black)
 }
 
 .bento-text-gradient-silver {
-  font-weight: 600;
+  font-weight: 500;
   background: linear-gradient(33deg, #fff 12%, #989393 63%, #d2d2d2 73%);
   -webkit-background-clip: text;
   background-clip: text;
