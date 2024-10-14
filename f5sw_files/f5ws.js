@@ -636,37 +636,3 @@ Webflow.require('ix2').init(
 );
 
 Webflow.require('commerce') && Webflow.require('commerce').init({siteId: "6654b3697a9d140e0ca14dcc", apiUrl: "https://render.webflow.com"});
-
-
-    new Swiper("#swiper-2", {
-      slidesPerView: 1,
-      centeredSlides: true,
-      spaceBetween: 24,
-      pagination: {
-        el: ("#swiper-2 .swiper-custom-pagination"),
-        clickable: true,
-        renderBullet: function (index, className) {
-          return `<div class=${className}>
-          <span class="number"></span>
-          <span class="line"></span>
-          </div>`;
-        }
-      },
-      lazyLoading: true,
-      loop: true,
-      keyboard: {
-        enabled: true,
-      },
-      navigation: {
-        nextEl: "#nav-right",
-        prevEl: "#nav-left"
-      },
-      breakpoints: {
-        800: {
-          slidesPerView: 1.5
-        },
-        1400: {
-          slidesPerView: 3
-        }
-      }
-    });

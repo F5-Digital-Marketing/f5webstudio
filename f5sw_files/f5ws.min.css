@@ -3808,7 +3808,7 @@ figcaption {
 }
 
 .rich-text p {
-  color: var(--mid-gray);
+  color: var(--main-white);
   margin-bottom: 45px;
   font-weight: 300
 }
@@ -8034,8 +8034,8 @@ f .padding-section-medium {
   font-size: 16px
 }
 
-.paragraph-small.white-70 {
-  color: rgba(255, 255, 255, .7)
+.paragraph-small.white-70 p{
+  color: #ffffffb3!important;
 }
 
 .paragraph-small.white-70.text-weight-xlight.copyright {
