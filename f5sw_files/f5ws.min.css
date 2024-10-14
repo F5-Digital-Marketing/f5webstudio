@@ -74,6 +74,7 @@ abbr[title] {
 
 b,
 strong {
+  color: #f1f1f1;
   font-weight: 700
 }
 
@@ -14073,7 +14074,8 @@ color: var(--black)
   font-weight: 500px;
   background: linear-gradient(33deg, #fff 12%, #989393 63%, #d2d2d2 73%);
   -webkit-background-clip: text;
-  background-clip: text
+  background-clip: text;
+  z-index: 9;
 }
 
 .bento-text-gradient-candy-light-green {
@@ -14495,7 +14497,7 @@ color: var(--black)
   transition-delay: 0.25s;
 }
 
-.card:hover .background .tiles .tile {
+.card .background .tiles .tile {
   -webkit-animation-name: tile;
   animation-name: tile;
 }
