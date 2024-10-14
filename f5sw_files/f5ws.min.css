@@ -2135,7 +2135,7 @@ textarea.w-select {
   --olive-drab: #414141;
   --dark-slate-grey-2: #1c3a29;
   --dark-slate-grey-3: #142e29;
-  --m-gray: #dadada;
+  --m-gray: #a3a3a3;
   --dim-grey: #313131;
   --cornflower-blue: #7fa9cf;
   --burlywood: #f3bf73;
@@ -2211,7 +2211,8 @@ h6 {
 }
 
 p {
-  margin-bottom: 0
+  margin-bottom: 0;
+  color: var(--m-gray);
 }
 
 a {
