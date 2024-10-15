@@ -2605,7 +2605,8 @@ figcaption {
   opacity: 1;
   font-size: 18px;
   font-weight: 300;
-  line-height: 1.5
+  line-height: 1.5;
+  color: var(--main-white);
 }
 
 .main-paragraph.text-small.opacity {
@@ -4253,7 +4254,7 @@ figcaption {
 .paragraph-gap-m {
   z-index: 2;
   grid-column-gap: 64px;
-  grid-row-gap: 0px;
+  grid-row-gap: 20px;
   flex-direction: column;
   align-items: flex-start;
   display: flex;
@@ -14759,6 +14760,7 @@ color: var(--black)
 
 /*text-roll*/
 .text {
+  width: 100%;
   color: #00a99d;                                              
 }
 
@@ -14774,6 +14776,7 @@ color: var(--black)
 }
 .content-slider__data {
   position: relative;
+  width: 100%;
   display: inline-block;
 }
 .content-slider__list {
@@ -14786,6 +14789,7 @@ color: var(--black)
   overflow: hidden;
 }
 .content-slider__item {
+  width: 100%;
   display: block;
   position: absolute;
   top: 0;
@@ -15102,9 +15106,8 @@ input[type="search"],
 input[type="tel"],
 input[type="time"],
 input[type="url"],
-textarea,
-select {
-  padding: 10px 0 10px 45px !important;
+textarea,select {
+  padding: 10px 0 10px 45px;
   border: 2px solid black!important;
   margin: 10px 0!important;
   font-size: 16px!important;
@@ -15115,6 +15118,10 @@ select {
   color: #0a0a0a!important; 
   box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset!important; 
   border-radius: 12px!important; 
+}
+
+select{
+  padding: 10px 0 10px 15px;
 }
 
 #input-text{
@@ -15174,7 +15181,6 @@ button {
 }
 
 fieldset {
-  margin-bottom: 15px;
   border: none;
 }
 
