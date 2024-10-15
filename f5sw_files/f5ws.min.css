@@ -15615,6 +15615,9 @@ stroke: #E5003C;
 img.card {
   transform: translateX(-27px) translateY(-90px);
 }
+.grid-lines{
 
-
+  background-image: linear-gradient(#22222240 1px, transparent 1px), linear-gradient(to right, #22222240 1px, #080809 1px);
+  background-size: 30px 30px;
+}
 
