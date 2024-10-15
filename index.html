@@ -426,7 +426,7 @@
         <div class="container small">
           <div class="flex-center">
             <div class="text-wrapper-relative">
-              <div class="text-align-center heading-xlarge text-weight-thin title-pillars">Estrutura<br>Intuitiva </div>
+              <div class="text-align-center heading-xlarge text-weight-thin title-pillars"  >Estrutura<br>Intuitiva </div>
               <img loading="lazy" src="./f5sw_files\Images\ux.svg" width="100%" alt=""
                 class="image-centralized-floating tap"
                 style="will-change: transform, filter; transform: translate3d(0px, 6%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; filter: blur(0px);">
@@ -762,21 +762,17 @@
 </div>
   </div>
   <script>
-    // ---- ---- Const ---- ---- //
 const cookiesBox = document.querySelector('.wrapper'),
   buttons = document.querySelectorAll('.button');
 
-// ---- ---- Show ---- ---- //
 const executeCodes = () => {
   if (document.cookie.includes('AlexGolovanov')) return;
   cookiesBox.classList.add('show');
 
-  // ---- ---- Button ---- ---- //
   buttons.forEach((button) => {
     button.addEventListener('click', () => {
       cookiesBox.classList.remove('show');
 
-      // ---- ---- Time ---- ---- //
       if (button.id == 'acceptBtn') {
         document.cookie =
           'cookieBy= AlexGolovanov; max-age=' + 60 * 60 * 24 * 30;
@@ -784,7 +780,6 @@ const executeCodes = () => {
     });
   });
 };
-
 window.addEventListener('load', executeCodes);
 
   </script>
