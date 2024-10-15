@@ -750,6 +750,32 @@
       </div>
     </div>
   </div>
+  <script src="https://cdn.jsdelivr.net/gh/EasyCookies/EasyCookies@0.0.2/easyCookies.min.js"></script>
+<script>
+    window.easyCookiesBanner = new EasyCookies.Banner({
+      scripts: {
+        gtag: 'AW-XXXXXXXXX'
+      },
+      data: {
+        title: "This website uses cookies 🍪🍪🍪",
+        text: "We use cookies to improve your experience.",
+        acceptBtnText: 'Accept cookies',
+        rejectBtnText: 'Reject'
+      },
+      styles: {
+        banner: {
+          fontFamily: "'Poppins', sans-serif",
+          color: "black",
+          maxWidth: "400px",
+          boxShadow: "rgba(144, 164, 174, 0.3) 0px 6px 12px 0px"
+        },
+        rejectBtn: {
+          display: 'block'
+        }
+      }
+    });
+    window.easyCookiesBanner.init(); 
+  </script>
   <script defer src="https://res.cloudinary.com/dohfsymfd/raw/upload/v1/f5web-estudio/files-js-css/f5ws.js"
     type="text/javascript"></script>
   <script async src="/f5sw_files/webfont.js" type="text/javascript"></script>
