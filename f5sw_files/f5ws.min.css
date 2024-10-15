@@ -14222,15 +14222,19 @@ color: var(--black)
 }
 
 .card h6 {
+  text-align: center;
   z-index: 2;
   position: relative;
   margin: 12px 0 4px 0;
   font-family: inherit;
   font-weight: 600;
-  font-size: 18px;
-  line-height: 2;
-  color: var(--card-label-color);
+  font-size: 25px;
+  line-height: 1.5;
 }
+@media screen and (max-width:991px) {
+  .card h6 {
+    font-size: 21px;
+  }}
 
 .card p {
   text-align: center;
