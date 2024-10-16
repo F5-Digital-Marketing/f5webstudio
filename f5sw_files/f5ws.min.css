@@ -11059,7 +11059,7 @@ f .padding-section-medium {
   }
 
   .main-paragraph.text-align-center.subourmission {
-    font-size: 18px
+    font-size: 17px
   }
 
   .main-paragraph._w-paragraph {
@@ -14848,6 +14848,7 @@ f .padding-section-medium {
 }
 
 .btn {
+  max-width: 400px;
   --btn-color: var(--pink-dark);
   --btn-bg: #f3f3f3;
   position: relative;
@@ -14924,6 +14925,11 @@ text-transform: uppercase;
   display: flex;
   flex-wrap: wrap;
   gap: 16px;
+}
+@media screen and (max-width:479px) {
+  .btn {
+    max-width: 100%;
+  }
 }
 
 .marquee {
