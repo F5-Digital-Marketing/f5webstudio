@@ -2129,7 +2129,7 @@ textarea.w-select {
 :root {
   --black: #000006;
   --dark-blue: #080811;
-  --pink-dark: #E5003C;
+  --pink-dark: #F20C36;
   --dark-slate-grey: #f3ecec;
  --pink-shadow: #3d2129;
   --main-white: #ecebe9;
@@ -4201,6 +4201,7 @@ figcaption {
   margin-bottom: 24px;
   padding: 10px;
   font-size: 22px;
+  font-weight: 600 !important;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -14861,17 +14862,13 @@ text-transform: uppercase;
   border-radius: 7px 7px 5px 7px;
   border: 0;
   cursor: pointer;
+  font-family:'cerapro' ;
   font-weight: 600;
-  letter-spacing: 0.2rem;
-  font-size: 0.9rem;
+  letter-spacing: 0.155rem;
+  font-size: 1.1rem;
   border: 2px solid linear-gradient(to left, var(--btn-color)20%, transparent 50%);
   transition: 100ms ease;
   box-shadow: -5px 5px 0 0 var(--btn-color);
-}
-
-.btn--secondary {
-  --btn-color: #444;
-  --btn-bg: #fafafa;
 }
 
 .btn svg {
@@ -15102,20 +15099,7 @@ select {
   border-radius: 12px;
 }
 
-button {
-  padding: 19px 39px 18px 39px;
-  color: #FFF;
-  background-color: #4bc970;
-  font-size: 18px;
-  text-align: center;
-  font-style: normal;
-  border-radius: 5px;
-  width: 100%;
-  border: 1px solid #3ac162;
-  border-width: 1px 1px 3px;
-  box-shadow: 0 -1px 0 rgba(255, 255, 255, .1) inset;
-  margin-bottom: 10px;
-}
+
 
 fieldset {
   border: none;
@@ -15553,9 +15537,10 @@ img.card {
   background-image: linear-gradient(#22222240 1px, transparent 1px), linear-gradient(to right, #22222240 1px, #000006 1px);
   background-size: 30px 30px;
 }
+#arrow-svg{  margin:-20px;
+}
 #arrow-svg path{
  fill: var(--pink-dark);
-  margin:-20px;
 }
 
 
