@@ -15490,11 +15490,17 @@ em:hover path {
 
 .swiper-custom-pagination .swiper-pagination-bullet-active .number,
 .swiper-custom-pagination .swiper-pagination-bullet-active .line {
+  background-color: var(--pink-dark);
   opacity: 1;
 }
 
 .swiper-custom-pagination .swiper-pagination-bullet-active .line {
   width: 2rem;
+}
+
+#swiper-2 > div.swiper-custom-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal > div.swiper-pagination-bullet.swiper-pagination-bullet-active
+.line{
+  display: none;
 }
 
 @media screen and (max-width:800px) {
