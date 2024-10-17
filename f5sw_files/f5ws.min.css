@@ -14939,21 +14939,23 @@ text-transform: uppercase;
   padding-top: 50px;
 }
 /*
-.marquee::after {
+.content::after {
   background: linear-gradient(to right, var(--black) 17%, #08080925 84%);
   content: "";
   height: 100%;
   position: absolute;
-  width: 100%;
+  width: 30%;
+  right: 0;
+  top: 0;
   z-index: 2;
 }
 
-.marquee::before {
+.content::before {
   background: linear-gradient(to right, var(--black) 17%, #08080925 84%);
   content: "";
   height: 100%;
   position: absolute;
-  width: 100%;
+  width: 50%;
   z-index: 2;
   right: 0;
   top: 0;
