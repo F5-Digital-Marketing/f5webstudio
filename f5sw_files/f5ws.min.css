@@ -13835,7 +13835,6 @@ f .padding-section-medium {
 }
 
 .grid-container-2 {
-  padding-bottom: 50px;
   margin: 50px auto;
   width: 95%;
   height: 45%;
@@ -13992,14 +13991,14 @@ f .padding-section-medium {
 
 .bento-text-gradient-silver {
   font-weight: 500;
-  background: linear-gradient(33deg, #fff 12%, #989393 63%, #d2d2d2 73%);
+  background: linear-gradient(2deg, #fff -2%, #989393 33%, #d2d2d2 73%);
   -webkit-background-clip: text;
   background-clip: text;
   z-index: 9;
 }
 
-.bento-text-gradient-candy-light-green {
-  background: -webkit-linear-gradient(-70deg, #7B4FF5, #fff);
+.bento-text-gradient-silver-2 {
+  background: -webkit-linear-gradient(-70deg, #cacaca, #fff);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -14934,20 +14933,18 @@ text-transform: uppercase;
 
 .marquee {
   position: relative;
-  width: 100vw;
-  max-width: 100%;
+  width: 100%;
+  max-width: 1250px;
   height: 40px;
-  overflow: hidden;
-  padding-top: 13px;
-  margin-bottom: -50px;
+  padding-top: 50px;
 }
-
+/*
 .marquee::after {
   background: linear-gradient(to right, var(--black) 17%, #08080925 84%);
   content: "";
   height: 100%;
   position: absolute;
-  width: 30%;
+  width: 100%;
   z-index: 2;
 }
 
@@ -14956,12 +14953,12 @@ text-transform: uppercase;
   content: "";
   height: 100%;
   position: absolute;
-  width: 30%;
+  width: 100%;
   z-index: 2;
   right: 0;
   top: 0;
   transform: rotateZ(180deg)
-}
+}*/
 
 .track {
   position: absolute;
