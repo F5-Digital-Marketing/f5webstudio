@@ -6402,7 +6402,7 @@ figcaption {
 }
 
 .ticker-scroll {
-  z-index: 3;
+  z-index: 0;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -15557,6 +15557,7 @@ img.card {
   }}
 
 .wrapper {
+  z-index: 999999!important;
   position: fixed;
   right: -370px;
   bottom: 50px;
@@ -15567,7 +15568,12 @@ img.card {
   padding: 15px 25px 22px;
   transition: all 0.3s ease;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+ ;
 }
+@media screen and (max-width:991px) {
+  .wrapper {
+    z-index: 999999!important;
+  }}
 .wrapper.show {
   right: 20px;
 }
@@ -15576,7 +15582,7 @@ img.card {
   align-items: center;
   column-gap: 15px;
   color: #4070f4;
-  margin-bottom: 15px;
+  margin-bottom: 15px; 
 }
 .title-box i {
   font-size: 32px;
