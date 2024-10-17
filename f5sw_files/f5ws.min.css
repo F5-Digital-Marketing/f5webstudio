@@ -6363,7 +6363,7 @@ figcaption {
 }
 
 .background-image-hero-jobs {
-  background-image: url(https://res.cloudinary.com/dohfsymfd/image/upload/f_auto,q_auto/v1/f5web-estudio/banner-scroll-sec);
+  background-image: url(../banner-scroll-3.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -6373,7 +6373,7 @@ figcaption {
   left: 0;
   right: 0;
   width: 100%;
-  height: 55vh;
+  height: 70vh;
   position: relative;
   overflow: hidden;
 }
@@ -14538,8 +14538,7 @@ f .padding-section-medium {
 .linha {
   z-index: 9;
   height: 1px;
-  background: #222;
-  background: -webkit-gradient(linear, 0 0, 100% 0, from(#0c0c0c), to(#0c0c0c), color-stop(50%, #666));
+  background: -webkit-gradient(linear, 0 0, 96% 0, from(#0c0c0c), to(#00000000), color-stop(50%, #1a142f));
 }
 
 @-webkit-keyframes scroll {
