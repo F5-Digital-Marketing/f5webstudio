@@ -4479,12 +4479,12 @@ figcaption {
 
 .background-image-hd {
   flex: none;
-  height: var(--framer-aspect-ratio-supported, 520px);
+  height: 520px;
   left: 50%;
   position: absolute;
   top: -60px;
-  transform: translate(-50%);
-  width: 100%;
+  transform:translate(-50%);
+  width: 100vw;
   z-index: 0;
 }
 
@@ -6393,8 +6393,9 @@ figcaption {
 }
 
 .full-image-cw {
-  background-color: #f1fbfd44;
-  width: 100%;
+  background-image: url(./f5sw_files/Images/SVG/bg-lines.svg);
+
+  width: 100vw;
   height: 100vh;
   position: relative;
   overflow: hidden
@@ -12202,7 +12203,7 @@ f .padding-section-medium {
   }
 
   .background-image-hero {
-    background-image: url(https://cdn.prod.website-files.com/6654b3697a9d140e0ca14dcc/6658d416a06be085ccf15c77_HeroCW_Mobile.webp);
+    background-image: url(/f5sw_files/Images/SVG/bg-lines.svg);
     background-position: 107svw 100%
   }
 
