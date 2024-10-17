@@ -5105,9 +5105,8 @@ figcaption {
   flex-direction: column;
   align-items: flex-start;
   width: 100%;
-  max-width: 740px;
+  max-width: 400PX;
   height: 100%;
-  padding: 96px 80px;
   display: flex
 }
 
@@ -9483,7 +9482,8 @@ f .padding-section-medium {
   }
 
   .half-container {
-    max-width: none;
+    align-items: center;
+    max-width: 100%;
     padding: 64px
   }
 
@@ -14943,7 +14943,7 @@ text-transform: uppercase;
 }
 
 .marquee::after {
-  background: linear-gradient(to right, #080809 17%, #08080925 84%);
+  background: linear-gradient(to right, var(--black) 17%, #08080925 84%);
   content: "";
   height: 100%;
   position: absolute;
@@ -14952,7 +14952,7 @@ text-transform: uppercase;
 }
 
 .marquee::before {
-  background: linear-gradient(to right, #080809 17%, #08080925 84%);
+  background: linear-gradient(to right, var(--black) 17%, #08080925 84%);
   content: "";
   height: 100%;
   position: absolute;
