@@ -14848,7 +14848,7 @@ f .padding-section-medium {
 }
 
 .btn {
-  max-width: 400px;
+  width: 490px;
   --btn-color: var(--pink-dark);
   --btn-bg: #f3f3f3;
   position: relative;
@@ -14924,11 +14924,11 @@ text-transform: uppercase;
 .btn-container {
   display: flex;
   flex-wrap: wrap;
-  gap: 16px;
+  padding-top: 20px;
 }
 @media screen and (max-width:479px) {
   .btn {
-    max-width: 100%;
+    width: 100%;
   }
 }
 
