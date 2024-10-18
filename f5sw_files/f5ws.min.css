@@ -15626,3 +15626,60 @@ img.card {
   background-color:var(--olive-drab);
 }
 
+
+/*header-fix*/
+
+.page-content-wrapper{
+  box-sizing: border-box;
+  background:#999;
+  
+}
+.header-f {
+/*  musthave style*/
+  position:fixed;
+  box-sizing:border-box;
+  top:0;
+  z-index:9999999999;
+  background: var(--black);
+  padding: 0 20px;;
+  list-style:none;
+  width:100%;
+  margin:0;
+}
+
+
+
+/*  musthave style*/
+.inner-block{
+ max-width:60%;
+  margin:0 20%;
+/*   custom */
+  background:#ddd;
+  padding:20px;
+}
+.fixed-btn {
+  display:block;
+  position:absolute;
+  right:15%;
+  top:0;
+  margin-top:20px;
+  height:100px;
+  width:100px;
+  border-radius:50%;
+  background: #e34;
+  color:var(--black);
+  line-height:100px;
+  text-align:center;
+  text-decoration:none;
+  
+}
+.fixed-btn.fixed{
+  position:fixed;
+  
+}
+@media screen and (max-width: 991px) {
+  #w-node-_6b7b42f9-ade5-6e00-7612-70bdd390a65c-d390a656 {
+      grid-column: 3 / 4;
+      display: none;
+  }
+}

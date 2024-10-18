@@ -58,19 +58,16 @@
       style="display:none;visibility:hidden"></iframe></noscript>
   <div class="page-wrapper">
     <div class="loader" style="display: none;">
-      <div class="mask-loader top"
-        style="transform: translate3d(0px, -100%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
+      <div class="mask-loader top">
       </div>
       <div class="loader-bar-wrapper" style="opacity: 0;">
-        <div class="loader-bar"
-          style="transform: translate3d(100%, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
+        <div class="loader-bar">
         </div>
       </div>
-      <div class="mask-loader bottom"
-        style="transform: translate3d(0px, 100%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
+      <div class="mask-loader bottom">
       </div>
     </div>
-    <div class="nav-wrapper" style="display: block; filter: blur(0px);">
+    <div class="header-f nav-wrapper" style="display: block; filter: blur(0px);">
       <div data-animation="default" class="navbar w-nav" data-easing2="ease" data-easing="ease" data-collapse="medium"
         role="banner" data-no-scroll="1" data-duration="0" data-doc-height="1">
         <div class="container large w-container">
@@ -82,20 +79,21 @@
               <nav role="navigation" class="nav-menu w-nav-menu">
                 <div class="nav-inner-wrapper">
                   <div id="w-node-_6b7b42f9-ade5-6e00-7612-70bdd390a65f-d390a656" class="nav-items-wrapper"><a
-                      href="#nosso-foco" class="main-nav-link w-inline-block">
+                      href="#projetos-f5" class="main-nav-link w-inline-block">
                       <div class="text-wrapper">
-                        <div class="nav-text">Nosso Foco</div>
-                        <div class="nav-text off">Nosso Foco</div>
+                        <div class="nav-text">Projetos</div>
+                        <div class="nav-text off">Projetos</div>
+                      </div>
+                    </a>
+                    <a href="#servicos" class="main-nav-link w-inline-block">
+                      <div class="text-wrapper">
+                        <div class="nav-text">Serviços</div>
+                        <div class="nav-text off">Serviços</div>
                       </div>
                     </a><a href="#metodo" class="main-nav-link w-inline-block w--current">
                       <div class="text-wrapper">
                         <div class="nav-text">Método F5</div>
                         <div class="nav-text off">Método F5</div>
-                      </div>
-                    </a><a href="#servicos" class="main-nav-link w-inline-block">
-                      <div class="text-wrapper">
-                        <div class="nav-text">Serviços</div>
-                        <div class="nav-text off">Serviços</div>
                       </div>
                     </a></div><a href="" id="w-node-_6b7b42f9-ade5-6e00-7612-70bdd390a669-d390a656" aria-current="page"
                     class="brand w-nav-brand w--current" aria-label="home"><img loading="lazy"
@@ -135,17 +133,80 @@
       </div>
       <div class="nav-overlayer"></div>
     </div>
-  
-<div class="wrapper">
-  <div class="info">
-    <p>Este site utiliza cookies para fornecer serviços e analisar o tráfego.</a>
-    </p>
-  </div>
-  <div class="buttons">
-    <button class="button" id="acceptBtn">Ok, entendi.</button>
-    <button class="button">Saiba Mais.</button>
-  </div>
-</div>
+    <div class="wrapper">
+      <div class="info">
+        <p>Este site utiliza cookies para fornecer serviços e analisar o tráfego.</a>
+        </p>
+      </div>
+      <div class="buttons">
+        <button class="button" id="acceptBtn">Ok, entendi.</button>
+        <button class="button">Saiba Mais.</button>
+      </div>
+    </div>
+    <script>
+      //load jquery first
+$(document).ready(function () {
+			//save content width
+  let content=$('.inner-block').width();
+  	//save menu height because fixed element height is not counted on page
+			let headerHeight = $('.header-f').outerHeight();
+let right;
+  //add its height as padding to content
+			$('.page-content-wrapper').css('padding-top', headerHeight);
+ 
+    //position right must be between content and window left
+  if(($(window).width()-content)/2<($('.fixed-btn').width()*8)) {
+      let right = ($(window).width()-content)/2-($('.fixed-btn').width()*1.5)
+     
+     }
+
+			
+  //save element top position 
+   let blockOffset = $('.inner-block').offset().top;
+     $('.fixed-btn').css({
+        'top': blockOffset,
+        'right': right
+
+  });
+//scroll function
+    $(window).scroll(function () {
+     // ;
+//condition if sctoll bit below content block
+        if ($(window).scrollTop() > blockOffset/1.5) {
+//if true fix bnt and set position top and right
+            $('.fixed-btn').addClass('fixed');
+        }
+        else {
+//if false set default 
+            $('.fixed-btn').removeClass('fixed');
+        }
+
+    });
+//the same to resize 
+    $(window).resize(function () {
+      let headerHeight = $('.header-f').outerHeight();
+      let content=$('.inner-block').width();
+      $('.page-content-wrapper').css({
+        'padding-top':headerHeight
+      });
+     
+      if(($(window).width()-content)/2<($('.fixed-btn').width()*8)) {
+      let right = ($(window).width()-content)/2-($('.fixed-btn').width()*1.5)
+     
+     }
+       let blockOffset = $('.inner-block').offset().top;
+         $('.fixed-btn').css({
+            'top': blockOffset,
+            'right': right
+
+          });
+        ($(window).scrollTop() > blockOffset/1.5) ?
+            $('.fixed-btn').addClass('fixed'):
+             $('.fixed-btn').removeClass('fixed');
+    });
+
+});
+    </script>
   </div>
   <div class="main-wrapper">
     <section id="hero" class="pattern-2 section">
@@ -177,13 +238,14 @@
               performance e design atraente, que vão aumentar o seu <b>posicionamento.</b></p>
           </div><a href="https://cal.com/joao-f5/15min" target="_blank" class="btn-b">
             <div class="btn-container"><button class="btn">Solicite um protótipo! </button></div>
-            <p class="text-align-center text-small text-weight-light">Custos fixos, sem mensalidades, opções flexíveis.</p>
+            <p class="text-align-center text-small text-weight-light">Custos fixos, sem mensalidades, opções flexíveis.
+            </p>
           </a>
         </div>
       </div>
     </section>
     <section id="slider-cases" class="bg-white-8">
-      <div class="wide-container">
+      <div id="projetos-f5" class="wide-container">
         <div class="swiper" id="swiper-2">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
@@ -263,14 +325,15 @@
         </div>
         <div class="_w-medium margin-top-small subpurmissiondiv">
           <p data-w-id="1d24ca17-7616-b93c-c986-06320cb2a038" class="main-paragraph text-align-center subourmission">
-            <span style="color: var(--pink-dark);">— </span>A solução está em páginas que<br><strong
-              class="">convençam seu público a agir.</strong></p>
+            <span style="color: var(--pink-dark);">— </span>A solução está em páginas que<br><strong class="">convençam
+              seu público a agir.</strong>
+          </p>
         </div><a href="https://cal.com/joao-f5/15min" target="_blank" class="btn-b">
-          <div class="btn-container"><button class="btn">Agende uma reunião de 15 min </button></div>
+          <div id="servicos" class="btn-container"><button class="btn">Agende uma reunião de 15 min </button></div>
         </a>
       </div>
     </section>
-    <section id="servicos" class="container-large">
+    <section class="container-large">
       <div style="height: 80px;" class="bento-text-gradient-silver tag-pill">serviços<span><img loading="lazy"
             id="circle-p" alt="logo" width="140" height="80" decoding="async" data-nimg="1" class=""
             src="./f5sw_files\Images\SVG\services-scribble.svg"></span></div>
@@ -351,34 +414,39 @@
               <div class="line line-3"></div>
             </div>
           </div>
+          <div id="metodo"></div>
         </div>
       </div>
     </section>
     <section class="section bg-white-6">
-      <div id="our-products" class="">
+      <div class="">
         <div class="container w-layout-grid grid-content-jobs inner-padding-small">
-            <div class="half-container">
-              <div class="content-wrapper-top-split"><img src="" loading="lazy" sizes="100vw">
-                <div class="bento-text-gradient-silver heading-large">
-                  Por trás de</div>
-                <div class="bento-text-gradient-silver heading-large">
-                  cada página...</div>
-                <p>Possuem etapas que resultam em uma estrutura essencial para o marketing do seu negócio. </p>
-              </div>
-              <div class="marquee">
-                <div class="track">
-                  <div class="content">&nbsp;&nbsp; <span class="info_box">|</span><span><strong>GOOGLE MEU NEGÓCIO
-                        -</strong> Perfil completo </span><span class="info_box">|</span><span><strong>GOOGLE ANALYTICS
-                        -</strong> Dados para o seu negócio </span><span class="info_box">|</span><span><strong>SEO
-                        -</strong> Rankeamento por palavras </span><span class="info_box">|</span><span><strong>GOOGLE MAPS
-                        -</strong> Seja encontrado facilmente </span><span class="info_box">|</span><span><strong>GOOGLE MEU
-                        NEGÓCIO -</strong>Perfil completo </span><span class="info_box">|</span><span><strong>GOOGLE ANALYTICS
-                        -</strong> Dados para o seu negócio </span><span class="info_box">|</span><span><strong>SEO
-                        -</strong> Rankeamento por palavras </span><span class="info_box">|</span><span><strong>GOOGLE MAPS
-                        -</strong> Seja encontrado facilmente </span><span class="info_box">|</span></div>
-                </div>
-              </div>            
+          <div class="half-container">
+            <div class="content-wrapper-top-split"><img src="" loading="lazy" sizes="100vw">
+              <div class="bento-text-gradient-silver heading-large">
+                Por trás de</div>
+              <div class="bento-text-gradient-silver heading-large">
+                cada página...</div>
+              <p>Possuem etapas que resultam em uma estrutura essencial para o marketing do seu negócio. </p>
             </div>
+            <div class="marquee">
+              <div class="track">
+                <div class="content">&nbsp;&nbsp; <span class="info_box">|</span><span><strong>GOOGLE MEU NEGÓCIO
+                      -</strong> Perfil completo </span><span class="info_box">|</span><span><strong>GOOGLE ANALYTICS
+                      -</strong> Dados para o seu negócio </span><span class="info_box">|</span><span><strong>SEO
+                      -</strong> Rankeamento por palavras </span><span class="info_box">|</span><span><strong>GOOGLE
+                      MAPS
+                      -</strong> Seja encontrado facilmente </span><span class="info_box">|</span><span><strong>GOOGLE
+                      MEU
+                      NEGÓCIO -</strong>Perfil completo </span><span class="info_box">|</span><span><strong>GOOGLE
+                      ANALYTICS
+                      -</strong> Dados para o seu negócio </span><span class="info_box">|</span><span><strong>SEO
+                      -</strong> Rankeamento por palavras </span><span class="info_box">|</span><span><strong>GOOGLE
+                      MAPS
+                      -</strong> Seja encontrado facilmente </span><span class="info_box">|</span></div>
+              </div>
+            </div>
+          </div>
           <div class="half-container">
             <div class="scream3d-float"></div>
             <div class="scream3d scream3d-float "><img loading="lazy" src="./f5sw_files\Images\SVG\ANALYIVS.svg"
@@ -395,7 +463,7 @@
         </div>
       </div>
     </section>
-    <section id="metodo" class="section">
+    <section class="section">
       <div data-w-id="d1ba166c-e709-394b-0f3c-433c987ebe87" class="wide-wrapper bg-light-gray">
         <div class="container small">
           <div class="flex-center">
@@ -435,7 +503,7 @@
         <div class="container small">
           <div class="flex-center">
             <div class="text-wrapper-relative">
-              <div class="text-align-center heading-xlarge text-weight-thin title-pillars"  >Estrutura<br>Intuitiva </div>
+              <div class="text-align-center heading-xlarge text-weight-thin title-pillars">Estrutura<br>Intuitiva </div>
               <img loading="lazy" src="./f5sw_files\Images\ux.svg" width="100%" alt=""
                 class="image-centralized-floating tap"
                 style="will-change: transform, filter; transform: translate3d(0px, 6%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; filter: blur(0px);">
@@ -476,12 +544,12 @@
             style="will-change: transform; transform: translate3d(-1.9535vw, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
             DÊ UM F5!</div>
         </div><a href="https://cal.com/joao-f5/15min" target="_blank" class="btn-b">
-          <div class="btn-container"><button class="btn">hoje mesmo!</button></div>
+          <div id="como-funciona" class="btn-container"><button class="btn">hoje mesmo!</button></div>
         </a>
       </div>
     </section>
     <div class="linha"></div>
-    <section id="servicos" class="container-large">
+    <section class="container-large">
       <div style="height: 80px; padding: 50px;" class="bento-text-gradient-silver tag-pill ">processo<span><img
             loading="lazy" id="circle-p" alt="logo" width="140" height="80" decoding="async" data-nimg="1" class=""
             src="./f5sw_files\Images\SVG\services-scribble.svg"></span></div>
@@ -515,7 +583,14 @@
               <div class="line line-3"></div>
             </div>
           </div>
-            <svg width="84" height="24" viewBox="0 0 60 24" fill="none" id="arrow-svg"> <path d="M50.5504 16.0296L48.4294 15.666L46.2976 15.3445C45.544 15.2228 44.7838 15.1465 44.021 15.1158C41.9902 15.0629 39.9569 15.0789 37.9264 15.1095L31.839 15.2428C29.3426 15.3124 14.8463 15.3736 12.3562 15.5027C11.1095 15.5507 9.86797 15.6421 8.62373 15.7108C7.38407 15.8098 6.14009 15.8855 4.90565 16.0133C4.14873 16.0541 3.38966 16.0274 2.63748 15.9334C2.2904 15.8844 1.96091 15.75 1.67853 15.5423C1.39616 15.3346 1.16974 15.0601 1.01957 14.7434C0.472551 13.7943 0.751742 12.6769 1.7556 12.3007C2.40763 12.0722 3.09501 11.961 3.78583 11.9725C6.90342 11.9277 10.014 11.6628 13.0942 11.1798C13.9386 10.9827 26.8074 10.9108 27.6727 10.9663C30.346 11.3325 33.0171 11.021 35.682 11.2352C36.6709 11.3111 37.6623 11.348 38.654 11.393C39.6458 11.4282 40.6382 11.4687 41.6273 11.553C45.155 11.8361 48.6694 12.2517 52.1691 12.7618C53.5561 12.9132 54.8616 13.4927 55.9043 14.4197C56.3879 14.8693 56.2219 15.784 55.5821 15.9127C54.6741 16.084 53.7528 16.1747 52.8289 16.1837C52.0701 16.1549 51.3137 16.0827 50.5631 15.9675L50.5504 16.0296Z" fill="#3d2129"></path> <path d="M42.8901 18.6329C44.2084 17.8651 45.5552 17.128 46.9595 16.4634C47.7052 16.1121 48.4597 15.7756 49.2059 15.4091C50.5084 14.7371 51.871 14.1886 53.2758 13.7708C54.7518 13.335 56.2808 13.1044 57.8197 13.0856L56.6436 16.8878C55.3675 16.1363 54.1022 15.3649 52.8559 14.5634C48.4974 11.756 44.3063 8.69102 40.235 5.48226C39.6304 4.97366 39.0809 4.40296 38.5956 3.77957C38.3776 3.49734 38.2346 3.16448 38.1801 2.81206C38.1255 2.45963 38.1611 2.09913 38.2836 1.7642C38.5861 0.713977 39.6026 0.151009 40.5611 0.597883C41.1727 0.902944 41.7314 1.30404 42.2161 1.78592C44.4752 3.91296 46.9925 5.74799 49.7087 7.24797C50.4582 7.66527 51.2769 8.03963 51.876 8.6283C53.797 10.5059 56.1776 11.7499 58.3179 13.3248C58.4514 13.4221 58.585 13.5193 58.7195 13.6171L58.8955 13.7452C59.2104 13.9745 59.4415 14.3008 59.5532 14.674C59.6649 15.0472 59.651 15.4468 59.5138 15.8114C59.3765 16.176 59.1234 16.4855 58.7934 16.6924C58.4633 16.8994 58.0744 16.9923 57.6864 16.9569C56.125 16.8147 54.5034 17.1559 52.8995 17.6253C49.7545 18.552 46.7035 20.2668 43.7803 22.1837C42.6424 22.9915 41.3023 23.4668 39.9098 23.5567C39.2412 23.5804 38.7078 22.8198 39.0892 22.2693C39.639 21.4827 40.2708 20.7567 40.9741 20.1036C41.5858 19.5831 42.2363 19.1101 42.92 18.6886L42.8901 18.6329Z" fill="a1a1a1"></path> </svg>
+          <svg width="84" height="24" viewBox="0 0 60 24" fill="none" id="arrow-svg">
+            <path
+              d="M50.5504 16.0296L48.4294 15.666L46.2976 15.3445C45.544 15.2228 44.7838 15.1465 44.021 15.1158C41.9902 15.0629 39.9569 15.0789 37.9264 15.1095L31.839 15.2428C29.3426 15.3124 14.8463 15.3736 12.3562 15.5027C11.1095 15.5507 9.86797 15.6421 8.62373 15.7108C7.38407 15.8098 6.14009 15.8855 4.90565 16.0133C4.14873 16.0541 3.38966 16.0274 2.63748 15.9334C2.2904 15.8844 1.96091 15.75 1.67853 15.5423C1.39616 15.3346 1.16974 15.0601 1.01957 14.7434C0.472551 13.7943 0.751742 12.6769 1.7556 12.3007C2.40763 12.0722 3.09501 11.961 3.78583 11.9725C6.90342 11.9277 10.014 11.6628 13.0942 11.1798C13.9386 10.9827 26.8074 10.9108 27.6727 10.9663C30.346 11.3325 33.0171 11.021 35.682 11.2352C36.6709 11.3111 37.6623 11.348 38.654 11.393C39.6458 11.4282 40.6382 11.4687 41.6273 11.553C45.155 11.8361 48.6694 12.2517 52.1691 12.7618C53.5561 12.9132 54.8616 13.4927 55.9043 14.4197C56.3879 14.8693 56.2219 15.784 55.5821 15.9127C54.6741 16.084 53.7528 16.1747 52.8289 16.1837C52.0701 16.1549 51.3137 16.0827 50.5631 15.9675L50.5504 16.0296Z"
+              fill="#3d2129"></path>
+            <path
+              d="M42.8901 18.6329C44.2084 17.8651 45.5552 17.128 46.9595 16.4634C47.7052 16.1121 48.4597 15.7756 49.2059 15.4091C50.5084 14.7371 51.871 14.1886 53.2758 13.7708C54.7518 13.335 56.2808 13.1044 57.8197 13.0856L56.6436 16.8878C55.3675 16.1363 54.1022 15.3649 52.8559 14.5634C48.4974 11.756 44.3063 8.69102 40.235 5.48226C39.6304 4.97366 39.0809 4.40296 38.5956 3.77957C38.3776 3.49734 38.2346 3.16448 38.1801 2.81206C38.1255 2.45963 38.1611 2.09913 38.2836 1.7642C38.5861 0.713977 39.6026 0.151009 40.5611 0.597883C41.1727 0.902944 41.7314 1.30404 42.2161 1.78592C44.4752 3.91296 46.9925 5.74799 49.7087 7.24797C50.4582 7.66527 51.2769 8.03963 51.876 8.6283C53.797 10.5059 56.1776 11.7499 58.3179 13.3248C58.4514 13.4221 58.585 13.5193 58.7195 13.6171L58.8955 13.7452C59.2104 13.9745 59.4415 14.3008 59.5532 14.674C59.6649 15.0472 59.651 15.4468 59.5138 15.8114C59.3765 16.176 59.1234 16.4855 58.7934 16.6924C58.4633 16.8994 58.0744 16.9923 57.6864 16.9569C56.125 16.8147 54.5034 17.1559 52.8995 17.6253C49.7545 18.552 46.7035 20.2668 43.7803 22.1837C42.6424 22.9915 41.3023 23.4668 39.9098 23.5567C39.2412 23.5804 38.7078 22.8198 39.0892 22.2693C39.639 21.4827 40.2708 20.7567 40.9741 20.1036C41.5858 19.5831 42.2363 19.1101 42.92 18.6886L42.8901 18.6329Z"
+              fill="a1a1a1"></path>
+          </svg>
         </div>
         <div class="grid-item-2">
           <div class="card"><span class="icon"><lord-icon src="https://cdn.lordicon.com/xyboiuok.json" trigger="loop"
@@ -543,11 +618,18 @@
               <div class="line line-2"></div>
               <div class="line line-3"></div>
             </div>
-          </div><svg width="84" height="24" viewBox="0 0 60 24" fill="none" id="arrow-svg"> <path d="M50.5504 16.0296L48.4294 15.666L46.2976 15.3445C45.544 15.2228 44.7838 15.1465 44.021 15.1158C41.9902 15.0629 39.9569 15.0789 37.9264 15.1095L31.839 15.2428C29.3426 15.3124 14.8463 15.3736 12.3562 15.5027C11.1095 15.5507 9.86797 15.6421 8.62373 15.7108C7.38407 15.8098 6.14009 15.8855 4.90565 16.0133C4.14873 16.0541 3.38966 16.0274 2.63748 15.9334C2.2904 15.8844 1.96091 15.75 1.67853 15.5423C1.39616 15.3346 1.16974 15.0601 1.01957 14.7434C0.472551 13.7943 0.751742 12.6769 1.7556 12.3007C2.40763 12.0722 3.09501 11.961 3.78583 11.9725C6.90342 11.9277 10.014 11.6628 13.0942 11.1798C13.9386 10.9827 26.8074 10.9108 27.6727 10.9663C30.346 11.3325 33.0171 11.021 35.682 11.2352C36.6709 11.3111 37.6623 11.348 38.654 11.393C39.6458 11.4282 40.6382 11.4687 41.6273 11.553C45.155 11.8361 48.6694 12.2517 52.1691 12.7618C53.5561 12.9132 54.8616 13.4927 55.9043 14.4197C56.3879 14.8693 56.2219 15.784 55.5821 15.9127C54.6741 16.084 53.7528 16.1747 52.8289 16.1837C52.0701 16.1549 51.3137 16.0827 50.5631 15.9675L50.5504 16.0296Z" fill="#3d2129"></path> <path d="M42.8901 18.6329C44.2084 17.8651 45.5552 17.128 46.9595 16.4634C47.7052 16.1121 48.4597 15.7756 49.2059 15.4091C50.5084 14.7371 51.871 14.1886 53.2758 13.7708C54.7518 13.335 56.2808 13.1044 57.8197 13.0856L56.6436 16.8878C55.3675 16.1363 54.1022 15.3649 52.8559 14.5634C48.4974 11.756 44.3063 8.69102 40.235 5.48226C39.6304 4.97366 39.0809 4.40296 38.5956 3.77957C38.3776 3.49734 38.2346 3.16448 38.1801 2.81206C38.1255 2.45963 38.1611 2.09913 38.2836 1.7642C38.5861 0.713977 39.6026 0.151009 40.5611 0.597883C41.1727 0.902944 41.7314 1.30404 42.2161 1.78592C44.4752 3.91296 46.9925 5.74799 49.7087 7.24797C50.4582 7.66527 51.2769 8.03963 51.876 8.6283C53.797 10.5059 56.1776 11.7499 58.3179 13.3248C58.4514 13.4221 58.585 13.5193 58.7195 13.6171L58.8955 13.7452C59.2104 13.9745 59.4415 14.3008 59.5532 14.674C59.6649 15.0472 59.651 15.4468 59.5138 15.8114C59.3765 16.176 59.1234 16.4855 58.7934 16.6924C58.4633 16.8994 58.0744 16.9923 57.6864 16.9569C56.125 16.8147 54.5034 17.1559 52.8995 17.6253C49.7545 18.552 46.7035 20.2668 43.7803 22.1837C42.6424 22.9915 41.3023 23.4668 39.9098 23.5567C39.2412 23.5804 38.7078 22.8198 39.0892 22.2693C39.639 21.4827 40.2708 20.7567 40.9741 20.1036C41.5858 19.5831 42.2363 19.1101 42.92 18.6886L42.8901 18.6329Z" fill="#3d2129"></path> </svg>
+          </div><svg width="84" height="24" viewBox="0 0 60 24" fill="none" id="arrow-svg">
+            <path
+              d="M50.5504 16.0296L48.4294 15.666L46.2976 15.3445C45.544 15.2228 44.7838 15.1465 44.021 15.1158C41.9902 15.0629 39.9569 15.0789 37.9264 15.1095L31.839 15.2428C29.3426 15.3124 14.8463 15.3736 12.3562 15.5027C11.1095 15.5507 9.86797 15.6421 8.62373 15.7108C7.38407 15.8098 6.14009 15.8855 4.90565 16.0133C4.14873 16.0541 3.38966 16.0274 2.63748 15.9334C2.2904 15.8844 1.96091 15.75 1.67853 15.5423C1.39616 15.3346 1.16974 15.0601 1.01957 14.7434C0.472551 13.7943 0.751742 12.6769 1.7556 12.3007C2.40763 12.0722 3.09501 11.961 3.78583 11.9725C6.90342 11.9277 10.014 11.6628 13.0942 11.1798C13.9386 10.9827 26.8074 10.9108 27.6727 10.9663C30.346 11.3325 33.0171 11.021 35.682 11.2352C36.6709 11.3111 37.6623 11.348 38.654 11.393C39.6458 11.4282 40.6382 11.4687 41.6273 11.553C45.155 11.8361 48.6694 12.2517 52.1691 12.7618C53.5561 12.9132 54.8616 13.4927 55.9043 14.4197C56.3879 14.8693 56.2219 15.784 55.5821 15.9127C54.6741 16.084 53.7528 16.1747 52.8289 16.1837C52.0701 16.1549 51.3137 16.0827 50.5631 15.9675L50.5504 16.0296Z"
+              fill="#3d2129"></path>
+            <path
+              d="M42.8901 18.6329C44.2084 17.8651 45.5552 17.128 46.9595 16.4634C47.7052 16.1121 48.4597 15.7756 49.2059 15.4091C50.5084 14.7371 51.871 14.1886 53.2758 13.7708C54.7518 13.335 56.2808 13.1044 57.8197 13.0856L56.6436 16.8878C55.3675 16.1363 54.1022 15.3649 52.8559 14.5634C48.4974 11.756 44.3063 8.69102 40.235 5.48226C39.6304 4.97366 39.0809 4.40296 38.5956 3.77957C38.3776 3.49734 38.2346 3.16448 38.1801 2.81206C38.1255 2.45963 38.1611 2.09913 38.2836 1.7642C38.5861 0.713977 39.6026 0.151009 40.5611 0.597883C41.1727 0.902944 41.7314 1.30404 42.2161 1.78592C44.4752 3.91296 46.9925 5.74799 49.7087 7.24797C50.4582 7.66527 51.2769 8.03963 51.876 8.6283C53.797 10.5059 56.1776 11.7499 58.3179 13.3248C58.4514 13.4221 58.585 13.5193 58.7195 13.6171L58.8955 13.7452C59.2104 13.9745 59.4415 14.3008 59.5532 14.674C59.6649 15.0472 59.651 15.4468 59.5138 15.8114C59.3765 16.176 59.1234 16.4855 58.7934 16.6924C58.4633 16.8994 58.0744 16.9923 57.6864 16.9569C56.125 16.8147 54.5034 17.1559 52.8995 17.6253C49.7545 18.552 46.7035 20.2668 43.7803 22.1837C42.6424 22.9915 41.3023 23.4668 39.9098 23.5567C39.2412 23.5804 38.7078 22.8198 39.0892 22.2693C39.639 21.4827 40.2708 20.7567 40.9741 20.1036C41.5858 19.5831 42.2363 19.1101 42.92 18.6886L42.8901 18.6329Z"
+              fill="#3d2129"></path>
+          </svg>
         </div>
         <div class="grid-item-2">
           <div class="card"><span class="icon"><lord-icon src="https://cdn.lordicon.com/pflszboa.json" trigger="loop"
-                state="in-build" colors="primary:#e5003c"  style="width:45px;height:45px"></lord-icon></span>
+                state="in-build" colors="primary:#e5003c" style="width:45px;height:45px"></lord-icon></span>
             <div class="content-wrapper-2">
               <h6 class="bento-text-gradient-silver-2">Testes e Lançamento </h6>
               <p class="text-align-center main-paragraph link_button_press">Na prova de fogo colocamos o que foi
@@ -724,12 +806,11 @@
         </div>
       </div>
       <script>fetch("https://api.form-data.com/f/nnraatp5eq9cdnhgn2ccdi", { method: "post", body: myFormData, headers: { "Content-Type": "application/json" } }).then(t => t.json()).then(t => { })</script>
-<div class="background-image-hd" name="Pattern" style="top:135px;z-index: -2;">
+      <div class="background-image-hd" name="Pattern" style="top:135px;z-index: -2;">
         <div data-framer-background-image-wrapper="true" style="border-radius: inherit;"><img decoding="async"
             sizes="100vw"
             srcset="./f5sw_files\Images\SVG\bg-lines.svg 512w,./f5sw_files\Images\SVG\bg-lines.svg 1024w,./f5sw_files\Images\SVG\bg-lines.svg 1440w"
-            src="./f5sw_files\Images\SVG\bg-lines.svg" alt=""
-            style="transform: rotate(180deg);">
+            src="./f5sw_files\Images\SVG\bg-lines.svg" alt="" style="transform: rotate(180deg);">
         </div>
       </div>
     </section>
@@ -749,7 +830,7 @@
             <ul role="list" class="w-list-unstyled">
               <li><a href="#servicos" class="regular-link-footer">Serviços</a></li>
               <li><a href="#metodo" class="regular-link-footer">Método F5</a></li>
-              <li><a href="#nosso-foco" class="regular-link-footer">Nosso Foco</a></li>
+              <li><a href="#projetos-f5" class="regular-link-footer">Projetos</a></li>
             </ul>
           </div>
           <div id="w-node-ab743b77-bdc2-708d-1a10-84727d0ad979-7d0ad962" class="content-wrapper gap-s">
@@ -765,25 +846,25 @@
     </div>
   </div>
   <script>
-const cookiesBox = document.querySelector('.wrapper'),
-  buttons = document.querySelectorAll('.button');
+    const cookiesBox = document.querySelector('.wrapper'),
+      buttons = document.querySelectorAll('.button');
 
-const executeCodes = () => {
-  if (document.cookie.includes('AlexGolovanov')) return;
-  cookiesBox.classList.add('show');
+    const executeCodes = () => {
+      if (document.cookie.includes('AlexGolovanov')) return;
+      cookiesBox.classList.add('show');
 
-  buttons.forEach((button) => {
-    button.addEventListener('click', () => {
-      cookiesBox.classList.remove('show');
+      buttons.forEach((button) => {
+        button.addEventListener('click', () => {
+          cookiesBox.classList.remove('show');
 
-      if (button.id == 'acceptBtn') {
-        document.cookie =
-          'cookieBy= AlexGolovanov; max-age=' + 60 * 60 * 24 * 30;
-      }
-    });
-  });
-};
-window.addEventListener('load', executeCodes);
+          if (button.id == 'acceptBtn') {
+            document.cookie =
+              'cookieBy= AlexGolovanov; max-age=' + 60 * 60 * 24 * 30;
+          }
+        });
+      });
+    };
+    window.addEventListener('load', executeCodes);
 
   </script>
   <script async src="https://res.cloudinary.com/dohfsymfd/raw/upload/v1/f5web-estudio/files-js-css/f5ws.js"
