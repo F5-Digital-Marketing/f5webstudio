@@ -2,7 +2,7 @@ html,
 html.lenis {
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
-  font-family: sans-serif;
+  font-family: Cerapro, sans-serif;
   overflow-x: hidden;
 }
 
@@ -137,6 +137,7 @@ samp {
 button,
 optgroup,
 select {
+  font-family: Magistral !important;
   color: inherit;
   font: inherit;
   margin: 0
@@ -13551,25 +13552,10 @@ f .padding-section-medium {
   }
 }
 
-@font-face {
-  font-family: 'Supreme Variable';
-  src: url('https://assets.website-files.com/6654b3697a9d140e0ca14dcc/6654b3697a9d140e0ca14e6a_Supreme-Variable.ttf') format('truetype');
-  font-weight: 100 800;
-  font-style: normal;
-  font-display: swap;
-}
 
 @font-face {
-  font-family: 'Bdogrotesk Vf';
-  src: url('https://assets.website-files.com/6654b3697a9d140e0ca14dcc/6654b3697a9d140e0ca14f39_BDOGrotesk-VF.ttf') format('truetype');
-  font-weight: 300 900;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Cerapro';
-  src: url('https://assets.website-files.com/6654b3697a9d140e0ca14dcc/6655f28125e495525118ac8b_CeraPro-Bold.otf') format('opentype');
+  font-family: 'Magistral Book';
+  src: url(../f5sw_files\font\Magistral-Book.ttf)format('truetype');
   font-weight: 700;
   font-style: normal;
   font-display: auto;
@@ -13577,7 +13563,15 @@ f .padding-section-medium {
 
 @font-face {
   font-family: 'Cerapro';
-  src: url('https://assets.website-files.com/6654b3697a9d140e0ca14dcc/6655f281393c15ac970056d8_CeraPro-Light.otf') format('opentype');
+  src: url(../f5sw_files/font/cerapro-bold.otf) format('opentype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: auto;
+}
+
+@font-face {
+  font-family: 'Cerapro';
+  src: url(../f5sw_files/font/cerapro-light.otf) format('opentype');
   font-weight: 300;
   font-style: normal;
   font-display: auto;
@@ -13585,7 +13579,7 @@ f .padding-section-medium {
 
 @font-face {
   font-family: 'Cerapro';
-  src: url('https://assets.website-files.com/6654b3697a9d140e0ca14dcc/6655f28199620d07dc87db9e_CeraPro-Regular.otf') format('opentype');
+  src: url(../f5sw_files/font/cerapro-regular.otf) format('opentype');
   font-weight: 400;
   font-style: normal;
   font-display: auto;
@@ -13593,7 +13587,7 @@ f .padding-section-medium {
 
 @font-face {
   font-family: 'Cerapro';
-  src: url('https://assets.website-files.com/6654b3697a9d140e0ca14dcc/6655f2812a51a3825d3742aa_CeraPro-Medium.otf') format('opentype');
+  src: url(../f5sw_files/font/cerapro-medium.otf) format('opentype');
   font-weight: 500;
   font-style: normal;
   font-display: auto;
@@ -13601,7 +13595,7 @@ f .padding-section-medium {
 
 @font-face {
   font-family: 'Cerapro';
-  src: url('https://assets.website-files.com/6654b3697a9d140e0ca14dcc/66573d3c12feb2a0733b03bd_CeraPro-Thin.otf') format('opentype');
+  src: url(../f5sw_files/font/cerapro-thin.otf) format('opentype');
   font-weight: 100;
   font-style: normal;
   font-display: auto;
