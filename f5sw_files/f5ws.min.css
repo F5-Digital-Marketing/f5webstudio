@@ -8,6 +8,13 @@ html.lenis {
 
 @font-face {
   font-family: 'Magistral';
+  src: url('https://res.cloudinary.com/dohfsymfd/raw/upload/v1/f5web-estudio/fonts/Magistral-Light.woff2') format('woff2');
+font-weight: 200;
+font-style: normal;
+font-display: auto;
+}
+@font-face {
+  font-family: 'Magistral';
   src: url('https://res.cloudinary.com/dohfsymfd/raw/upload/v1/f5web-estudio/fonts/Magistral-Book.woff2') format('woff2');
 font-weight: 400;
 font-style: normal;
