@@ -6,6 +6,55 @@ html.lenis {
   overflow-x: hidden;
 }
 
+@font-face {
+  font-family: 'Magistral';
+  src: url('https://res.cloudinary.com/dohfsymfd/raw/upload/v1/f5web-estudio/fonts/Magistral-Book.woff2') format('woff2');
+font-weight: 400;
+font-style: normal;
+font-display: auto;
+}
+
+@font-face {
+font-family: 'Cerapro';
+src: url('https://res.cloudinary.com/dohfsymfd/raw/upload/v1/f5web-estudio/fonts/CeraPro-Bold.woff2') format('woff2');
+font-weight: 700;
+font-style: normal;
+font-display: auto;
+}
+
+@font-face {
+font-family: 'Cerapro';
+src: url('https://res.cloudinary.com/dohfsymfd/raw/upload/v1/f5web-estudio/fonts/CeraPro-Light.woff2') format('woff2');
+font-weight: 300;
+font-style: normal;
+font-display: auto;
+}
+
+@font-face {
+font-family: 'Cerapro';
+src: url('https://res.cloudinary.com/dohfsymfd/raw/upload/v1/f5web-estudio/fonts/CeraPro-Regular.woff2') format('woff2');
+font-weight: 400;
+font-style: normal;
+font-display: auto;
+}
+
+@font-face {
+font-family: 'Cerapro';
+src: url('https://res.cloudinary.com/dohfsymfd/raw/upload/v1/f5web-estudio/fonts/CeraPro-Medium.woff2') format('woff2');
+font-weight: 500;
+font-style: normal;
+font-display: auto;
+}
+
+@font-face {
+font-family: 'Cerapro';
+src: url('https://res.cloudinary.com/dohfsymfd/raw/upload/v1/f5web-estudio/fonts/CeraPro-Thin.woff2') format('woff2');
+font-weight: 100;
+font-style: normal;
+font-display: auto;
+}
+
+
 body {
   margin: 0;
 }
@@ -13550,55 +13599,6 @@ f .padding-section-medium {
   #w-node-_229613fd-4be9-4e5e-4736-fa9ef420e1e2-3fd8cc73 {
     grid-column: span 1/span 1
   }
-}
-
-
-@font-face {
-  font-family: 'Magistral Book';
-  src: url(../f5sw_files/font/Magistral-Book.ttf)format('truetype');
-  font-weight: 700;
-  font-style: normal;
-  font-display: auto;
-}
-
-@font-face {
-  font-family: 'Cerapro';
-  src: url(../f5sw_files/font/CeraPro-Bold.otf) format('opentype');
-  font-weight: 700;
-  font-style: normal;
-  font-display: auto;
-}
-
-@font-face {
-  font-family: 'Cerapro';
-  src: url(../f5sw_files/font/CeraPro-Light.otf) format('opentype');
-  font-weight: 300;
-  font-style: normal;
-  font-display: auto;
-}
-
-@font-face {
-  font-family: 'Cerapro';
-  src: url(../f5sw_files/font/CeraPro-Regular.otf) format('opentype');
-  font-weight: 400;
-  font-style: normal;
-  font-display: auto;
-}
-
-@font-face {
-  font-family: 'Cerapro';
-  src: url(../f5sw_files/font/CeraPro-Medium.otf) format('opentype');
-  font-weight: 500;
-  font-style: normal;
-  font-display: auto;
-}
-
-@font-face {
-  font-family: 'Cerapro';
-  src: url(../f5sw_files/font/CeraPro-Thin.otf) format('opentype');
-  font-weight: 100;
-  font-style: normal;
-  font-display: auto;
 }
 
 .scream3d {
