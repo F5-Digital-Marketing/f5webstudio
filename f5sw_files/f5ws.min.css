@@ -2392,8 +2392,8 @@ figcaption {
 }
 
 .section.footer.cw {
-  padding-top: 3em;
-  padding-bottom: 2em;
+  padding-top: 7em;
+  padding-bottom: 10em;
   height: 60%;
 }
 
@@ -6190,13 +6190,12 @@ figcaption {
 }
 
 .colum-1-content-wrapper-footer {
-  grid-column-gap: 8px;
-  grid-row-gap: 8px;
+  grid-row-gap: 20px;
   flex-flow: column;
-  justify-content: flex-start;
-  align-items: flex-start;
+  align-items: center;
   min-height: auto;
-  display: flex
+  display: flex;
+  justify-content: center;
 }
 
 .nav-inner-wrapper {
