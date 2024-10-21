@@ -6190,12 +6190,13 @@ figcaption {
 }
 
 .colum-1-content-wrapper-footer {
-  grid-row-gap: 20px;
+  grid-column-gap: 8px;
+  grid-row-gap: 8px;
   flex-flow: column;
   align-items: center;
   min-height: auto;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
 }
 
 .nav-inner-wrapper {
