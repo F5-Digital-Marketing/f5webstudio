@@ -4252,7 +4252,6 @@ figcaption {
 
 .tag-pill {
   text-transform: uppercase;
-  background: linear-gradient(-70deg, #f785aa59, #7b4ff500);
   border-radius: 7px;
   margin-bottom: 24px;
   padding: 10px;
@@ -4275,9 +4274,11 @@ figcaption {
   align-items: center;
 }
 
-.tag-pill.dark {
-  color: #ffffff;
-  background-color: rgba(243, 243, 243, .8)
+.tag-pill.absolute-top.white {
+  color:var(--main-white);
+  border-style: none;
+  border-width: 0
+
 }
 
 .tag-pill.absolute-top {
@@ -13981,12 +13982,6 @@ f .padding-section-medium {
 
 .blue-dark {
   color: var(--black)
-}
-
-.bento-text-gradient-coral {
-  background: linear-gradient(90deg, rgba(152,0,28,1) 0%, rgba(198,6,41,1) 35%, rgba(242,12,54,1) 100%);
-  -webkit-background-clip: text;
-  background-clip: text
 }
 
 .bento-text-gradient-coral-yellow-dark,
