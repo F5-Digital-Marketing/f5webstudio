@@ -6310,6 +6310,10 @@ figcaption {
 }
 
 .text-weight-light {
+  text-transform: uppercase;
+  font-family: 'Magistral';
+  font-weight: 200;
+  letter-spacing: 0.155em;
   font-weight: 300
 }
 
@@ -13979,8 +13983,8 @@ f .padding-section-medium {
   color: var(--black)
 }
 
-.bento-text-gradient-coral-yellow-dark {
-  background: -webkit-linear-gradient(-70deg, #E5004a, #87002e);
+.bento-text-gradient-coral {
+  background: linear-gradient(90deg, rgba(152,0,28,1) 0%, rgba(198,6,41,1) 35%, rgba(242,12,54,1) 100%);
   -webkit-background-clip: text;
   background-clip: text
 }
