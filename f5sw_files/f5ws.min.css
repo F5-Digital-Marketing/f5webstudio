@@ -2659,7 +2659,7 @@ figcaption {
 
 .main-paragraph {
   opacity: 1;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 300;
   line-height: 1.5;
   color: var(--main-white);
@@ -2680,7 +2680,7 @@ figcaption {
 
 .main-paragraph._w-small.paragraph-hero-jobs {
   margin-bottom: 24px;
-  font-size: 18px
+  font-size: 20px
 }
 
 .main-paragraph.press_description {
@@ -13608,7 +13608,6 @@ f .padding-section-medium {
 .scream3d {
   margin-top: 0;
   margin-right: 140px;
-  padding-left: 80px;
   position: relative;
   width: 400px;
   height: 400px;
