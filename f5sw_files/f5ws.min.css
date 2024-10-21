@@ -6423,7 +6423,7 @@ figcaption {
 }
 
 .background-image-hero-jobs {
-  background-image: url(../banner-scroll-3.jpg);
+  background-image: url('https://res.cloudinary.com/dohfsymfd/image/upload/f_auto,q_auto/v1/f5web-estudio/Sessao-scroll-telas');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
