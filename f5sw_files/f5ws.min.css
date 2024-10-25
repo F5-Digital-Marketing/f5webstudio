@@ -15083,8 +15083,8 @@ input[type="radio"],
 input[type="checkbox"] {
   appearance: none;
   border-radius: 18%;
-  width: 16px;
-  height: 16px;
+  width: 13px;
+  height: 13px;
   border: 2px solid #b4b4b4;
   transition: .1s all linear;
   margin-right: 5px;
@@ -15094,8 +15094,8 @@ input[type="checkbox"] {
 }
 
 input[type="radio"]:checked {
-  width: 19px;
-  height: 17px;
+  width: 9px;
+  height: 9px;
 }
 
 select {
