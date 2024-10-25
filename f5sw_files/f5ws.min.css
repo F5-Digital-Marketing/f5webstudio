@@ -12996,7 +12996,7 @@ f .padding-section-medium {
 
 @media screen and (max-width:991px) {
   #w-node-_86df5418-d57b-53a1-3c41-22c9211a2358-aa039404 {
-    width: 90%
+    width: 100%
   }
 }
 
@@ -15025,7 +15025,7 @@ text-transform: uppercase;
 }
 
 form {
-  max-width: 84%;
+  max-width: 100%;
   margin: 10px auto;
   border-radius: 8px;
 }
