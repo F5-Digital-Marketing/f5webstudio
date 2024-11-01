@@ -906,7 +906,12 @@
     src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
   <script>if (window.matchMedia("(max-width: 991px)").matches) { $('.main-nav-link').on('click', function () { $('.menu-button').click(); }); } 
   </script>
-    <script async src="https://cdn.lordicon.com/lordicon.js"></script>
+  <script>setTimeout(() => {
+    const src = document.createElement("script")
+    src.src = "https://cdn.lordicon.com/lordicon.js"
+    document.body.appendChild(src)
+}, 3000);</script>
+   
 </body>
 
 </html>
