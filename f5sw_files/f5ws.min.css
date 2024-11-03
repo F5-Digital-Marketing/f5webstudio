@@ -11326,6 +11326,7 @@ f .padding-section-medium {
 }
 
 .card {
+  overflow-x: hidden;
   --background-color: #171725;
   --text-color: #A1A1AA;
   --card-border-color: #ffffff1a;
