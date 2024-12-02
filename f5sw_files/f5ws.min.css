@@ -400,7 +400,6 @@ li {
 }
 
 img {
-  padding: 0px 40px 0px 40px;
   object-fit: contain;
   max-width: 100%;
   display: inline-block
@@ -12964,6 +12963,10 @@ body { font-family: sans-serif; }
   background-repeat: no-repeat;
   counter-increment: gallery-cell;
   gap: 40px;
+}
+
+.gallery-cell>img{
+    padding: 0px 40px 0px 40px;
 }
 .flickity-button{
   display: none;
