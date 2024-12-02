@@ -12962,7 +12962,7 @@ body { font-family: sans-serif; }
   background-position: center;
   background-repeat: no-repeat;
   counter-increment: gallery-cell;
-  gap: 40px;
+  gap: 20px;
 }
 
 .gallery-cell>img{
