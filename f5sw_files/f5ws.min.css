@@ -416,9 +416,12 @@ figure {
 }
 
 figcaption {
+  padding: 50px;
+  font-family: magistral;
   text-align: center;
   margin-top: 5px;
-  font-size: 13px;
+  font-size: 16px;
+  letter-spacing: 1;
   font-weight: 300
 }
 
@@ -12944,11 +12947,14 @@ body { font-family: sans-serif; }
   height:600px;
 
 }
+
+.flickity-slider{
+  gap: 40px;
+}
 :focus-visible {
   outline:none !important}
 
 .gallery-cell {
-  
   width:60%;
   height: 60%;
   margin-right: 10px;
@@ -12956,14 +12962,10 @@ body { font-family: sans-serif; }
   background-position: center;
   background-repeat: no-repeat;
   counter-increment: gallery-cell;
+  gap: 40px;
 }
 .flickity-button{
   display: none;
-
-
-
-
-
 }
 
 @media screen and (max-width:991px) {
@@ -12971,6 +12973,3 @@ body { font-family: sans-serif; }
     width:100%;
     margin-right: 10px;
   }}
-
-
-/* cell number */
