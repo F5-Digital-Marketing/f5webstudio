@@ -12964,9 +12964,9 @@ body { font-family: sans-serif; }
   counter-increment: gallery-cell;
   gap: 20px;
 }
-
+.flickity-page-dots{ display: none!important}
 .gallery-cell>img{
-    padding: 0px 40px 0px 40px;
+    padding: 0px 20px 0px 20px;
 }
 .flickity-button{
   display: none;
@@ -12976,4 +12976,7 @@ body { font-family: sans-serif; }
   .gallery-cell {
     width:100%;
     margin-right: 10px;
-  }}
+  }
+  .gallery {
+     height:300px;
+}}
