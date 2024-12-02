@@ -11655,9 +11655,7 @@ f .padding-section-medium {
   right: 22.5%;
 }
 
-.card:hover {
-  box-shadow: 0 3px 6px var(--card-hover-box-shadow-1), 0 var(--card-hover-box-shadow-2-y) var(--card-hover-box-shadow-2-blur) var(--card-hover-box-shadow-2), -7px 8px 0 1px var(--card-hover-border-color);
-}
+
 
 .card:hover .shine {
   opacity: 1;
