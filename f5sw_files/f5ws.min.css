@@ -12763,7 +12763,6 @@ em:hover path {
 }
 
 .bg-white-8 { 
-  overflow: hidden;
   width: 100%;
   height: 100%;
   background-size: cover;
@@ -12941,11 +12940,15 @@ img.card {
 body { font-family: sans-serif; }
 
 .gallery {
-  height: 900px;
+ overflow: hidden;
+  height:600px;
 
 }
+:focus-visible {
+  outline:none !important}
 
 .gallery-cell {
+  
   width:60%;
   height: 60%;
   margin-right: 10px;
@@ -12954,7 +12957,20 @@ body { font-family: sans-serif; }
   background-repeat: no-repeat;
   counter-increment: gallery-cell;
 }
+.flickity-button{
+  display: none;
 
+
+
+
+
+}
+
+@media screen and (max-width:991px) {
+  .gallery-cell {
+    width:100%;
+    margin-right: 10px;
+  }}
 
 
 /* cell number */

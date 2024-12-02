@@ -170,104 +170,7 @@
         <button class="button" id="acceptBtn">Ok, entendi.</button>
         <button class="button">Saiba Mais.</button>
       </div>
-    </div>
-    <script>
-      //load jquery first
-      $(document).ready(function () {
-        //save content width
-        let content = $('.inner-block').width();
-        //save menu height because fixed element height is not counted on page
-        let headerHeight = $('.header-f').outerHeight();
-        let right;
-        //add its height as padding to content
-        $('.page-content-wrapper').css('padding-top', headerHeight);
 
-        //position right must be between content and window left
-        if (($(window).width() - content) / 2 < ($('.fixed-btn').width() * 8)) {
-          let right = ($(window).width() - content) / 2 - ($('.fixed-btn').width() * 1.5)
-
-        }
-
-
-        //save element top position 
-        let blockOffset = $('.inner-block').offset().top;
-        $('.fixed-btn').css({
-          'top': blockOffset,
-          'right': right
-
-        });
-        //scroll function
-        $(window).scroll(function () {
-          // ;
-          //condition if sctoll bit below content block
-          if ($(window).scrollTop() > blockOffset / 1.5) {
-            //if true fix bnt and set position top and right
-            $('.fixed-btn').addClass('fixed');
-          }
-          else {
-            //if false set default 
-            $('.fixed-btn').removeClass('fixed');
-          }
-
-        });
-        //the same to resize 
-        $(window).resize(function () {
-          let headerHeight = $('.header-f').outerHeight();
-          let content = $('.inner-block').width();
-          $('.page-content-wrapper').css({
-            'padding-top': headerHeight
-          });
-
-          if (($(window).width() - content) / 2 < ($('.fixed-btn').width() * 8)) {
-            let right = ($(window).width() - content) / 2 - ($('.fixed-btn').width() * 1.5)
-
-          }
-          let blockOffset = $('.inner-block').offset().top;
-          $('.fixed-btn').css({
-            'top': blockOffset,
-            'right': right
-
-          });
-          ($(window).scrollTop() > blockOffset / 1.5) ?
-            $('.fixed-btn').addClass('fixed') :
-            $('.fixed-btn').removeClass('fixed');
-        });
-
-      });
-      
-new Swiper("#swiper-2", {
-    slidesPerView: 1,
-    centeredSlides: true,
-    spaceBetween: 24,
-    pagination: {
-        el: ("#swiper-2 .swiper-custom-pagination"),
-        clickable: true,
-        renderBullet: function(index, className) {
-            return `<div class=${className}>
-          <span class="number"></span>
-          <span class="line"></span>
-          </div>`;
-        }
-    },
-    lazyLoading: true,
-    loop: true,
-    keyboard: {
-        enabled: true,
-    },
-    navigation: {
-        nextEl: "#nav-right",
-        prevEl: "#nav-left"
-    },
-    breakpoints: {
-        800: {
-            slidesPerView: 1.5
-        },
-        1400: {
-            slidesPerView: 3
-        }
-    }
-});
-    </script>
   </div>
   <div class="main-wrapper">
     <section id="hero" class="pattern-2 section">
@@ -315,66 +218,42 @@ new Swiper("#swiper-2", {
 <path d="M33.4661 70.3474C32.308 71.487 31.24 72.7148 30.2716 74.0195C30.0237 74.373 29.7714 74.7255 29.5277 75.0845C29.2959 75.4523 29.0686 75.8233 28.8526 76.1993C27.947 77.8444 27.1615 79.5734 26.3986 81.3278L25.266 83.975C24.8887 84.8593 24.5183 85.7526 24.1174 86.6304L24.1115 86.6434C23.9735 86.9454 23.7213 87.1802 23.4102 87.2963C23.0991 87.4123 22.7547 87.4 22.4527 87.2621C22.2626 87.174 22.0974 87.04 21.9719 86.8723C21.8463 86.7046 21.7645 86.5083 21.7335 86.3011L21.3475 83.6108C20.9151 80.7132 20.484 77.8127 20.071 74.9036C19.6591 71.9945 19.2645 69.0774 18.9456 66.1377C18.8609 65.2468 18.8249 64.3519 18.8377 63.457C18.8361 62.6075 19.0572 62.0388 19.3586 61.6797C19.801 61.1578 20.3445 61.6172 20.5752 62.7726C20.7215 63.5357 20.8223 64.3068 20.8771 65.0818C21.1916 68.63 21.734 72.1542 22.5011 75.6327C22.7093 76.5963 22.9624 77.594 23.04 78.5513C23.242 81.0327 23.6938 83.4914 24.0813 85.9561L21.9511 85.6618C22.1816 85.1312 22.42 84.6049 22.6755 84.0868C23.6748 82.0387 24.5708 79.9195 25.6352 77.8601C26.5781 76.0024 27.6635 74.2205 28.8816 72.5303C30.1173 70.8519 31.497 69.2846 33.0052 67.8461C33.3051 67.5623 33.6077 67.2897 33.9131 67.0317C34.2267 66.7836 34.5437 66.5515 34.8643 66.3355C35.4821 65.9139 36.1493 65.5698 36.851 65.3109C37.1647 65.1966 37.3901 65.2397 37.4868 65.3908C37.5806 65.5384 37.5578 65.8071 37.3422 66.106C37.0184 66.5073 36.6665 66.8942 36.3203 67.289C35.9768 67.6862 35.6199 68.0744 35.2594 68.4546C34.9745 68.7765 34.6678 69.083 34.3544 69.3855L34.1188 69.6121L33.8926 69.846C33.7427 70.0029 33.5929 70.1596 33.4434 70.316L33.4661 70.3474Z" fill="#525252"></path>
 </svg>
 
+<!-- Flickity HTML init -->
+<div class="gallery js-flickity"
+  data-flickity-options='{ "wrapAround": true }'>
+  <div class="gallery-cell"><figure><img 
+    src="https://res.cloudinary.com/dohfsymfd/image/upload/f_auto,q_auto/v1/f5web-estudio/SLIDER/forthe-solar-landing-page"
+    loading="lazy" alt="forthe-solar-landing-page" width="100%"/>
+  <figcaption>Distribuidora Forthe </figcaption>
+</figure></div>
+  <div class="gallery-cell"><figure><img
+    src="https://res.cloudinary.com/dohfsymfd/image/upload/f_auto,q_auto/v1/f5web-estudio/SLIDER/ltv-mentoria-landing-page"
+    loading="lazy" alt="ltv-mentoria-landing-page"width="100%">
+  <figcaption>Mentoria LTV </figcaption>
+</figure></div>
+  <div class="gallery-cell"><figure><img
+    src="https://res.cloudinary.com/dohfsymfd/image/upload/f_auto,q_auto/v1/f5web-estudio/SLIDER/estacao-solar-landing-page"
+    loading="lazy" alt="estacao-solar-landing-page"width="100%"/>
+  <figcaption>Estação Distribuidora </figcaption>
+</figure></div>
+  <div class="gallery-cell"><figure><img
+    src="https://res.cloudinary.com/dohfsymfd/image/upload/f_auto,q_auto/v1/f5web-estudio/SLIDER/vf-moveis-website"
+    loading="lazy" alt="vf-moveis-website" width="100%"/>
+  <figcaption>VF Móveis Planejados </figcaption>
+</figure></div>
+  <div class="gallery-cell"><figure><img
+    src="https://res.cloudinary.com/dohfsymfd/image/upload/f_auto,q_auto/v1/f5web-estudio/SLIDER/automacao-magnetica-landing-page"
+    loading="lazy" alt="automacao-magnetica-landing-page"width="100%"/>
+  <figcaption>Automações Magnéticas </figcaption>
+</figure></div>
+<div class="gallery-cell"><figure><img
+  src="https://res.cloudinary.com/dohfsymfd/image/upload/f_auto,q_auto/v1/f5web-estudio/SLIDER/sk-metal-website"
+  loading="lazy" alt="sk-metal-website "width="100%"/>
+<figcaption>Sk Metal Agroindustrial </figcaption>
+</figure></div>
+</div>
 
-        <div class="swiper" id="swiper-2">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <figure><img 
-                src="https://res.cloudinary.com/dohfsymfd/image/upload/f_auto,q_auto/v1/f5web-estudio/SLIDER/forthe-solar-landing-page"
-                loading="lazy" alt="forthe-solar-landing-page" width="1250" height="881" />
-              <figcaption>Distribuidora Forthe </figcaption>
-            </figure>
-            </div>
-            <div class="swiper-slide">
-              <figure><img
-                  src="https://res.cloudinary.com/dohfsymfd/image/upload/f_auto,q_auto/v1/f5web-estudio/SLIDER/ltv-mentoria-landing-page"
-                  loading="lazy" alt="ltv-mentoria-landing-page" width="1250" height="881" />
-                <figcaption>Mentoria LTV </figcaption>
-              </figure>
-            </div>
-            <div class="swiper-slide">
-              <figure><img
-                src="https://res.cloudinary.com/dohfsymfd/image/upload/f_auto,q_auto/v1/f5web-estudio/SLIDER/estacao-solar-landing-page"
-                loading="lazy" alt="estacao-solar-landing-page" width="1250" height="881" />
-              <figcaption>Estação Distribuidora </figcaption>
-            </figure>
-            </div>
-            <div class="swiper-slide">
-              <figure><img
-                  src="https://res.cloudinary.com/dohfsymfd/image/upload/f_auto,q_auto/v1/f5web-estudio/SLIDER/vf-moveis-website"
-                  loading="lazy" alt="vf-moveis-website" width="1250" height="881" />
-                <figcaption>VF Móveis Planejados </figcaption>
-              </figure>
-            </div>
-            <div class="swiper-slide">
-              <figure><img
-                  src="https://res.cloudinary.com/dohfsymfd/image/upload/f_auto,q_auto/v1/f5web-estudio/SLIDER/automacao-magnetica-landing-page"
-                  loading="lazy" alt="automacao-magnetica-landing-page" width="1250" height="881" />
-                <figcaption>Automações Magnéticas </figcaption>
-              </figure>
-            </div>
-            <div class="swiper-slide">
-              <figure><img
-                  src="https://res.cloudinary.com/dohfsymfd/image/upload/f_auto,q_auto/v1/f5web-estudio/SLIDER/sk-metal-website"
-                  loading="lazy" alt="sk-metal-website " width="1250" height="881" />
-                <figcaption>Sk Metal Agroindustrial </figcaption>
-              </figure>
-            </div>
-          </div>
-          <div class="swiper-custom-nav"><svg width="64" height="64" viewBox="0 0 64 64" id="nav-left" fill="none"
-              xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd" clip-rule="evenodd"
-                d="M32 2.79753e-06C14.3269 4.34256e-06 -4.34256e-06 14.3269 -2.79753e-06 32C-1.2525e-06 49.6731 14.3269 64 32 64C49.6731 64 64 49.6731 64 32C64 14.3269 49.6731 1.2525e-06 32 2.79753e-06ZM28.9334 24.3999C28.6667 24.1333 28.4 23.9999 28 23.9999C27.6 23.9999 27.3334 24.1333 27.0667 24.3999L20.4 31.0666L20.4 31.0667C20.2 31.2667 20.075 31.5041 20.025 31.751C19.9417 32.1624 20.0666 32.6 20.4 32.9333L27.0667 39.6C27.6 40.1333 28.4 40.1333 28.9333 39.6C29.4667 39.0667 29.4667 38.2667 28.9333 37.7333L24.5334 33.3334L42.7222 33.3334C43.4889 33.3334 44 32.8 44 32C44 31.2 43.4889 30.6667 42.7222 30.6667L24.5333 30.6667L28.9334 26.2666C29.4667 25.7333 29.4667 24.9333 28.9334 24.3999Z"
-                fill="#F20C36" />
-            </svg><svg width="64" height="64" viewBox="0 0 64 64" id="nav-right" fill="none"
-              xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd" clip-rule="evenodd"
-                d="M32 64C49.6731 64 64 49.6731 64 32C64 14.3269 49.6731 0 32 0C14.3269 0 0 14.3269 0 32C0 49.6731 14.3269 64 32 64ZM35.0666 39.6001C35.3333 39.8667 35.6 40.0001 36 40.0001C36.4 40.0001 36.6666 39.8667 36.9333 39.6001L43.6 32.9334L43.6 32.9333C43.8 32.7333 43.925 32.4959 43.975 32.249C44.0583 31.8376 43.9334 31.4 43.6 31.0667L36.9333 24.4C36.4 23.8667 35.6 23.8667 35.0667 24.4C34.5333 24.9333 34.5333 25.7333 35.0667 26.2667L39.4666 30.6666H21.2778C20.5111 30.6666 20 31.2 20 32C20 32.8 20.5111 33.3333 21.2778 33.3333H39.4667L35.0666 37.7334C34.5333 38.2667 34.5333 39.0667 35.0666 39.6001Z"
-                fill="#F20C36" />
-            </svg></div>
-          <div class="swiper-custom-pagination"></div>
         </div>
-      </div>
     </section>
     <section id="nosso-foco">
       <div class="flex-center inner-padding-xlarge">
@@ -927,41 +806,7 @@ new Swiper("#swiper-2", {
     window.addEventListener('load', executeCodes);
 
   </script>
-  <script>
-    
-new Swiper("#swiper-2", {
-    slidesPerView: 1,
-    centeredSlides: true,
-    spaceBetween: 24,
-    pagination: {
-        el: ("#swiper-2 .swiper-custom-pagination"),
-        clickable: true,
-        renderBullet: function(index, className) {
-            return `<div class=${className}>
-          <span class="number"></span>
-          <span class="line"></span>
-          </div>`;
-        }
-    },
-    lazyLoading: true,
-    loop: true,
-    keyboard: {
-        enabled: true,
-    },
-    navigation: {
-        nextEl: "#nav-right",
-        prevEl: "#nav-left"
-    },
-    breakpoints: {
-        800: {
-            slidesPerView: 1.5
-        },
-        1400: {
-            slidesPerView: 3
-        }
-    }
-});
-  </script>
+
   <script src="https://res.cloudinary.com/dohfsymfd/raw/upload/v1729016555/f5web-estudio/files-js-css/f5ws2.js"
     type="text/javascript"></script>
   <script async src="/f5sw_files/webfont.js" type="text/javascript"></script>
