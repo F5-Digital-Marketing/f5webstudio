@@ -1,7 +1,7 @@
 html,html.lenis {
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
-  font-family: Cerapro, sans-serif;
+  font-family: Cerapro, sans-serif !important;
   overflow-x: hidden;
 }
 
