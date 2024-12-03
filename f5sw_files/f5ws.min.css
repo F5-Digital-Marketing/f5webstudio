@@ -12815,7 +12815,7 @@ img.card {
   position: fixed;
   right: -370px;
   bottom: 50px;
-  max-width: 290px;
+  max-width: 190px;
   width: 100%;
   background: #fff;
   border-radius: 8px;
@@ -12868,7 +12868,7 @@ img.card {
 }
 .button {
   font-size: 13px;
-  width: calc(100% / 2 - 10px);
+  width: 100%;
   padding: 7px 0;
   border: none;
   border-radius: 4px;
