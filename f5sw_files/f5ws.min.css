@@ -1,7 +1,6 @@
 html,html.lenis {
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
-  font-family: Cerapro, sans-serif !important;
   overflow-x: hidden;
 }
 
@@ -22,7 +21,7 @@ font-display: auto;
 
 @font-face {
 font-family: 'Cerapro';
-src: url('.f5sw_files/font/CeraPro-Bold.woff2') format('woff2');
+src: url(../f5sw_files/font/CeraPro-Bold.woff2) format('woff2');
 font-weight: 700;
 font-style: normal;
 font-display: auto;
@@ -30,7 +29,7 @@ font-display: auto;
 
 @font-face {
 font-family: 'Cerapro';
-src: url('.f5sw_files/font/CeraPro-Light.woff2') format('woff2');
+src: url(../f5sw_files/font/CeraPro-Light.woff2) format('woff2');
 font-weight: 300;
 font-style: normal;
 font-display: auto;
@@ -38,7 +37,7 @@ font-display: auto;
 
 @font-face {
 font-family: 'Cerapro';
-src: url('.f5sw_files/font/CeraPro-Regular.woff2') format('woff2');
+src: url(../f5sw_files/font/CeraPro-Regular.woff2) format('woff2');
 font-weight: 400;
 font-style: normal;
 font-display: auto;
@@ -46,7 +45,7 @@ font-display: auto;
 
 @font-face {
 font-family: 'Cerapro';
-src: url('.f5sw_files/font/CeraPro-Medium.woff2') format('woff2');
+src: url(../f5sw_files/font/CeraPro-Medium.woff2) format('woff2');
 font-weight: 500;
 font-style: normal;
 font-display: auto;
@@ -54,7 +53,7 @@ font-display: auto;
 
 @font-face {
 font-family: 'Cerapro';
-src: url('.f5sw_files/font/CeraPro-Thin.woff2') format('woff2');
+src: url(../f5sw_files/font/CeraPro-Thin.woff2) format('woff2');
 font-weight: 100;
 font-style: normal;
 font-display: auto;
@@ -765,7 +764,7 @@ figcaption {
   text-transform: none;
   margin-top: 0;
   font-size: 10em;
-  font-weight: 400;
+  font-weight: 100;
   line-height: .85;
   position: relative
 }
@@ -12940,9 +12939,6 @@ img.card {
   }
 }
 
-
-/*css-slider-03333*/
-body { font-family: sans-serif; }
 
 .gallery {
  overflow: hidden;
