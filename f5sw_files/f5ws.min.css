@@ -3435,7 +3435,8 @@ figcaption {
 .text-align-center.heading-xlarge.text-weight-thin.title-pillars {
   letter-spacing: 0;
   font-size: 8.5em;
-  line-height: 1.3
+  line-height: 1.3;
+  font-weight: 100;
 }
 
 .logo-cw-footer {
