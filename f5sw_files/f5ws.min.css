@@ -22,7 +22,7 @@ font-display: auto;
 
 @font-face {
 font-family: 'Cerapro';
-src: url('https://res.cloudinary.com/dohfsymfd/raw/upload/v1/f5web-estudio/fonts/CeraPro-Bold.woff2') format('woff2');
+src: url('.f5sw_files/font/CeraPro-Bold.woff2') format('woff2');
 font-weight: 700;
 font-style: normal;
 font-display: auto;
@@ -30,7 +30,7 @@ font-display: auto;
 
 @font-face {
 font-family: 'Cerapro';
-src: url('https://res.cloudinary.com/dohfsymfd/raw/upload/v1/f5web-estudio/fonts/CeraPro-Light.woff2') format('woff2');
+src: url('.f5sw_files/font/CeraPro-Light.woff2') format('woff2');
 font-weight: 300;
 font-style: normal;
 font-display: auto;
@@ -38,7 +38,7 @@ font-display: auto;
 
 @font-face {
 font-family: 'Cerapro';
-src: url('https://res.cloudinary.com/dohfsymfd/raw/upload/v1/f5web-estudio/fonts/CeraPro-Regular.woff2') format('woff2');
+src: url('.f5sw_files/font/CeraPro-Regular.woff2') format('woff2');
 font-weight: 400;
 font-style: normal;
 font-display: auto;
@@ -46,7 +46,7 @@ font-display: auto;
 
 @font-face {
 font-family: 'Cerapro';
-src: url('https://res.cloudinary.com/dohfsymfd/raw/upload/v1/f5web-estudio/fonts/CeraPro-Medium.woff2') format('woff2');
+src: url('.f5sw_files/font/CeraPro-Medium.woff2') format('woff2');
 font-weight: 500;
 font-style: normal;
 font-display: auto;
@@ -54,7 +54,7 @@ font-display: auto;
 
 @font-face {
 font-family: 'Cerapro';
-src: url('https://res.cloudinary.com/dohfsymfd/raw/upload/v1/f5web-estudio/fonts/CeraPro-Thin.woff2') format('woff2');
+src: url('.f5sw_files/font/CeraPro-Thin.woff2') format('woff2');
 font-weight: 100;
 font-style: normal;
 font-display: auto;
@@ -182,7 +182,7 @@ body {
   background-color: #fff;
   min-height: 100%;
   margin: 0;
-  font-family:Cerapro, Arial, sans-serif;
+  font-family: Cerapro, Arial, sans-serif;
   font-size: 14px;
   line-height: 20px
 }
@@ -12118,7 +12118,7 @@ text-transform: uppercase;
   border-radius: 7px 7px 5px 7px;
   border: 0;
   cursor: pointer;
-  font-family:'cerapro' ;
+  font-family:'CeraPro' ;
   font-weight: 600;
   letter-spacing: 0.155rem;
   font-size: 1.1rem;
